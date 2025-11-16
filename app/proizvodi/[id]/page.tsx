@@ -6,8 +6,8 @@ import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { ShoppingCart, ArrowLeft, Phone } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { ShoppingCart, ArrowLeft, Phone, CheckCircle2 } from 'lucide-react';
 import { toast } from 'sonner';
 import { useState } from 'react';
 
@@ -65,9 +65,15 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
               </span>
             </div>
 
-            <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
               {product.name}
             </h1>
+
+            {product.subtitle && (
+              <h2 className="text-xl md:text-2xl text-muted-foreground mb-6">
+                {product.subtitle}
+              </h2>
+            )}
 
             <p className="text-4xl font-bold text-primary mb-6">
               {product.price.toLocaleString('sr-RS')} RSD
@@ -124,27 +130,60 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
               </Button>
             </div>
 
-            {/* Additional Info */}
-            <Card className="mt-8">
-              <CardContent className="pt-6">
-                <h3 className="font-semibold mb-3">Informacije o usluzi</h3>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>✓ Dostupno 24/7</li>
-                  <li>✓ Profesionalna oprema</li>
-                  <li>✓ Iskusno osoblje</li>
-                  <li>✓ Osiguranje vozila</li>
-                  <li>✓ Brz odziv</li>
-                </ul>
-              </CardContent>
-            </Card>
+            {/* Usage Info */}
+            {product.usage && (
+              <Card className="mt-8">
+                <CardContent className="pt-6">
+                  <h3 className="font-semibold mb-3 text-lg">Upotreba</h3>
+                  <p className="text-muted-foreground">{product.usage}</p>
+                </CardContent>
+              </Card>
+            )}
           </div>
         </div>
+
+        {/* Benefits */}
+        {product.benefits && product.benefits.length > 0 && (
+          <Card className="mb-12">
+            <CardHeader>
+              <CardTitle className="text-2xl">Lekovito djelovanje</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {product.benefits.map((benefit, index) => (
+                  <div key={index} className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                    <span className="text-muted-foreground">{benefit}</span>
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        )}
+
+        {/* Full Description */}
+        {product.fullDescription && (
+          <Card className="mb-12">
+            <CardHeader>
+              <CardTitle className="text-2xl">Detaljan opis</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="prose prose-lg max-w-none">
+                {product.fullDescription.split('\n\n').map((paragraph, index) => (
+                  <p key={index} className="text-muted-foreground mb-4 whitespace-pre-line">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        )}
 
         {/* Related Products */}
         {relatedProducts.length > 0 && (
           <div className="mt-16">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
-              Slične usluge
+              Slični proizvodi
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {relatedProducts.map((relatedProduct) => (
