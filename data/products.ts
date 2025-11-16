@@ -316,4 +316,51 @@ Vodeno-etanolni ekstrakt karanfilića.
 
 NAPOMENA: Trudnicama, dojiljama i deci ispod 12 godina se ne savetuje uzimanje tinkture.`
   },
+  {
+    id: '6',
+    name: 'Tinktura - divlji kesten',
+    price: 1500,
+    description: 'Divlji kesten je vrlo dobar prirodni lek za terapiju proširenih vena i hemoroida. Sadrži escin koji blagotvorno deluje na stabilizaciju zidova venskih krvnih sudova i smanjenje otoka i bola. Za spoljnu upotrebu.',
+    image: '/BRKIN DIVLJI KESTEN za spoljnu upotrebu.jpg',
+    category: 'Tinkture',
+    subtitle: 'Divlji kesten za proširene vene',
+    usage: 'Tinkturu koristiti svakodnevno. Blago utrljavati na obolela mesta. Utrljati u kožu svako veče pre spavanja, tokom deset dana. SAMO ZA SPOLJNU UPOTREBU. Zapremina boce je 100 ml.',
+    benefits: [
+      'Smanjuje simptome kod oboljenja vena',
+      'Pomaže kod proširenih vena',
+      'Umanjuje bol i umor',
+      'Smanjuje otok nogu i edem',
+      'Stabilizuje zidove venskih krvnih sudova',
+      'Umanjuje upalne procese',
+      'Povećava čvrstinu krvnih sudova',
+      'Pojačava otpor venskih kapilara',
+      'Smanjuje opterećenje venskih krvnih sudova',
+      'Oslobađa osećaja težine u nogama',
+      'Umanjuje bolove i grčeve',
+      'Pomaže kod hemoroida'
+    ],
+    fullDescription: `Divlji kesten za proširene vene
+
+Zapremina boce je 100 ml.
+
+Divlji kesten je vrlo dobar prirodni lek za terapiju proširenih vena i hemoroida. Ova biljka utiče na smanjenje simptoma kod oboljenja vena, kao što su: proširene vene, bol, umor, otok nogu, edem.
+
+Dejstvo
+
+Sastojak divljeg kestena, escin, blagotvorno deluje na stabilizaciju zidova venskih krvnih sudova i samim tim smanjenja otoka i bola.
+
+Divlji kesten umanjuje upalne procese, povećava čvrstinu krvnih sudova, pojačava otpor venskih kapilara i umanjuje propustljivost za tečnost, na taj način smanjuje se opterećenje venskih krvnih sudova i otok.
+
+Divlji kesten oslobađa osećaja težine u nogama, umanjuje bolove i grčeve.
+
+Način upotrebe
+
+Tinkturu koristiti svakodnevno. Blago utrljavati na obolela mesta.
+
+Tinkturu utrljati u kožu svako veče pre spavanja, tokom deset dana.
+
+NAPOMENA: SAMO ZA SPOLJNU UPOTREBU. Ne gutati.
+
+Zdravi i veseli bili!`
+  },
 ];
