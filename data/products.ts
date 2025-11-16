@@ -605,4 +605,122 @@ Maslačak trebaju izbjegavati osobe alergične na cijelu obitelj Asteraceae, koj
 
 NAPOMENA: Konsultujte se sa stručnjakom pre upotrebe, posebno ako imate zdravstvene probleme ili uzimate lekove.`
   },
+  {
+    id: '12',
+    name: 'Tinktura - cimet',
+    price: 1500,
+    description: 'Cimet (Cinnamomum zeylanicum) povećava aktivnost inzulina i snižava nivo šećera u krvi. Smanjuje loš kolesterol i trigliceride, pojačava aktivnost mozga, pročišćava krv i pomaže kod dijabetesa tipa 2.',
+    image: '/Cinnamonessentialoil2.jpg',
+    category: 'Tinkture',
+    subtitle: '(Cinnamomum zeylanicum)',
+    usage: '3 x 20 kapi na dan. Tinktura cimeta, zapremine 30 ml.',
+    benefits: [
+      'Povećava aktivnost inzulina',
+      'Snižava nivo šećera u krvi',
+      'Snižava nivo lošeg kolesterola',
+      'Snižava nivo triglicerida u krvi',
+      'Pojačava aktivnost mozga',
+      'Pomaže u uklanjanju nervne napetosti',
+      'Pomaže kod gubitka pamćenja',
+      'Pročišćava krv',
+      'Poboljšava cirkulaciju krvi',
+      'Smanjuje šanse za srčani udar',
+      'Antifungalno, antibakterijsko, antivirusno i antiseptičko',
+      'Pomaže u uništavanju mikroba u žučnom mehuru',
+      'Zaustavlja krvarenje i olakšava ozdravljenje',
+      'Deluje protuupalno',
+      'Ublažava bolove i ukočenost mišića i zglobova',
+      'Preporučuje se za artritis',
+      'Pomaže kod glavobolje zbog hladnoće',
+      'Kontroliše šećer u krvi kod dijabetesa tipa 2',
+      'Pruža zaštitu od bolesti srca',
+      'Pomaže kod koronarne arterije',
+      'Poboljšava zdravlje debelog crijeva',
+      'Uklanja loš zadah',
+      'Pomaže kod probavnih smetnji',
+      'Pomaže kod prehlade, gripe i upale grla',
+      'Pomaže kod menstrualnih grčeva',
+      'Prirodni diuretik',
+      'Afrodizijak'
+    ],
+    fullDescription: `Tinktura od Cimeta (Cinnamomum zeylanicum)
+
+Tinktura cimeta, zapremine 30 ml.
+
+Lekoviti se cimet dobiva samo iz vrste Cinnamomum zeylanicum Nees, koja potiče sa Šri Lanke (cejlonski cimet).
+
+Dejstvo na dijabetes
+
+Potvrđeno je da Cimet dosta povećava aktivnost inzulina, tako da redovno uzimanje tinkture od cimeta može bitno smanjiti nivo šećera u krvi. Osim toga, ova biljka snižava i nivo lošeg kolesterola i triglicerida u krvi.
+
+Mozak i nervni sistem
+
+Cimet pojačava aktivnost mozga.
+
+Pomaže u uklanjanju nervne napetosti i gubitka pamćenja.
+
+Cirkulacija i srce
+
+Pročišćava krv – uklanja nečistoće iz krvi.
+
+Pomaže u cirkulaciji krvi – redovita konzumacija cimeta značajno smanjuje šanse za dobivanje srčanog udara.
+
+Pruža zaštitu od bolesti srca.
+
+Malo cimeta u hrani pomaže onima koji pate od koronarne arterije krvne žile koje opskrbljuju srce krvlju, bolesti i visokog krvnog tlaka.
+
+Antimikrobna svojstva
+
+Zbog antifungalnog, antibakterijskog, antivirusnog i antiseptičkog svojstva, cimet brani od vanjskih i unutarnjih bolesti.
+
+Pomaže u uništavanju mikroba i bakterija u žučnom mjehuru.
+
+Ozdravljenje
+
+Cimet pomaže u zaustavljanju krvarenja i olakšava proces ozdravljenja.
+
+Cimet deluje i protuupalno.
+
+Mišići i zglobovi
+
+Pomaže u uklanjanju ukočenosti mišića.
+
+Ublažava bolove i ukočenost mišića i zglobova.
+
+Preporučuje se za artritis.
+
+Također pomaže u uklanjanju glavobolje koja se javlja zbog hladnoće.
+
+Dijabetes
+
+Cimet ima mogućnost kontrole šećera u krvi.
+
+Dijabetičarima može koristiti da uzimaju manje inzulina.
+
+Posebno koristan za pacijente koji boluju od dijabetesa tipa 2.
+
+Probava
+
+Također poboljšava zdravlje debelog crijeva.
+
+Cimet se koristi u žvakaćim gumama, jer je dobar osvježivač i uklanja loš zadah.
+
+On također pomaže probavi – vrlo je učinkovit za probavne smetnje.
+
+Pomaže kod prehlade, gripe, upale grla i zagušenja.
+
+Ostale koristi
+
+Cimet je učinkovit u pružanju olakšanja od menstrualnih grčeva i nelagode.
+
+Cimet je prirodni diuretik i pomaže u sekreciji i otpuštanju mokraće.
+
+Također je afrodizijak jer se veruje da budi seksualnu želju.
+
+Upotreba
+
+3 x 20 kapi na dan.
+
+NAPOMENA: Konzultujte se sa stručnjakom pre upotrebe, posebno ako imate dijabetes i koristite insulin ili druge lekove.`
+  },
 ];
