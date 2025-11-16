@@ -496,4 +496,52 @@ Upotreba tinkture
 
 UPOZORENJE: Zbog nedostatka raspoloživih naučnih dokaza, tinktura male mlečike se ne preporučuje u trudnoći i tokom dojenja.`
   },
+  {
+    id: '10',
+    name: 'Tinktura - ruzmarin',
+    price: 1500,
+    description: 'Ruzmarin poboljšava cirkulaciju, normalizuje krvni pritisak i umiruje srce. Pospešuje mokrenje, poboljšava pamćenje i koristi se kod živčanih bolova, slabosti srca i opšte telesne slabosti.',
+    image: '/BRKIN RUZMARIN  100.jpg',
+    category: 'Tinkture',
+    subtitle: 'Poboljšava cirkulaciju, normalizuje pritisak/tlak, umiruje srce',
+    usage: 'Uzima se 5-10 kapi dnevno na kocki šećera. Boca je zapremine 100 ml.',
+    benefits: [
+      'Poboljšava cirkulaciju',
+      'Normalizuje krvni pritisak',
+      'Umiruje srce',
+      'Pospešuje mokrenje',
+      'Koristi se kod vodene bolesti',
+      'Pomaže kod reume i gihta',
+      'Pomaže kod upale zglobova',
+      'Poboljšava pamćenje',
+      'Koristi se kod živčanih bolova',
+      'Pomaže kod slabosti srca',
+      'Pomaže kod opšte telesne slabosti',
+      'Pojačava koren kose i poboljšava rast',
+      'Uklanja bradavice (prema iskustvima korisnika)'
+    ],
+    fullDescription: `TINKTURA RUZMARINA
+
+Boca je zapremine 100 ml.
+
+Dejstvo
+
+Poboljšava cirkulaciju, normalizuje pritisak/tlak, umiruje srce.
+
+Pospešuje mokrenje. Koristi se kod vodene bolesti, reume, gihta i upale zglobova.
+
+Poboljšava pamćenje.
+
+Koristi se kod živčanih bolova, slabosti srca i opšte telesne slabosti.
+
+Dodatna upotreba
+
+Utrljavanjem u teme glave pojačava koren kose i poboljšava rast, neki se zaklinju da su uklonili bradavice ovom tinkturom.
+
+Način upotrebe
+
+Uzima se 5-10 kapi dnevno na kocki šećera.
+
+NAPOMENA: Tinktura ruzmarina je prirodni dodatak ishrani i treba je koristiti u okviru zdrave ishrane i životnog stila.`
+  },
 ];
