@@ -1,6 +1,8 @@
 import ButtonToTop from "@/components/ButtonToTop";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { CartProvider } from "@/contexts/CartContext";
+import { Toaster } from "@/components/ui/sonner";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -43,10 +45,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased text-muted-foreground bg-muted  text-base md:text-xl`}
       >
-        <Header />
-        {children}
-        <ButtonToTop />
-        <Footer />
+        <CartProvider>
+          <Header />
+          {children}
+          <ButtonToTop />
+          <Footer />
+          <Toaster />
+        </CartProvider>
       </body>
     </html>
   );

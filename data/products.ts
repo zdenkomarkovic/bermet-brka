@@ -1,0 +1,68 @@
+import { Product } from '@/contexts/CartContext';
+
+export const products: Product[] = [
+  {
+    id: '1',
+    name: 'Šlep služba - Gradski prevoz',
+    price: 5000,
+    description: 'Profesionalni šlep servis za prevoz vozila u gradskom području. Brza i sigurna usluga dostupna 24/7.',
+    image: '/hero.jpg',
+    category: 'Gradski prevoz',
+  },
+  {
+    id: '2',
+    name: 'Međugradski šlep servis',
+    price: 15000,
+    description: 'Pouzdani međugradski šlep servis za duže relacije. Moderni kamioni i profesionalno osoblje.',
+    image: '/hero1.jpg',
+    category: 'Međugradski prevoz',
+  },
+  {
+    id: '3',
+    name: 'Asistencija na putu',
+    price: 3000,
+    description: 'Brza pomoć na putu u slučaju kvara ili nesreće. Dostupni smo u svakom momentu.',
+    image: '/hero2.jpg',
+    category: 'Pomoć na putu',
+  },
+  {
+    id: '4',
+    name: 'Transport motocikala',
+    price: 4000,
+    description: 'Specijalizovani transport motocikala i skutera. Sigurna oprema i iskusni vozači.',
+    image: '/cta.jpg',
+    category: 'Specijalni prevoz',
+  },
+  {
+    id: '5',
+    name: 'Prevoz teških vozila',
+    price: 20000,
+    description: 'Prevoz kamiona, autobusa i druge teške mehanizacije. Profesionalna oprema za sve vrste vozila.',
+    image: '/hero.jpg',
+    category: 'Teška vozila',
+  },
+  {
+    id: '6',
+    name: 'Hitna pomoć vozilima',
+    price: 6000,
+    description: 'Hitna intervencija za neprohodna vozila. Dostupni 24 sata dnevno.',
+    image: '/hero1.jpg',
+    category: 'Hitna pomoć',
+  },
+  {
+    id: '7',
+    name: 'Noćni šlep servis',
+    price: 7000,
+    description: 'Šlep servis dostupan tokom noćnih sati sa povećanom cijenom zbog hitnosti.',
+    image: '/hero2.jpg',
+    category: 'Noćni servis',
+  },
+  {
+    id: '8',
+    name: 'Premještanje havarije',
+    price: 8000,
+    description: 'Uklanjanje havarija i oštećenih vozila sa puta. Brza i efikasna usluga.',
+    image: '/cta.jpg',
+    category: 'Havarije',
+  },
+];

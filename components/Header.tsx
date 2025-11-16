@@ -3,7 +3,8 @@
 import Image from "next/image";
 import Logo from "../public/android-chrome-192x192.png";
 import Link from "next/link";
-import { ChevronDownIcon, MenuIcon, PhoneIcon } from "lucide-react";
+import { ChevronDownIcon, MenuIcon, PhoneIcon, ShoppingCart } from "lucide-react";
+import { useCart } from "@/contexts/CartContext";
 
 import {
   Sheet,
@@ -25,6 +26,27 @@ import {
 import { HoverCard, HoverCardTrigger, HoverCardContent } from "./ui/hover-card";
 
 const mobTitleStyles = "text-lg py-2";
+
+const CartIcon = () => {
+  const { getTotalItems } = useCart();
+  const totalItems = getTotalItems();
+
+  return (
+    <Link href="/korpa" className="relative">
+      <motion.div
+        whileHover={{ scale: 1.1 }}
+        className="relative"
+      >
+        <ShoppingCart className="text-primary cursor-pointer h-6 w-6" />
+        {totalItems > 0 && (
+          <span className="absolute -top-2 -right-2 bg-primary text-primary-foreground text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
+            {totalItems}
+          </span>
+        )}
+      </motion.div>
+    </Link>
+  );
+};
 
 const MobileMenu = () => (
   <Sheet>
@@ -169,7 +191,9 @@ export default function Header() {
           />
         </Link>
         <DesktopNav />
-        <Link href="tel:+3816">
+        <div className="flex items-center gap-4">
+          <CartIcon />
+          <Link href="tel:+3816" className="hidden sm:block">
           <motion.button
             whileHover={{
               color: "hsl(var(--foreground))",
@@ -180,8 +204,9 @@ export default function Header() {
             <PhoneIcon />
             <p className="">+38160 000 000</p>
           </motion.button>
-        </Link>
-        <MobileMenu />
+          </Link>
+          <MobileMenu />
+        </div>
       </nav>
     </header>
   );
