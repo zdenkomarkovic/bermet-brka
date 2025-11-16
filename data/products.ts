@@ -870,4 +870,50 @@ Svojim uticajem na gušteraču pomaže u regulaciji nivoa šećera u krvi.
 
 Zahvaljujući prisustvu kvercetina, kopriva stabiliše mastocite (ćelije odgovorne za alergijske simptome) i sprečava oslobađanje histamina kod alergijskih reakcija.`
   },
+  {
+    id: '15',
+    name: 'Tinktura - protiv holesterola',
+    price: 1500,
+    description: 'Biljne kapi za holesterol i trigliceride i visok nivo masti u krvi. Sadrži artičoku, kantarion, petrovac, neven, nana list, hajdučku travu i koren maslačka. Pomaže kod povećanog nivoa triglicerida koji ukazuje na loše funkcionisanje jetre i pankreasa.',
+    image: '/TINKTURA povišenog holesterola_0x90.jpg',
+    category: 'Tinkture',
+    subtitle: 'TINKTURA protiv povišenog holesterola i triglicerida',
+    usage: 'Dnevno, do 3 x po 10 kapi u čaj ili na kašičici meda. Boca je zapremine 100 ml.',
+    benefits: [
+      'Smanjivanje triglicerida u krvi',
+      'Smanjivanje holesterola u krvi',
+      'Jačanje krvne slike',
+      'Povećanja gvožđa u krvi',
+      'Poboljšava funkcionisanje jetre',
+      'Poboljšava funkcionisanje pankreasa',
+      'Sprečava zapušavanje arterija štetnim naslagama',
+      'Smanjuje LDL holesterol',
+      'Sprečava nagomilavanje naslaga',
+      'Pomaže u prevenciji srčanih oboljenja'
+    ],
+    fullDescription: `TINKTURA protiv povišenog holesterola i triglicerida
+
+Boca je zapremine 100 ml.
+
+Povećani nivo triglicerida ukazuje na loše funkcionisanje jetre i pankreasa, jer trigliceridi su krvne masti i mogu da imaju veliku ulogu u zapušavanju arterija štetnim naslagama. Lekari mnogo brinu o visokom LDL holesterolu, koji ima tendenciju da se pričvrsti na zidove arterija i napravi naslage.
+
+Holesterol supstanca u krvi nalik na vosak predstavlja glavni uzročnik nagomilavanja naslaga i dobijanja srčanih oboljenja.
+
+Sastav
+
+Artičoka, kantarion, petrovac, neven, nana list, hajdučka trava i koren maslačka.
+
+Biljne kapi za holesterol i trigliceride i visok nivo masti u krvi
+
+Preporučuje se za:
+
+• Smanjivanje triglicerida u krvi
+• Smanjivanje holesterola u krvi
+• Jačanje krvne slike
+• Povećanja gvožđa u krvi
+
+Primena
+
+Dnevno, do 3 x po 10 kapi u čaj ili na kašičici meda.`
+  },
 ];
