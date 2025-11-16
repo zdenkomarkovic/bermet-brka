@@ -153,4 +153,52 @@ O gljivi
 
 Čaga (Inonotus Obliquus) – gljiva koja raste na brezi - koristi se u narodnoj medicini mnogih istočnoevropskih zemalja, uključujući i Rusiju, za lečenje gastritisa, čireva, tuberkuloze kostiju, raka…`
   },
+  {
+    id: '3',
+    name: 'Kapi - zeleni orah',
+    price: 1500,
+    description: 'Mladi zeleni orah sadrži belančevine, 65% ulja, fosfor, kalijum, magnezijum, vitamin B, gvožđe i veliku količinu C vitamina. Koristi se za čišćenje krvi, detoksikaciju organizma, čišćenje parazita i jačanje imuniteta.',
+    image: '/BRKIN ZELENI ORAH. mala.jpg',
+    category: 'Kapi',
+    subtitle: 'Alkoholno - vodeni ekstrakt mladog zelenog oraha',
+    usage: 'Deca do 6 godina - 2 x 15 kapi. Deca od 6 do 12 godina - 2 x 20 kapi. Deca starija od 12 godina i odrasli - 3 x 20 kapi. Kapi se mogu piti sa malo vode, čaja ili prirodnog soka. Boca je zapremine 100 ml.',
+    benefits: [
+      'Čišćenje krvi',
+      'Detoksikacija organizma',
+      'Čišćenje parazita',
+      'Jačanje otpornosti organizma',
+      'Bogat vitaminom C',
+      'Sadrži fosfor, kalijum i magnezijum',
+      'Prirodan izvor gvožđa',
+      'Bezbedno za trudnice i dojilje'
+    ],
+    fullDescription: `Kapi od Zelenog oraha
+
+Sastav: Alkoholno - vodeni ekstrakt mladog zelenog oraha
+
+Mladi zeleni orah sadrži belančevine, 65% ulja, fosfor, kalijum, magnezijum, vitamin B, gvožđe i veliku količinu C vitamina.
+
+Dugo se koristi u različitim oblicima (sirupi, kapi, tinkture)
+
+Organske kapi od Zelenog oraha
+
+• Čišćenja krvi
+• Detoksikacije organizma
+• Čišćenje parazita
+• Jačanje otpornosti organizma
+
+Način upotrebe:
+
+Deca do 6 godina - 2 x 15 kapi
+Deca od 6 do 12 godina - 2 x 20 kapi
+Deca starija od 12 godina i odrasli - 3 x 20 kapi
+
+Kapi se mogu piti sa malo vode, čaja ili prirodnog soka.
+
+Kontraindikacije nisu poznate. Kapi mogu piti trudnice i dojilje.
+
+NAPOMENA: Kapi od zelenog oraha su prirodni dodaci ishrani i ne mogu se koristiti kao zamjena za ishranu.
+
+Boca je zapremine 100 ml.`
+  },
 ];
