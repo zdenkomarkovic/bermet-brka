@@ -544,4 +544,65 @@ Uzima se 5-10 kapi dnevno na kocki šećera.
 
 NAPOMENA: Tinktura ruzmarina je prirodni dodatak ishrani i treba je koristiti u okviru zdrave ishrane i životnog stila.`
   },
+  {
+    id: '11',
+    name: 'Tinktura - maslačak',
+    price: 1500,
+    description: 'Maslačak se koristi kod visokog krvnog pritiska, "trovanja krvi", reumatoidnog artritisa, plućnih tegoba, žutice, bolesti bubrega i kožnih tegoba. Odlično deluje na čišćenje jetre, žuči i bubrega.',
+    image: '/BRKIN MASLACAK.jpg',
+    category: 'Tinkture',
+    subtitle: 'Delovi biljke koji se koriste',
+    usage: '3 puta 15 kapi dnevno. Boca je zapremine 100 ml.',
+    benefits: [
+      'Pomaže kod visokog krvnog pritiska',
+      'Čisti krv',
+      'Pomaže kod reumatoidnog artritisa',
+      'Pomaže kod plućnih tegoba',
+      'Pomaže kod žutice',
+      'Pomaže kod bolesti bubrega',
+      'Pomaže kod kožnih tegoba',
+      'Čišćenje jetre',
+      'Poboljšava rad žuči',
+      'Poboljšava rad bubrega',
+      'Deluje na organe za izlučivanje'
+    ],
+    fullDescription: `Tinktura od Maslačka
+
+Boca je zapremine 100 ml.
+
+Delovi biljke koji se koriste
+
+Prema evropskoj regulativi, ljekoviti su i korijen (taraxaci radix) i list (taraxaci folium). U modernoj fitoterapiji preferira se upotreba korijena, no učinkovitost se postiže i s listovima i s korijenom.
+
+Tinktura od Maslačka preporuča se kod niza bolesti:
+
+• Od visokoga krvnog tlaka
+• "Trovanja krvi"
+• Reumatoidnog artritisa
+• Plućnih tegoba
+• Žutice
+• Bolesti bubrega
+• Kožnih tegoba
+• Čišćenje jetre
+
+Čini se da su "naši stari" dobro uvidjeli njegovo općenito dobro djelovanje na organe za izlučivanje, jetru, žuč i bubrege, stoga je djelovanje na te sustave posljedično olakšavalo tegobe zbog drugih bolesti.
+
+Upotreba
+
+3 puta 15 kapi dnevno.
+
+Kontraindikacije
+
+Ni list, ni korijen ne smiju se piti kod opstrukcije (začepljenja) žučnih vodova. Oprez je potreban kod žučnih kamenaca, jer koleretično djelovanje maslačka može pokrenuti "uspavane" žučne kamence.
+
+Ako pijete lijekove kardiotonične glikozide (digitalis), savjetujte se s fitoterapeutom – farmaceutom ili liječnikom.
+
+Kod nasljednih sindroma povišenog bilirubina (Gilbertov, Crigler-Najjarov, Dubin Johnsonov sindrom) treba biti oprezan i koristiti dvostruko manju dozu od preporučene.
+
+U slučaju boli, mučnine i drugih simptoma, treba prestati piti pripravke maslačka.
+
+Maslačak trebaju izbjegavati osobe alergične na cijelu obitelj Asteraceae, kojoj maslačak i pripada.
+
+NAPOMENA: Konsultujte se sa stručnjakom pre upotrebe, posebno ako imate zdravstvene probleme ili uzimate lekove.`
+  },
 ];
