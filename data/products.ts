@@ -363,4 +363,47 @@ NAPOMENA: SAMO ZA SPOLJNU UPOTREBU. Ne gutati.
 
 Zdravi i veseli bili!`
   },
+  {
+    id: '7',
+    name: 'Tinktura sremuša',
+    price: 1500,
+    description: 'Sremuš (medveđi luk) deluje antioksidativno i čisti organizam. Snižava nivoa triglicerida i holesterola u krvi, snižava povišeni krvni pritisak, poboljšava cirkulaciju i blagotvorno deluje na rad srca.',
+    image: '/BRKIN SREMUS0.030 ML.jpg',
+    category: 'Tinkture',
+    subtitle: 'Tinktura sremuša (medveđi luk)',
+    usage: 'Piti 20 kapi 3 puta dnevno pre jela, uz čašu vode. Zapremina boce je 30 ml.',
+    benefits: [
+      'Deluje antioksidativno',
+      'Čisti organizam',
+      'Snižava nivo triglicerida u krvi',
+      'Snižava nivo holesterola u krvi',
+      'Snižava povišeni krvni pritisak',
+      'Poboljšava cirkulaciju',
+      'Blagotvorno deluje na rad srca',
+      'Jača kardiovaskularni sistem'
+    ],
+    fullDescription: `Tinktura sremuša (medveđi luk)
+
+Zapremina boce je 30 ml.
+
+Sremuš, poznat i kao medveđi luk, koristi se vekovima u narodnoj medicini zbog svojih izuzetnih lekovitih svojstava.
+
+Dejstvo
+
+Deluje antioksidativno i čisti organizam.
+
+Snižava nivoa triglicerida i holesterola u krvi.
+
+Snižava povišeni krvni pritisak.
+
+Poboljšava cirkulaciju.
+
+Blagotvorno deluje na rad srca.
+
+Način upotrebe
+
+Piti 20 kapi 3 puta dnevno pre jela, uz čašu vode.
+
+NAPOMENA: Tinktura sremuša je prirodni dodatak ishrani i treba je koristiti u okviru zdrave ishrane i životnog stila.`
+  },
 ];
