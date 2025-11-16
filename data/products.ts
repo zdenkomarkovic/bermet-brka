@@ -796,4 +796,78 @@ Upotreba
 
 Tinkturu možete koristiti 3 puta dnevno po 20 kapi, kašikica meda i limun. Na taj način ćete obradovati organizam.`
   },
+  {
+    id: '14',
+    name: 'Tinktura - kopriva',
+    price: 600,
+    description: 'Tinktura od koprive poboljšava rad probavnog sustava. Sadrži kalcij, kalij, željezo, fosfor, vitamine C i A i organske kiseline. Kopriva je biljka najbogatija željezom. Snažno utječe na organizam i za nju se s pravom može reći da djeluje na cijeli organizam.',
+    image: '/BRKINA KOPRIVA.jpg',
+    category: 'Tinkture',
+    subtitle: '(Urtica dioica), Boca je zapremine 100 ml',
+    usage: 'Piti 3 x dnevno po 15 kapi u deci vode, soka ili čaja.',
+    benefits: [
+      'Izrazito dobra protiv opadanja kose',
+      'Prokrvljuje vlasište kose',
+      'Kontrolira lučenje sebuma vlasišta',
+      'Ojačava korijen kose',
+      'Sprječava opadanje kose',
+      'Potiče mladu kosu na rast',
+      'Poboljšava rad probavnog sustava',
+      'Koristi se kod anemije',
+      'Utiče na porast crvenih krvnih zrnaca',
+      'Ima diuretski efekat',
+      'Pomaže kod bolesti urinarnog sistema',
+      'Pomaže kod upale bubrega i mokraćnih kanala',
+      'Pomaže kod kamena u bubregu',
+      'Pomaže kod uvećane prostate',
+      'Omogućava pojačano izlučivanje mokraćne kiseline',
+      'Koristi se kod gihta',
+      'Pomaže kod krvarenja',
+      'Pomaže kod čira na želudcu i duodenumu',
+      'Pomaže kod pojačanog menstrualnog krvarenja',
+      'Pomaže kod hemoroida',
+      'Deluje analgetski (protiv bolova)',
+      'Savetuje se kod bolova u kičmi i zglobovima',
+      'Ima antibakterijsko dejstvo',
+      'Ima antivirusno dejstvo',
+      'Koristi se kod različitih upalnih procesa',
+      'Jedan od najboljih čuvara funkcije jetre',
+      'Pomaže u regulaciji nivoa šećera u krvi',
+      'Stabiliše mastocite',
+      'Sprečava oslobađanje histamina kod alergijskih reakcija'
+    ],
+    fullDescription: `TINKTURA OD KOPRIVE (Urtica dioica)
+
+Boca je zapremine 100 ml.
+
+Tinktura izrazito dobra protiv opadanja kose.
+
+Prokrvljuje vlasište kose, kontrolira lučenje sebuma vlasišta, ojačava korijen kose, sprječava opadanje i potiče mladu kosu na rast.
+
+Tinktura od Kopriva poboljšava rad probavnog sustava. Sadrži kalcij, kalij, željezo, fosfor, vitamine C i A i organske kiseline. Također, u koprivi se nalaze i flavonoidi koji dobro djeluju na rad organizma.
+
+Kopriva je biljka najbogatija željezom. Snažno utječe na organizam i za nju se s pravom može reći da djeluje na cijeli organizam.
+
+Sastojci: Alkoholni ekstrakt koprive, Urtica dioica, 70% (v/v). Sastojci u dnevnoj dozi (= 60 kapi): odgovara približno 300 mg biljne droge (nadzemni dio biljke).
+
+Upotreba Tinkture od Koprive: Piti 3 x dnevno po 15 kapi u deci vode, soka ili čaja.
+
+Napomena: Čuvati od dohvata male djece. Preporučene dnevne doze ne smiju se preskočiti. Dodatak prehrani nije nadomjestak ili zamjena uravnotežanoj prehrani.
+
+Koristi se kod anemije i utiče na porast crvenih krvnih zrnaca. Tinktura koprive ima diuretski efekat, pomaže kod bolesti urinarnog sistema (upala bubrega i mokraćnih kanala, kamen u bubregu, uvećana prostata).
+
+Omogućava pojačano izlučivanje mokraćne kiseline, pa se koristi kod gihta.
+
+Zbog visokog sadržaja tanina pomaže kod krvarenja (čir na želudcu i duodenumu, pojačano menstrualno krvarenje, hemoroidi).
+
+Deluje analgetski (protiv bolova) pa se savetuje kod bolova u kičmi i zglobovima.
+
+Zbog antibakterijskog i antivirusnog dejstva koristi se kod različitih upalnih procesa.
+
+Kopriva je jedan od najboljih čuvara funkcije jetre.
+
+Svojim uticajem na gušteraču pomaže u regulaciji nivoa šećera u krvi.
+
+Zahvaljujući prisustvu kvercetina, kopriva stabiliše mastocite (ćelije odgovorne za alergijske simptome) i sprečava oslobađanje histamina kod alergijskih reakcija.`
+  },
 ];
