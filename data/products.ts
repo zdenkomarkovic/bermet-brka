@@ -201,4 +201,70 @@ NAPOMENA: Kapi od zelenog oraha su prirodni dodaci ishrani i ne mogu se koristit
 
 Boca je zapremine 100 ml.`
   },
+  {
+    id: '4',
+    name: 'Kapi za zdrave vene',
+    price: 1500,
+    description: 'Brkine kapi za zdrave vene sadrže mešavinu tinktura lekovitih biljaka koje povoljno deluju na zid venskih krvnih sudova čineći ih elastičnijim, smanjuju otok, umanjuju bol i osećaj teških nogu.',
+    image: '/BRKA ZA ZDRAVE VENE,.jpg',
+    category: 'Kapi',
+    subtitle: 'Brkine kapi za zdrave vene',
+    usage: '3 puta na dan popiti pola kašičice ili 25 kapi tinkture. Pakovanje: 100ml',
+    benefits: [
+      'Povoljno deluje na zid venskih krvnih sudova',
+      'Čini vene elastičnijim',
+      'Smanjuje otok',
+      'Umanjuje bol',
+      'Smanjuje osećaj teških nogu',
+      'Pomaže kod proširenih vena na nogama',
+      'Pomaže kod hemoroida',
+      'Pomaže kod tromboflebitisa'
+    ],
+    fullDescription: `BRKINE KAPI ZA ZDRAVE VENE
+
+PAKOVANJE: 100ml
+
+DEJSTVO:
+
+Brkine kapi za zdrave vene, sadrže mešavinu tinktura lekovitih biljaka koje povoljno deluju na zid venskih krvnih sudova čineći ih elastičnijim, smanjuju otok, umanjuju bol i osečaj teških nogu.
+
+Brkine kapi za zdrave vene preporučuju se osobama sa proširenim venama i hemoroidima.
+
+SASTAV:
+
+• Tinktura biljke Petasites hybridus (đavolji šešir ili pomor kantarion)
+• Tinktura biljke Linaria vulgaris (linalist)
+• Tinktura biljke Melilotus officinalis (žuti kokotac)
+• Tinktura semena biljke Aesculus hippocastanum (divlji kesten)
+• Tinktura biljke Melilotus albus (bela slatka detelina)
+• Tinktura biljke Geranium robertianum (zdravac)
+• Tinktura cvasti biljke Celendula officinalis (neven)
+• Tinktura korena biljke Symphytum officinale (crni gavez)
+• Tinktura biljke Achilea millefolium (hajdučka trava)
+
+INDIKACIJE:
+
+Brkine kapi za zdrave vene preporučuju se kod:
+• Proširenih vena na nogama
+• Hemoroida
+• Otoka
+• Tromboflebitisa
+• Osećaja bola i težine u nogama
+
+DOZIRANJE I NAČIN PRIPREME:
+
+3 puta na dan popiti pola kašičice ili 25 kapi tinkture.
+
+KONTRAINDIKACIJE:
+
+Osetljivost na neku od biljnih tinktura.
+
+NAČIN ČUVANJA:
+
+Na sobnoj temperaturi, suvom i tamnom mestu, van domašaja dece.
+
+NEŽELJENA DEJSTVA:
+
+Retka pojava alergije i stomačnih problema.`
+  },
 ];
