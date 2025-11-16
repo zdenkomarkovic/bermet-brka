@@ -1017,4 +1017,106 @@ Boca je zapremine 100 ml.`
     category: 'Tinkture',
     subtitle: 'Tinktura za dobar seks'
   },
+  {
+    id: '20',
+    name: 'Tinktura - glog',
+    price: 1500,
+    description: 'Glog je najlekovitija biljka na svetu, snažan lek za srce. Uspešno sprečava infarkt, pomaže kod visokog pritiska, zaštićuje od povišenog holesterola i ateroskleroze. Ima široku korist za održavanje zdravlja krvnih sudova, kod slabljenja srčanog mišića i srčane aritmije.',
+    image: '/TINKTURA GLOGA.jpg',
+    category: 'Tinkture',
+    subtitle: 'Najlekovitija biljka na svetu, Boca je zapremine 100 ml.',
+    usage: '3 do 4 puta dnevno po 15 kapi. Boca je zapremine 100 ml.',
+    benefits: [
+      'Snažan lek za srce',
+      'Uspešno sprečava infarkt',
+      'Pomaže kod visokog pritiska',
+      'Zaštita od povišenog holesterola',
+      'Zaštita od ateroskleroze',
+      'Održavanje zdravlja krvnih sudova',
+      'Pomaže kod slabljenja srčanog mišića',
+      'Pomaže kod srčane aritmije',
+      'Povećava cirkulaciju krvnih sudova',
+      'Preporučuje se nakon srčanog udara',
+      'Jača smirujući učinak',
+      'Pomaže kod umora i manjka energije',
+      'Pomaže kod lošeg sna',
+      'Pomaže kod teškog disanja',
+      'Pomaže kod vrtoglavica',
+      'Pomaže kod lupanja srca',
+      'Pomaže kod nervoze',
+      'Pomaže kod šuma u ušima',
+      'Vredan u menopauzi',
+      'Pomaže kod mršavljenja',
+      'Potstiče izbacivanje viška vode',
+      'Pomaže kod celulita i edema',
+      'Pomaže kod bolesti zglobova',
+      'Jača vezivno tkivo na zglobovima',
+      'Antiupalno delovanje',
+      'Kod ulcerativnog kolitisa',
+      'Kod probavnih problema',
+      'Štiti od slobodnih radikala',
+      'Sprečava arteriosklerozu'
+    ],
+    fullDescription: `GLOG: najlekovitija biljka na svetu
+
+Boca je zapremine 100 ml.
+
+Glog je jedna od biljaka s najstarijom tradicijom uzgoja i upotrebe.
+
+Kinezi su nekad od njega radili fermentirano piće, a njegovi ostaci pronađeni su u 9.000 godina starim lončanicama.
+
+Smatra se da je već tada bio značajan u religiji.
+
+Legenda kaže da je od ovog grma napravljena Hristova kruna od trnja.
+
+Uz njega se vežu i mnoga druga verovanja, čak i mitovi poput onog o vampirima.
+
+Glog je nekada rastao samo u Eropi, Aziji i Severnoj Americi te na Mediteranu, dok danas je proširen po čitavom svetu.
+
+Poznat je i pod nazivima bela drača, beli trn, glogić, glogovac, glogovina, oštri trn, trnka, žetica, glagovna glog, gloginja, medvedove hruške.
+
+Snažan lek za srce
+
+Glog sadrži aktivne supstance s antioksidativnim delovanjem. U cvetovima se, uz nešto eteričnog ulja, nalaze lekovite i delotvorne supstance trimetil-amin i glikozid-oksiakantin.
+
+Plodovi sadrže eterično ulje, tanin, saponin, glikozide i fruktozu te u znatnim količinama kalij, natrij, kalcij i soli fosforne kiseline.
+
+Nakon uvrštavanja tinkture svežih plodova gloga u homeopatsku knjigu Wilmara Schwabea, on je postao popularna biljka i predmet mnogih istraživanja.
+
+Ta istraživanja su potvrdila da je glog izuzetno vredan lek za srce.
+
+Naučnici su zaključili da glog, između ostaloga, uspešno sprečava bolest modernog doba - infarkt.
+
+Svi oni koji imaju problem s visokim pritiskom ili se žele zaštititi od povišenog holesterola i od ateroskleroze mogu se lečiti tinkturom gloga.
+
+Ova biljka ima široku korist za održavanje zdravlja krvnih sudova, kod visokog pritiska, slabljenja srčanog mišića i srčane aritmije.
+
+Glog je prihvaćen kao sredstvo za snažan i uspešan tretman ranih faza srčanih bolesti te kao delotvorna terapija kod bolesti koje su uzele maha.
+
+Preporučuje se nakon srčanog udara, budući da povećava cirkulaciju krvnih sudova koje snabdevaju srčani mišić.
+
+Pospešuje aktivnost i bolju snabdevenost srčanog mišića. Svako bi iznad 50 godina trebao povremeno uzimati tinkturu gloga.
+
+Glog je jedna od biljaka s najjačim smirujućim učinkom.
+
+Pomaže kod umora, manjka energije, lošeg sna, teškog disanja, vrtoglavica, lupanja srca, nervoze i šuma u ušima.
+
+Vredan je i u menopauzi.
+
+Može se koristiti kao pomoć kod mršavljenja jer potstiče izbacivanje viška vode iz organizma.
+
+To ga svojstvo čini korisnim i kod celulita, edema i bolesti zglobova.
+
+Glog jača vezivno tkivo na zglobovima, a zbog antiupalnog delovanja savetuje se kod ulcerativnog kolitisa i probavnih problema.
+
+Štiti od delovanja slobodnih radikala i sprečava bolesti krvnih sudova poput arterioskleroze.
+
+Brojne studije o glogu ustanovile su da je on sigurna i dobro podnošljiva biljka.
+
+Međutim, glog se ne preporučuje trudnicama i dojiljama.
+
+Upotreba
+
+3 do 4 puta dnevno po 15 kapi.`
+  },
 ];
