@@ -916,4 +916,45 @@ Primena
 
 Dnevno, do 3 x po 10 kapi u čaj ili na kašičici meda.`
   },
+  {
+    id: '16',
+    name: 'Tinktura - sikavica',
+    price: 1500,
+    description: 'Sikavica biljka (Silybum Marianum) je jedan od najboljih regeneratora jetre kojeg nam je priroda dala. Ona ujedno i štiti ovaj organ. Preporučuje se osobama sklonim alkoholizmu i masnoj hrani, i dokazano pomaže kod mamurluka.',
+    image: '/TINKTURA  SIKAVICE.jpg',
+    category: 'Tinkture',
+    subtitle: 'Silybum Marianum, jedan od najboljih regeneratora jetre',
+    usage: '4 do 5 puta dnevno po 20 kapi sa vodom, čajem. Kad koristite Sikavicu nemojte konzumirati alkohol. Boca je zapremine 100 ml.',
+    benefits: [
+      'Najbolji prirodni regenerator jetre',
+      'Štiti jetru',
+      'Preporučuje se osobama sklonim alkoholizmu',
+      'Preporučuje se osobama sklonim masnoj hrani',
+      'Pomaže kod mamurluka',
+      'Jača organizam',
+      'Regulira probavu',
+      'Pomaže kod zatvora',
+      'Zaustavlja krvarenja',
+      'Jača krvne žile'
+    ],
+    fullDescription: `SIKAVICA BILJKA JE NAJBOLJI PRIRODNI REGENERATOR JETRE
+
+Sikavica biljka ima latinski naziv Silybum Marianum, jedan je od najboljih regeneratora jetre kojeg nam je priroda dala. Ona ujedno i štiti ovaj organ i teško joj neki drugi preparat može stati na crtu, da se tako izrazimo.
+
+Drugi nazivi koji se koriste na Balkanu za nju su gospin trn, gospina trava, badelj, osljebad, oslobod, beli stričak, šareni čkalj, šarena badeljka i divlja artičoka.
+
+Sikavica se preporučuje osobama sklonim alkoholizmu i masnoj hrani, i dokazano pomaže kod mamurluka.
+
+Ova biljka jača organizam, regulira probavu i pomaže kod zatvora.
+
+Ova biljka zaustavlja krvarenja i jača krvne žile.
+
+Upotreba
+
+4 do 5 puta dnevno po 20 kapi sa vodom, čajem.
+
+Kad koristite Sikavicu nemojte konzumirati alkohol.
+
+Boca je zapremine 100 ml.`
+  },
 ];
