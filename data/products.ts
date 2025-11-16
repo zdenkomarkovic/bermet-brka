@@ -406,4 +406,51 @@ Piti 20 kapi 3 puta dnevno pre jela, uz čašu vode.
 
 NAPOMENA: Tinktura sremuša je prirodni dodatak ishrani i treba je koristiti u okviru zdrave ishrane i životnog stila.`
   },
+  {
+    id: '8',
+    name: 'Tinktura sremuša 100ml',
+    price: 2500,
+    description: 'Sremuš (medveđi luk) deluje antioksidativno i čisti organizam. Snižava nivoa triglicerida i holesterola u krvi, snižava povišeni krvni pritisak, poboljšava cirkulaciju i blagotvorno deluje na rad srca.',
+    image: '/BRKIN SREMUS  0.100 ML.jpg',
+    category: 'Tinkture',
+    subtitle: 'Tinktura sremuša (medveđi luk)',
+    usage: 'Piti 20 kapi 3 puta dnevno, pre jela, uz čašu vode. Zapremina boce je 100 ml.',
+    benefits: [
+      'Deluje antioksidativno',
+      'Čisti organizam',
+      'Snižava nivo triglicerida u krvi',
+      'Snižava nivo holesterola u krvi',
+      'Snižava povišeni krvni pritisak',
+      'Poboljšava cirkulaciju',
+      'Blagotvorno deluje na rad srca',
+      'Jača kardiovaskularni sistem'
+    ],
+    fullDescription: `Tinktura sremuša (medveđi luk)
+
+Zapremina boce je 100 ml.
+
+Sremuš, poznat i kao medveđi luk, koristi se vekovima u narodnoj medicini zbog svojih izuzetnih lekovitih svojstava.
+
+Dejstvo
+
+Deluje antioksidativno i čisti organizam.
+
+Snižavanje nivoa triglicerida i holesterola u krvi.
+
+Snižavanje povišenog krvnog pritiska.
+
+Poboljšanje cirkulacije.
+
+Blagotvorno dejstvo na rad srca.
+
+Način upotrebe
+
+Piti 20 kapi 3 puta dnevno, pre jela, uz čašu vode.
+
+Način čuvanja
+
+Na hladnom i tamnom mestu, van domašaja dece.
+
+NAPOMENA: Preparat ne bi trebalo da koriste deca do 14 godina, trudnice i osobe koje su preosetljive na neki od sastojaka.`
+  },
 ];
