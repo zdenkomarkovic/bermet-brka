@@ -267,4 +267,53 @@ NEŽELJENA DEJSTVA:
 
 Retka pojava alergije i stomačnih problema.`
   },
+  {
+    id: '5',
+    name: 'Tinktura karanfilića',
+    price: 1500,
+    description: 'Karanfilić sadrži eugenol, cariofilen i tanin, koje imaju jaka antimikrobna dejstva. Uništava parazite i njihova jajašca, mikroskopske protozoe, bakterije, viruse i gljivice. Jedina biljka sposobna da uništi jajašca parazita.',
+    image: '/TINKTURA karanfilica.jpg',
+    category: 'Tinkture',
+    subtitle: '(Syzygium aromaticus)',
+    usage: 'Preporučen unos je od 15 do 25 kapi, 3 puta dnevno sa vodom, pre jela. Zapremina boce je 100 ml.',
+    benefits: [
+      'Uništava parazite i njihova jajašca',
+      'Jaka antimikrobna dejstva',
+      'Uništava mikroskopske protozoe',
+      'Leči malariju, tuberkulozu, koleru i šugu',
+      'Deluje protiv bakterija, virusa i gljivica',
+      'Uništava Candidu',
+      'Uništava pseudomonas aeruginosa',
+      'Uništava stafilokoke i streptokoke',
+      'Pomaže kod mučnine i bolova u stomaku',
+      'Pospešuje probavu',
+      'Smanjuje holesterol i trigliceride',
+      'Snažan antiseptik i analgetik'
+    ],
+    fullDescription: `Tinktura KARANFILIĆA (KLINČIĆA) - (Syzygium aromaticus)
+
+Zapremina boce je 100 ml.
+
+Karanfilić sadrži eugenol, cariofilen i tanin, koje imaju jaka antimikrobna dejstva. Navedeno uništava parazite i njihova jajašca. Eugonal je najjača do sad poznata supstanca koja uništava sve mikroskopske protozoe.
+
+Karanfilić vrlo uspešno leči malariju, tuberkulozu, koleru, šugu i druge bolesti uzrokovane parazitima, bakterijama, virusima i gljivicama, uključujući i Candidu. Karanfilić uništava pseudomonas aeruginosa i sve vrste stafilokoka i streptokoka.
+
+Važno je napomenuti kako je karanfilić jedina biljka koja je sposobna da uništi jajašca parazita. Ako jajašca nisu uništena, paraziti će se iz njih izleći i ponovno proširiti po celom telu.
+
+Pomaže kod mučnine i bolova u stomaku, u borbi protiv parazita, posebno u kombinaciji sa tinkturama od pelina i crnog oraha. Pospešuje probavu i smanjuje holesterol i trigliceride. Karanfilić je snažan antiseptik i analgetik. Sadrži i tanine, smolu, sluz i veliki procenat flavonoida.
+
+Čišćenje od parazita
+
+Čišćenje od parazita naročito se preporučuje kod astme, alergija i raka, a preventivno se preporučuje svima jer je skoro svaki čovek zaražen nekom vrstom parazita. Čišćenje tela od parazita bi trebalo obavljati minimum jedan put godišnje, preporuka je dva puta, ali ne češće od 4 meseca.
+
+Preporučen unos:
+
+Od 15 do 25 kapi, 3 puta dnevno sa vodom, pre jela.
+
+Sastav:
+
+Vodeno-etanolni ekstrakt karanfilića.
+
+NAPOMENA: Trudnicama, dojiljama i deci ispod 12 godina se ne savetuje uzimanje tinkture.`
+  },
 ];
