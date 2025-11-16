@@ -1000,4 +1000,21 @@ Na sobnoj temperaturi, na tamnom mestu, van domašaja dece.
 
 Boca je zapremine 100 ml.`
   },
+  {
+    id: '18',
+    name: 'Tinktura za menopauzu',
+    price: 1500,
+    description: 'Tinktura za menopauzu pomaže u ublažavanju simptoma menopauze i hormonalnoj ravnoteži.',
+    image: '/TINKTURA MENOPAUZA.jpg',
+    category: 'Tinkture'
+  },
+  {
+    id: '19',
+    name: 'Brka za dobar sex',
+    price: 1500,
+    description: 'Tinktura za dobar seks - prirodno rešenje za poboljšanje seksualne funkcije i vitalnosti.',
+    image: '/BRKA ZA DOBAR SEX etiketa.jpg',
+    category: 'Tinkture',
+    subtitle: 'Tinktura za dobar seks'
+  },
 ];
