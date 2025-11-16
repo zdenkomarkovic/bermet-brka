@@ -5,11 +5,21 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { Trash2, Plus, Minus, ShoppingBag, ArrowLeft } from 'lucide-react';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { Textarea } from '@/components/ui/textarea';
+import { Trash2, Plus, Minus, ShoppingBag, ArrowLeft, Send } from 'lucide-react';
 import { toast } from 'sonner';
+import { useState } from 'react';
 
 export default function KorpaPage() {
   const { cart, removeFromCart, updateQuantity, clearCart, getTotalPrice, getTotalItems } = useCart();
+  const [customerInfo, setCustomerInfo] = useState({
+    name: '',
+    phone: '',
+    address: '',
+    note: ''
+  });
 
   const handleRemove = (productId: string, productName: string) => {
     removeFromCart(productId);
@@ -21,6 +31,55 @@ export default function KorpaPage() {
       clearCart();
       toast.success('Korpa je ispražnjena');
     }
+  };
+
+  const handleViberOrder = () => {
+    // Validate required fields
+    if (!customerInfo.name.trim()) {
+      toast.error('Molimo unesite vaše ime');
+      return;
+    }
+    if (!customerInfo.phone.trim()) {
+      toast.error('Molimo unesite vaš telefon');
+      return;
+    }
+    if (!customerInfo.address.trim()) {
+      toast.error('Molimo unesite vašu adresu');
+      return;
+    }
+
+    // Create order message
+    let message = `🛒 NOVA NARUDŽBINA\n\n`;
+    message += `👤 Ime: ${customerInfo.name}\n`;
+    message += `📱 Telefon: ${customerInfo.phone}\n`;
+    message += `📍 Adresa: ${customerInfo.address}\n`;
+
+    if (customerInfo.note.trim()) {
+      message += `📝 Napomena: ${customerInfo.note}\n`;
+    }
+
+    message += `\n📦 PROIZVODI:\n`;
+    message += `${'─'.repeat(30)}\n`;
+
+    cart.forEach((item, index) => {
+      message += `${index + 1}. ${item.name}\n`;
+      message += `   Količina: ${item.quantity} x ${item.price.toLocaleString('sr-RS')} RSD\n`;
+      message += `   Ukupno: ${(item.price * item.quantity).toLocaleString('sr-RS')} RSD\n\n`;
+    });
+
+    message += `${'─'.repeat(30)}\n`;
+    message += `💰 UKUPNO: ${getTotalPrice().toLocaleString('sr-RS')} RSD\n`;
+
+    // Encode message for URL
+    const encodedMessage = encodeURIComponent(message);
+
+    // Create Viber deep link
+    const viberLink = `viber://forward?text=${encodedMessage}`;
+
+    // Open Viber
+    window.location.href = viberLink;
+
+    toast.success('Otvaranje Viber aplikacije...');
   };
 
   if (cart.length === 0) {
@@ -158,7 +217,7 @@ export default function KorpaPage() {
           </div>
 
           {/* Order Summary */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-1 space-y-4">
             <Card className="sticky top-4">
               <CardHeader>
                 <CardTitle>Pregled narudžbine</CardTitle>
@@ -181,14 +240,66 @@ export default function KorpaPage() {
                   </div>
                 </div>
               </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Vaši podaci</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="space-y-2">
+                  <Label htmlFor="name">Ime i prezime *</Label>
+                  <Input
+                    id="name"
+                    placeholder="Unesite vaše ime i prezime"
+                    value={customerInfo.name}
+                    onChange={(e) => setCustomerInfo({ ...customerInfo, name: e.target.value })}
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="phone">Telefon *</Label>
+                  <Input
+                    id="phone"
+                    type="tel"
+                    placeholder="Unesite vaš broj telefona"
+                    value={customerInfo.phone}
+                    onChange={(e) => setCustomerInfo({ ...customerInfo, phone: e.target.value })}
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="address">Adresa *</Label>
+                  <Input
+                    id="address"
+                    placeholder="Unesite vašu adresu"
+                    value={customerInfo.address}
+                    onChange={(e) => setCustomerInfo({ ...customerInfo, address: e.target.value })}
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="note">Napomena (opciono)</Label>
+                  <Textarea
+                    id="note"
+                    placeholder="Dodatne informacije ili napomena..."
+                    value={customerInfo.note}
+                    onChange={(e) => setCustomerInfo({ ...customerInfo, note: e.target.value })}
+                    rows={3}
+                  />
+                </div>
+              </CardContent>
               <CardFooter className="flex flex-col gap-2">
-                <Button className="w-full" size="lg" asChild>
-                  <Link href="/kontakt">
-                    Naruči
-                  </Link>
+                <Button
+                  className="w-full"
+                  size="lg"
+                  onClick={handleViberOrder}
+                >
+                  <Send className="mr-2 h-5 w-5" />
+                  Poruči preko Vibera
                 </Button>
                 <p className="text-xs text-center text-muted-foreground">
-                  Kontaktirajte nas za finalizaciju narudžbine
+                  Otvoriće se Viber aplikacija sa svim detaljima narudžbine
                 </p>
               </CardFooter>
             </Card>
