@@ -723,4 +723,77 @@ Upotreba
 
 NAPOMENA: Konzultujte se sa stručnjakom pre upotrebe, posebno ako imate dijabetes i koristite insulin ili druge lekove.`
   },
+  {
+    id: '13',
+    name: 'Tinktura - đumbir',
+    price: 600,
+    description: 'Tinktura od đumbira veoma je korisna kod prehlada, posebno kod virusnih infekcija. Zahvaljujući tinkturi od đumbira upalni procesi u organizmu brzo nestaju. Ova tinktura je odlično prirodno sredstvo za glavobolju, zubobolju, bolove u zglobovima i kod osteohondroza.',
+    image: '/ginger.jpg',
+    category: 'Tinkture',
+    subtitle: 'Vrlo je dobra za lečenje upale grla, krajnika, angine',
+    usage: 'Tinkturu možete koristiti 3 puta dnevno po 20 kapi, kašikica meda i limun. Na taj način ćete obradovati organizam.',
+    benefits: [
+      'Korisna kod prehlada i virusnih infekcija',
+      'Brzo smanjuje upalne procese u organizmu',
+      'Pomaže kod glavobolje',
+      'Pomaže kod zubobolje',
+      'Ublažava bolove u zglobovima',
+      'Pomaže kod osteohondroza',
+      'Lečenje upale grla, krajnika, angine',
+      'Poboljšava vid',
+      'Povećava seksualnu aktivnost kod žena i muškaraca',
+      'Pomaže u mršavljenju',
+      'Smanjuje apetit',
+      'Tonizira organizam',
+      'Čisti organizam od toksina',
+      'Čisti krv',
+      'Poboljšava varenje',
+      'Oslobađa suvišnih masnih naslaga',
+      'Čisti jetru',
+      'Pomaže kod alkoholizma',
+      'Pomaže nakon hemioterapije',
+      'Poboljšava ten kože',
+      'Vraća sjaj u očima',
+      'Poboljšava raspoloženje'
+    ],
+    fullDescription: `Tinktura od đumbira - drevni prirodni lijek
+
+Tinktura od đumbira veoma je korisna kod prehlada, posebno kod virusnih infekcija. Zahvaljujući tinkturi od đumbira upalni procesi u organizmu brzo nestaju. Ova tinktura je odlično prirodno sredstvo za glavobolju, zubobolju, bolove u zglobovima i kod osteohondroza.
+
+Vrlo je dobra za lečenje upale grla, krajnika, angine. Korisna je za poboljšanje vida, povećava seksualnu aktivnost kod žena i kod muškaraca.
+
+Ali u poslednje vreme tinktura od đumbira najčešće se primenjuje za mršavljenje, jer se pokazala kao vrlo dobro sredstvo u borbi protiv suvišnih kilograma.
+
+Onima koje žele uraditi korekciju svoje težine, preporučuje se ovaj lek koristiti ujutro i popodne, po 1-2 kašikice, za mesec dana. Poslije napraviti pauzu – jedan mesec, pa ponoviti. Tinktura od đumbira smanjuje apetit i tonizira organizam.
+
+Zaista, zašto je đumbir lek za mnoge bolesti? Zar nije dovoljna količina lekovitih korenja, lišća i trava koje imaju u svom jedinstvenom sastavu sve korisne mikroelemente, vitamine, organske kiseline koje mogu smanjivati upale i t.d. Lista korisnih osobina obične kamilice ili limuna ništa nije manja u odnosu na đumbir.
+
+Mnogo se piše o djumbiru, o lečenju đumbirom, dele se različite recepte na internetu, ali niko konkretno ne objašnjava zašto baš on može da izleči mnoge bolesti i u čemu je njegova tajna?
+
+Đumbir poseduje jedinstvenu sposobnost čišćenja organizma od skoro svih vrsta toksina, koji se unose putem hrane, alkohola, hemikalija i zračenja.
+
+1. Toksini su – glavni uzroci mnogih bolesti! Oni truju naš organizam, uzrokuju degeneraciju čelija, sto dovodi do onkoloških oboljenja (raka).
+
+2. Toksini se sakupljaju na zidovima krvnih sudova i postaju uzrok hipertenzije, multiple skleroze, moždanog udara, bolesti srca.
+
+3. Toksini koji se sakupljaju u crevima dovode do gastritisa, kolitisa, čira, pankreatitisa, poremećenog metabolizma, endokrine bolesti, dijabetesa.
+
+3. Soli (i one su takođe toksini) koje se stvaraju u zglobovima, izazivaju artritis i osteoporozu.
+
+Kao što vidite, skoro da ne postoji ni jedna ozbiljna bolest, koja nije izazvana toksinima u organizmu.
+
+ALI, đumbir je taj, koji može „spaliti" svo ovo smeće, očistiti organizam, samim time – dovesti ga do zdravlja na prirodan način, odnosno bez bespotrebne hemioterapije, bez bespotrebnih operacija i bez bespotrebnih strogih procedura.
+
+Povratiti zdravlje, dobro raspoloženje, lep ten koži i sjaj u očima pomoći će vam đumbir. Čisti krv, pospešuje varenje i „spaljuje" svo nepotrebno smeće u organizmu, usput i oslobađa suvišnih masnih naslaga.
+
+Đumbir za čišćenje jetre
+
+Za dugoročno i sistematsko čišćenje jetre (posebno u lečenju alkoholizma i posle posledica hemioterapije), koristi se tinktura sa đumbirom.
+
+Boca je zapremine 100 ml.
+
+Upotreba
+
+Tinkturu možete koristiti 3 puta dnevno po 20 kapi, kašikica meda i limun. Na taj način ćete obradovati organizam.`
+  },
 ];
