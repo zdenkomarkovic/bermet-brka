@@ -453,4 +453,47 @@ Na hladnom i tamnom mestu, van domašaja dece.
 
 NAPOMENA: Preparat ne bi trebalo da koriste deca do 14 godina, trudnice i osobe koje su preosetljive na neki od sastojaka.`
   },
+  {
+    id: '9',
+    name: 'Tinktura - mlečika',
+    price: 1500,
+    description: 'Mala mlečika (Epilobium parviflorum) je prirodni citostatik i jedno od najjačih prirodnih sredstava za prostatu. Koristi se za lečenje prostate, naročito kod benignih tumora, bešike, mokraćnih i polnih organa.',
+    image: '/BRKINA MLECIKA ZA PROSTATU.jpg',
+    category: 'Tinkture',
+    subtitle: 'Epilobium parviflorum',
+    usage: '3 puta dnevno po 20 kapi rastvoriti u mlaku vodu, čaj ili mleko. Boca je zapremine 100 ml.',
+    benefits: [
+      'Prirodni citostatik',
+      'Jedno od najjačih prirodnih sredstava za prostatu',
+      'Antiurolitik',
+      'Pomaže kod benignih tumora prostate',
+      'Pomaže kod oboljenja bešike',
+      'Pomaže kod oboljenja mokraćnih organa',
+      'Pomaže kod oboljenja polnih organa',
+      'Sadrži lecitine i flavonoide'
+    ],
+    fullDescription: `Mala mlečika - Epilobium parviflorum
+
+Boca je zapremine 100 ml.
+
+PRIRODNI CITOSTATIK i jedno od najjačih prirodnih sredstava za PROSTATU!
+
+Lekovito delovanje
+
+Antiurolitik i citostatik.
+
+Narodna medicina
+
+Koristi se za lečenje prostate, naročito kod benignih tumora, bešike, mokraćnih i polnih organa. Biljku je popularisala Marija Treben za lečenje mokraćnih i rasplodnih organa.
+
+Hemijski sastav
+
+Lecitini (hanaerol, β-sitosterin), flavonoidi, tanini, triterpenske kiseline i dr. Nedovoljno je proučena.
+
+Upotreba tinkture
+
+3 puta dnevno po 20 kapi rastvoriti u mlaku vodu, čaj ili mleko.
+
+UPOZORENJE: Zbog nedostatka raspoloživih naučnih dokaza, tinktura male mlečike se ne preporučuje u trudnoći i tokom dojenja.`
+  },
 ];
