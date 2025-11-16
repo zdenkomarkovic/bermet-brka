@@ -957,4 +957,47 @@ Kad koristite Sikavicu nemojte konzumirati alkohol.
 
 Boca je zapremine 100 ml.`
   },
+  {
+    id: '17',
+    name: 'Tinktura za cirkulaciju',
+    price: 1500,
+    description: 'Tinktura za cirkulaciju poboljšava cirkulaciju i rad srca, otklanja bol, zaustavlja krvarenje, vrlo je efikasna protiv infekcija. Ljuta aleva paprika je neprikosnovena u poboljšavanju protoka i strujenja krvi kroz organizam, u kombinaciji sa belim lukom ima još efektivnije dejstvo.',
+    image: '/BRKINA TINKTURA ZA CIRKULACIJU  2 CVET.jpg',
+    category: 'Tinkture',
+    subtitle: 'Tinktura za cirkulaciju',
+    usage: 'Jedna čajna kašičica tri puta dnevno. Kod težih oboljenja 60 kapi 6-8 puta dnevno. Najčešće se pije 60 kapi pet puta na dan. Može se piti sa vodom, sokom ili mlakim čajem. Promuckati pre upotrebe. Boca je zapremine 100 ml.',
+    benefits: [
+      'Poboljšava cirkulaciju',
+      'Poboljšava rad srca',
+      'Otklanja bol',
+      'Zaustavlja krvarenje',
+      'Vrlo efikasna protiv infekcija',
+      'Poboljšava protok i strujenje krvi kroz organizam',
+      'Sadrži ljutu alevu papriku',
+      'Sadrži beli luk za sinergijsko dejstvo',
+      'Nema nuspojave i neželjene efekte',
+      'Potpuno prirodan ekstrahovano bilje'
+    ],
+    fullDescription: `Tinktura za cirkulaciju
+
+Poboljšava cirkulaciju i rad srca, otklanja bol, zaustavlja krvarenje, protiv infekcija.
+
+NAČIN UPOTREBE:
+
+Jedna čajna kašičica tri puta dnevno. Kod težih oboljenja 60 kapi 6-8 puta dnevno. Najčešće se pije 60 kapi pet puta na dan - doze mogu da se povećavaju u zavisnosti od konkretnog stanja pacijenta što je relativna stvar koja se razlikuje od slučaja do slučaja, ne postoje nikakve nuspojave i neželjeni efekti jer se radi o potpuno prirodnom ekstrahovano bilju koje i u najvećim količinama ne može da šteti.
+
+Može se piti sa vodom, sokom ili mlakim čajem, promuckati pre upotrebe. Kada je pacijent na postu od prirodnih ceđenih sokova najefikasnije je ukapati je u sok.
+
+Spada u set osnovnih tinktura koje se piju kod svakog zdravstvenog problema, jer treba da pojačamo cirkulaciju i dotok sveže krvi, koja rešava problem na obolelom mestu, snabdevajući je putem prirodnih ceđenih sokova (prirodne infuzije) svim potrebnim mineralima, vitaminima, fitohemikalijama i ostalim vitalnim sastojcima koji se bore protiv bolesti i podižu opšte stanje našeg organizma i samim tim doprinose prirodnom čišćenju i izlečenju.
+
+Poboljšava cirkulaciju i rad srca, otklanja bol, zaustavlja krvarenje, vrlo je efikasna protiv infekcija.
+
+Ljuta aleva paprika je neprikosnovena u poboljšavanju protoka i strujenja krvi kroz organizam, u kombinaciji sa belim lukom ima još efektivnije dejstvo (između ostalog zbog toga se i praktikuje korišćenje set-paketa osnovnih tinktura koje jedna drugu nadopunjuju i ostvaruju jače sinergijsko dejstvo i efekat prilikom lečenja).
+
+ČUVANJE
+
+Na sobnoj temperaturi, na tamnom mestu, van domašaja dece.
+
+Boca je zapremine 100 ml.`
+  },
 ];
