@@ -94,9 +94,6 @@ export default function KorpaPage() {
     message += `------------------------------\n`;
     message += `UKUPNO: ${getTotalPrice().toLocaleString("sr-RS")} RSD\n`;
 
-    // Encode message for URL
-    const encodedMessage = encodeURIComponent(message);
-
     // Phone number to send to
     const phoneNumber = "381606338605";
 
