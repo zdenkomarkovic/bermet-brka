@@ -20,6 +20,8 @@ export default function KorpaPage() {
     address: '',
     note: ''
   });
+  const [showOrderPreview, setShowOrderPreview] = useState(false);
+  const [orderMessage, setOrderMessage] = useState('');
 
   const handleRemove = (productId: string, productName: string) => {
     removeFromCart(productId);
@@ -49,7 +51,7 @@ export default function KorpaPage() {
     }
 
     // Create order message
-    let message = `NOVA NARUDZBINA\n\n`;
+    let message = `NOVA NARUDŽBINA\n\n`;
     message += `Ime: ${customerInfo.name}\n`;
     message += `Telefon: ${customerInfo.phone}\n`;
     message += `Adresa: ${customerInfo.address}\n`;
@@ -59,35 +61,33 @@ export default function KorpaPage() {
     }
 
     message += `\nPROIZVODI:\n`;
-    message += `------------------------------\n`;
+    message += `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`;
 
     cart.forEach((item, index) => {
       message += `${index + 1}. ${item.name}\n`;
-      message += `   Kolicina: ${item.quantity} x ${item.price.toLocaleString('sr-RS')} RSD\n`;
+      message += `   Količina: ${item.quantity} x ${item.price.toLocaleString('sr-RS')} RSD\n`;
       message += `   Ukupno: ${(item.price * item.quantity).toLocaleString('sr-RS')} RSD\n\n`;
     });
 
-    message += `------------------------------\n`;
-    message += `UKUPNO: ${getTotalPrice().toLocaleString('sr-RS')} RSD\n`;
+    message += `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`;
+    message += `💰 UKUPNO: ${getTotalPrice().toLocaleString('sr-RS')} RSD`;
 
-    // Encode message for URL
-    const encodedMessage = encodeURIComponent(message);
+    setOrderMessage(message);
+    setShowOrderPreview(true);
+  };
 
-    // Phone number without + sign
-    const phoneNumber = '381641967267';
-
-    // Create Viber deep link
-    const viberLink = `viber://contact?number=${phoneNumber}`;
-
-    // Open Viber
-    window.open(viberLink, '_blank');
-
-    // Copy message to clipboard as fallback
-    navigator.clipboard.writeText(message).then(() => {
-      toast.success('Poruka kopirana! Nalepite je u Viber chat.');
+  const handleCopyMessage = () => {
+    navigator.clipboard.writeText(orderMessage).then(() => {
+      toast.success('Poruka kopirana u clipboard!');
     }).catch(() => {
-      toast.success('Otvaranje Viber aplikacije...');
+      toast.error('Greška pri kopiranju poruke');
     });
+  };
+
+  const handleOpenViber = () => {
+    const phoneNumber = '381641967267';
+    const viberLink = `viber://chat?number=${encodeURIComponent(phoneNumber)}`;
+    window.location.href = viberLink;
   };
 
   if (cart.length === 0) {
@@ -297,18 +297,57 @@ export default function KorpaPage() {
                   />
                 </div>
               </CardContent>
-              <CardFooter className="flex flex-col gap-2">
-                <Button
-                  className="w-full"
-                  size="lg"
-                  onClick={handleViberOrder}
-                >
-                  <Send className="mr-2 h-5 w-5" />
-                  Poruči preko Vibera
-                </Button>
-                <p className="text-xs text-center text-muted-foreground">
-                  Otvoriće se Viber aplikacija sa svim detaljima narudžbine
-                </p>
+              <CardFooter className="flex flex-col gap-3">
+                {!showOrderPreview ? (
+                  <>
+                    <Button
+                      className="w-full"
+                      size="lg"
+                      onClick={handleViberOrder}
+                    >
+                      <Send className="mr-2 h-5 w-5" />
+                      Nastavi na Viber
+                    </Button>
+                    <p className="text-xs text-center text-muted-foreground">
+                      Prikaži poruku i pošalji preko Vibera
+                    </p>
+                  </>
+                ) : (
+                  <>
+                    <div className="w-full p-4 bg-muted rounded-lg">
+                      <p className="text-xs font-semibold mb-2">Vaša poruka:</p>
+                      <pre className="text-xs whitespace-pre-wrap font-mono">
+                        {orderMessage}
+                      </pre>
+                    </div>
+                    <div className="grid grid-cols-2 gap-2 w-full">
+                      <Button
+                        variant="outline"
+                        onClick={handleCopyMessage}
+                        className="w-full"
+                      >
+                        Kopiraj poruku
+                      </Button>
+                      <Button
+                        onClick={handleOpenViber}
+                        className="w-full"
+                      >
+                        Otvori Viber
+                      </Button>
+                    </div>
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      onClick={() => setShowOrderPreview(false)}
+                      className="w-full"
+                    >
+                      Nazad
+                    </Button>
+                    <p className="text-xs text-center text-muted-foreground">
+                      1. Kopiraj poruku • 2. Otvori Viber • 3. Nalepi (Paste) i pošalji
+                    </p>
+                  </>
+                )}
               </CardFooter>
             </Card>
           </div>
