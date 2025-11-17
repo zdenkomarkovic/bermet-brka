@@ -1,27 +1,47 @@
-'use client';
+"use client";
 
-import { useCart } from '@/contexts/CartContext';
-import Image from 'next/image';
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
-import { Trash2, Plus, Minus, ShoppingBag, ArrowLeft, Send } from 'lucide-react';
-import { toast } from 'sonner';
-import { useState } from 'react';
+import { useCart } from "@/contexts/CartContext";
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import {
+  Trash2,
+  Plus,
+  Minus,
+  ShoppingBag,
+  ArrowLeft,
+  Send,
+} from "lucide-react";
+import { toast } from "sonner";
+import { useState } from "react";
 
 export default function KorpaPage() {
-  const { cart, removeFromCart, updateQuantity, clearCart, getTotalPrice, getTotalItems } = useCart();
+  const {
+    cart,
+    removeFromCart,
+    updateQuantity,
+    clearCart,
+    getTotalPrice,
+    getTotalItems,
+  } = useCart();
   const [customerInfo, setCustomerInfo] = useState({
-    name: '',
-    phone: '',
-    address: '',
-    note: ''
+    name: "",
+    phone: "",
+    address: "",
+    note: "",
   });
   const [showOrderPreview, setShowOrderPreview] = useState(false);
-  const [orderMessage, setOrderMessage] = useState('');
+  const [orderMessage, setOrderMessage] = useState("");
 
   const handleRemove = (productId: string, productName: string) => {
     removeFromCart(productId);
@@ -29,24 +49,24 @@ export default function KorpaPage() {
   };
 
   const handleClearCart = () => {
-    if (window.confirm('Da li ste sigurni da želite da ispraznite korpu?')) {
+    if (window.confirm("Da li ste sigurni da želite da ispraznite korpu?")) {
       clearCart();
-      toast.success('Korpa je ispražnjena');
+      toast.success("Korpa je ispražnjena");
     }
   };
 
   const handleViberOrder = () => {
     // Validate required fields
     if (!customerInfo.name.trim()) {
-      toast.error('Molimo unesite vaše ime');
+      toast.error("Molimo unesite vaše ime");
       return;
     }
     if (!customerInfo.phone.trim()) {
-      toast.error('Molimo unesite vaš telefon');
+      toast.error("Molimo unesite vaš telefon");
       return;
     }
     if (!customerInfo.address.trim()) {
-      toast.error('Molimo unesite vašu adresu');
+      toast.error("Molimo unesite vašu adresu");
       return;
     }
 
@@ -65,27 +85,34 @@ export default function KorpaPage() {
 
     cart.forEach((item, index) => {
       message += `${index + 1}. ${item.name}\n`;
-      message += `   Količina: ${item.quantity} x ${item.price.toLocaleString('sr-RS')} RSD\n`;
-      message += `   Ukupno: ${(item.price * item.quantity).toLocaleString('sr-RS')} RSD\n\n`;
+      message += `   Količina: ${item.quantity} x ${item.price.toLocaleString(
+        "sr-RS"
+      )} RSD\n`;
+      message += `   Ukupno: ${(item.price * item.quantity).toLocaleString(
+        "sr-RS"
+      )} RSD\n\n`;
     });
 
     message += `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`;
-    message += `💰 UKUPNO: ${getTotalPrice().toLocaleString('sr-RS')} RSD`;
+    message += `💰 UKUPNO: ${getTotalPrice().toLocaleString("sr-RS")} RSD`;
 
     setOrderMessage(message);
     setShowOrderPreview(true);
   };
 
   const handleCopyMessage = () => {
-    navigator.clipboard.writeText(orderMessage).then(() => {
-      toast.success('Poruka kopirana u clipboard!');
-    }).catch(() => {
-      toast.error('Greška pri kopiranju poruke');
-    });
+    navigator.clipboard
+      .writeText(orderMessage)
+      .then(() => {
+        toast.success("Poruka kopirana u clipboard!");
+      })
+      .catch(() => {
+        toast.error("Greška pri kopiranju poruke");
+      });
   };
 
   const handleOpenViber = () => {
-    const phoneNumber = '381641967267';
+    const phoneNumber = "381641967267";
     const viberLink = `viber://chat?number=${encodeURIComponent(phoneNumber)}`;
     window.location.href = viberLink;
   };
@@ -103,9 +130,7 @@ export default function KorpaPage() {
               Dodajte proizvode u korpu da biste nastavili sa kupovinom.
             </p>
             <Link href="/proizvodi">
-              <Button size="lg">
-                Pogledaj proizvode
-              </Button>
+              <Button size="lg">Pogledaj proizvode</Button>
             </Link>
           </div>
         </div>
@@ -122,7 +147,8 @@ export default function KorpaPage() {
               Korpa
             </h1>
             <p className="text-muted-foreground">
-              Imate {getTotalItems()} {getTotalItems() === 1 ? 'proizvod' : 'proizvoda'} u korpi
+              Imate {getTotalItems()}{" "}
+              {getTotalItems() === 1 ? "proizvod" : "proizvoda"} u korpi
             </p>
           </div>
           <Link href="/proizvodi">
@@ -141,7 +167,10 @@ export default function KorpaPage() {
                 <CardContent className="p-4 sm:p-6">
                   <div className="flex gap-4">
                     {/* Product Image */}
-                    <Link href={`/proizvodi/${item.id}`} className="flex-shrink-0">
+                    <Link
+                      href={`/proizvodi/${item.id}`}
+                      className="flex-shrink-0"
+                    >
                       <div className="relative h-24 w-24 sm:h-32 sm:w-32 rounded-lg overflow-hidden bg-muted">
                         <Image
                           src={item.image}
@@ -163,7 +192,7 @@ export default function KorpaPage() {
                         {item.category}
                       </p>
                       <p className="text-xl font-bold text-primary mb-4">
-                        {item.price.toLocaleString('sr-RS')} RSD
+                        {item.price.toLocaleString("sr-RS")} RSD
                       </p>
 
                       <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
@@ -173,7 +202,9 @@ export default function KorpaPage() {
                             variant="outline"
                             size="icon"
                             className="h-8 w-8"
-                            onClick={() => updateQuantity(item.id, item.quantity - 1)}
+                            onClick={() =>
+                              updateQuantity(item.id, item.quantity - 1)
+                            }
                           >
                             <Minus className="h-4 w-4" />
                           </Button>
@@ -184,7 +215,9 @@ export default function KorpaPage() {
                             variant="outline"
                             size="icon"
                             className="h-8 w-8"
-                            onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                            onClick={() =>
+                              updateQuantity(item.id, item.quantity + 1)
+                            }
                           >
                             <Plus className="h-4 w-4" />
                           </Button>
@@ -192,8 +225,12 @@ export default function KorpaPage() {
 
                         {/* Subtotal */}
                         <div className="text-sm text-muted-foreground">
-                          Ukupno: <span className="font-semibold text-foreground">
-                            {(item.price * item.quantity).toLocaleString('sr-RS')} RSD
+                          Ukupno:{" "}
+                          <span className="font-semibold text-foreground">
+                            {(item.price * item.quantity).toLocaleString(
+                              "sr-RS"
+                            )}{" "}
+                            RSD
                           </span>
                         </div>
 
@@ -237,13 +274,13 @@ export default function KorpaPage() {
                 </div>
                 <div className="flex justify-between text-muted-foreground">
                   <span>Međuzbir:</span>
-                  <span>{getTotalPrice().toLocaleString('sr-RS')} RSD</span>
+                  <span>{getTotalPrice().toLocaleString("sr-RS")} RSD</span>
                 </div>
                 <div className="border-t pt-4">
                   <div className="flex justify-between text-lg font-bold">
                     <span>Ukupno:</span>
                     <span className="text-primary">
-                      {getTotalPrice().toLocaleString('sr-RS')} RSD
+                      {getTotalPrice().toLocaleString("sr-RS")} RSD
                     </span>
                   </div>
                 </div>
@@ -261,7 +298,9 @@ export default function KorpaPage() {
                     id="name"
                     placeholder="Unesite vaše ime i prezime"
                     value={customerInfo.name}
-                    onChange={(e) => setCustomerInfo({ ...customerInfo, name: e.target.value })}
+                    onChange={(e) =>
+                      setCustomerInfo({ ...customerInfo, name: e.target.value })
+                    }
                   />
                 </div>
 
@@ -272,7 +311,12 @@ export default function KorpaPage() {
                     type="tel"
                     placeholder="Unesite vaš broj telefona"
                     value={customerInfo.phone}
-                    onChange={(e) => setCustomerInfo({ ...customerInfo, phone: e.target.value })}
+                    onChange={(e) =>
+                      setCustomerInfo({
+                        ...customerInfo,
+                        phone: e.target.value,
+                      })
+                    }
                   />
                 </div>
 
@@ -282,7 +326,12 @@ export default function KorpaPage() {
                     id="address"
                     placeholder="Unesite vašu adresu"
                     value={customerInfo.address}
-                    onChange={(e) => setCustomerInfo({ ...customerInfo, address: e.target.value })}
+                    onChange={(e) =>
+                      setCustomerInfo({
+                        ...customerInfo,
+                        address: e.target.value,
+                      })
+                    }
                   />
                 </div>
 
@@ -292,7 +341,9 @@ export default function KorpaPage() {
                     id="note"
                     placeholder="Dodatne informacije ili napomena..."
                     value={customerInfo.note}
-                    onChange={(e) => setCustomerInfo({ ...customerInfo, note: e.target.value })}
+                    onChange={(e) =>
+                      setCustomerInfo({ ...customerInfo, note: e.target.value })
+                    }
                     rows={3}
                   />
                 </div>
@@ -328,10 +379,7 @@ export default function KorpaPage() {
                       >
                         Kopiraj poruku
                       </Button>
-                      <Button
-                        onClick={handleOpenViber}
-                        className="w-full"
-                      >
+                      <Button onClick={handleOpenViber} className="w-full">
                         Otvori Viber
                       </Button>
                     </div>
@@ -344,7 +392,8 @@ export default function KorpaPage() {
                       Nazad
                     </Button>
                     <p className="text-xs text-center text-muted-foreground">
-                      1. Kopiraj poruku • 2. Otvori Viber • 3. Nalepi (Paste) i pošalji
+                      1. Kopiraj poruku • 2. Otvori Viber • 3. Nalepi (Paste) i
+                      pošalji
                     </p>
                   </>
                 )}
