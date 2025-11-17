@@ -69,17 +69,17 @@ export default function KorpaPage() {
     }
 
     // Create order message
-    let message = `🛒 NOVA NARUDŽBINA\n\n`;
-    message += `👤 Ime: ${customerInfo.name}\n`;
-    message += `📱 Telefon: ${customerInfo.phone}\n`;
-    message += `📍 Adresa: ${customerInfo.address}\n`;
+    let message = `NOVA NARUDZBINA\n\n`;
+    message += `Ime: ${customerInfo.name}\n`;
+    message += `Telefon: ${customerInfo.phone}\n`;
+    message += `Adresa: ${customerInfo.address}\n`;
 
     if (customerInfo.note.trim()) {
-      message += `📝 Napomena: ${customerInfo.note}\n`;
+      message += `Napomena: ${customerInfo.note}\n`;
     }
 
-    message += `\n📦 PROIZVODI:\n`;
-    message += `${"─".repeat(30)}\n`;
+    message += `\nPROIZVODI:\n`;
+    message += `------------------------------\n`;
 
     cart.forEach((item, index) => {
       message += `${index + 1}. ${item.name}\n`;
@@ -91,22 +91,30 @@ export default function KorpaPage() {
       )} RSD\n\n`;
     });
 
-    message += `${"─".repeat(30)}\n`;
-    message += `💰 UKUPNO: ${getTotalPrice().toLocaleString("sr-RS")} RSD\n`;
+    message += `------------------------------\n`;
+    message += `UKUPNO: ${getTotalPrice().toLocaleString("sr-RS")} RSD\n`;
 
     // Encode message for URL
     const encodedMessage = encodeURIComponent(message);
 
     // Phone number to send to
-    const phoneNumber = "+381606338605";
+    const phoneNumber = "+381641967267";
 
-    // Create Viber deep link with phone number
-    const viberLink = `viber://chat?number=${phoneNumber}&text=${encodedMessage}`;
+    // Create Viber deep link
+    const viberLink = `viber://contact?number=${phoneNumber}`;
 
     // Open Viber
-    window.location.href = viberLink;
+    window.open(viberLink, "_blank");
 
-    toast.success("Otvaranje Viber aplikacije...");
+    // Copy message to clipboard as fallback
+    navigator.clipboard
+      .writeText(message)
+      .then(() => {
+        toast.success("Poruka kopirana! Nalepite je u Viber chat.");
+      })
+      .catch(() => {
+        toast.success("Otvaranje Viber aplikacije...");
+      });
   };
 
   if (cart.length === 0) {
