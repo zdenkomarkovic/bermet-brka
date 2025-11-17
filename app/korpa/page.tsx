@@ -53,7 +53,7 @@ export default function KorpaPage() {
     }
   };
 
-  const handleViberOrder = () => {
+  const handleViberOrder = async () => {
     // Validate required fields
     if (!customerInfo.name.trim()) {
       toast.error("Molimo unesite vaše ime");
@@ -96,12 +96,31 @@ export default function KorpaPage() {
 
     const phoneNumber = "+381606338605";
 
-    // FINAL VIBER LINK — AUTOMATIC TEXT INSERT
-    const viberLink = `viber://chat?number=${encodeURIComponent(
+    // ANDROID — full auto works
+    const androidLink = `viber://chat?number=${encodeURIComponent(
       phoneNumber
     )}&text=${encodeURIComponent(message)}`;
 
-    window.location.href = viberLink;
+    // iPHONE — must use fallback (copy → open chat)
+    const iosLink = `viber://chat?number=${encodeURIComponent(phoneNumber)}`;
+
+    const isIOS =
+      typeof navigator !== "undefined" &&
+      /iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+    if (isIOS) {
+      try {
+        await navigator.clipboard.writeText(message);
+        alert("Poruka je kopirana — samo nalepite u Viber 😊");
+      } catch (err) {
+        alert("Kopiranje poruke nije uspelo, molimo nalepite ručno.");
+      }
+
+      window.location.href = iosLink;
+    } else {
+      // ANDROID radi automatski
+      window.location.href = androidLink;
+    }
   };
 
   if (cart.length === 0) {
