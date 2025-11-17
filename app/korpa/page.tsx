@@ -56,7 +56,6 @@ export default function KorpaPage() {
   };
 
   const handleViberOrder = () => {
-    // Validate required fields
     if (!customerInfo.name.trim()) {
       toast.error("Molimo unesite vaše ime");
       return;
@@ -70,7 +69,6 @@ export default function KorpaPage() {
       return;
     }
 
-    // Create order message
     let message = `NOVA NARUDŽBINA\n\n`;
     message += `Ime: ${customerInfo.name}\n`;
     message += `Telefon: ${customerInfo.phone}\n`;
@@ -96,8 +94,13 @@ export default function KorpaPage() {
     message += `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`;
     message += `💰 UKUPNO: ${getTotalPrice().toLocaleString("sr-RS")} RSD`;
 
-    setOrderMessage(message);
-    setShowOrderPreview(true);
+    const phoneNumber = "+381606338605";
+
+    const viberLink = `viber://chat?number=${encodeURIComponent(
+      phoneNumber
+    )}&text=${encodeURIComponent(message)}`;
+
+    window.location.href = viberLink;
   };
 
   const handleCopyMessage = () => {
