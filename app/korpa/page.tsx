@@ -73,8 +73,11 @@ export default function KorpaPage() {
     // Encode message for URL
     const encodedMessage = encodeURIComponent(message);
 
-    // Create Viber deep link
-    const viberLink = `viber://forward?text=${encodedMessage}`;
+    // Phone number to send to
+    const phoneNumber = '+381641967267';
+
+    // Create Viber deep link with phone number
+    const viberLink = `viber://chat?number=${phoneNumber}&text=${encodedMessage}`;
 
     // Open Viber
     window.location.href = viberLink;
