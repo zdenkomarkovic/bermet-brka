@@ -113,6 +113,7 @@ export default function KorpaPage() {
         await navigator.clipboard.writeText(message);
         alert("Poruka je kopirana — samo nalepite u Viber 😊");
       } catch (err) {
+        console.error(err);
         alert("Kopiranje poruke nije uspelo, molimo nalepite ručno.");
       }
 
