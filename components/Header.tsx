@@ -1,9 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import Logo from "../public/android-chrome-192x192.png";
+import Logo from "../public/banerNOV1.jpg";
 import Link from "next/link";
-import { ChevronDownIcon, MenuIcon, PhoneIcon, ShoppingCart } from "lucide-react";
+import {
+  ChevronDownIcon,
+  MenuIcon,
+  PhoneIcon,
+  ShoppingCart,
+} from "lucide-react";
 import { useCart } from "@/contexts/CartContext";
 
 import {
@@ -33,10 +38,7 @@ const CartIcon = () => {
 
   return (
     <Link href="/korpa" className="relative">
-      <motion.div
-        whileHover={{ scale: 1.1 }}
-        className="relative"
-      >
+      <motion.div whileHover={{ scale: 1.1 }} className="relative">
         <ShoppingCart className="text-primary cursor-pointer h-6 w-6" />
         {totalItems > 0 && (
           <span className="absolute -top-2 -right-2 bg-primary text-primary-foreground text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
@@ -194,16 +196,16 @@ export default function Header() {
         <div className="flex items-center gap-4">
           <CartIcon />
           <Link href="tel:+3816" className="hidden sm:block">
-          <motion.button
-            whileHover={{
-              color: "hsl(var(--foreground))",
-              backgroundColor: "hsl(var(--primary))",
-            }}
-            className=" items-center justify-center rounded-full text-primary border-primary border-2 text-sm md:text-lg py-1 px-2 md:py-2 md:px-4 transition-colors flex"
-          >
-            <PhoneIcon />
-            <p className="">+38160 000 000</p>
-          </motion.button>
+            <motion.button
+              whileHover={{
+                color: "hsl(var(--foreground))",
+                backgroundColor: "hsl(var(--primary))",
+              }}
+              className=" items-center justify-center rounded-full text-primary border-primary border-2 text-sm md:text-lg py-1 px-2 md:py-2 md:px-4 transition-colors flex"
+            >
+              <PhoneIcon />
+              <p className="">+38160 000 000</p>
+            </motion.button>
           </Link>
           <MobileMenu />
         </div>
