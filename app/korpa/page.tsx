@@ -112,7 +112,7 @@ export default function KorpaPage() {
   };
 
   const handleOpenViber = () => {
-    const phoneNumber = "381641967267";
+    const phoneNumber = "381606338605";
     const viberLink = `viber://chat?number=${encodeURIComponent(phoneNumber)}`;
     window.location.href = viberLink;
   };

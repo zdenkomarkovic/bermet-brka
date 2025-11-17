@@ -1,17 +1,21 @@
-'use client';
+"use client";
 
-import { products } from '@/data/products';
-import { useCart } from '@/contexts/CartContext';
-import { notFound } from 'next/navigation';
-import Image from 'next/image';
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { ShoppingCart, ArrowLeft, Phone, CheckCircle2 } from 'lucide-react';
-import { toast } from 'sonner';
-import { useState, use } from 'react';
+import { products } from "@/data/products";
+import { useCart } from "@/contexts/CartContext";
+import { notFound } from "next/navigation";
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ShoppingCart, ArrowLeft, Phone, CheckCircle2 } from "lucide-react";
+import { toast } from "sonner";
+import { useState, use } from "react";
 
-export default function ProductDetailPage({ params }: { params: Promise<{ id: string }> }) {
+export default function ProductDetailPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
   const { addToCart } = useCart();
   const [quantity, setQuantity] = useState(1);
 
@@ -47,17 +51,17 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
         </Link>
 
         {/* Product Details */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12 items-center">
           {/* Product Image */}
-          <div className="relative h-[400px] lg:h-[600px] rounded-lg overflow-hidden bg-muted">
-            <Image
-              src={product.image}
-              alt={product.name}
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
+
+          <Image
+            src={product.image}
+            alt={product.name}
+            width={300}
+            height={300}
+            className="w-full object-cover rounded-lg"
+            priority
+          />
 
           {/* Product Info */}
           <div className="flex flex-col">
@@ -78,7 +82,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
             )}
 
             <p className="text-4xl font-bold text-primary mb-6">
-              {product.price.toLocaleString('sr-RS')} RSD
+              {product.price.toLocaleString("sr-RS")} RSD
             </p>
 
             <div className="prose prose-lg mb-8">
@@ -111,20 +115,11 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                onClick={handleAddToCart}
-                size="lg"
-                className="flex-1"
-              >
+              <Button onClick={handleAddToCart} size="lg" className="flex-1">
                 <ShoppingCart className="mr-2 h-5 w-5" />
                 Dodaj u korpu
               </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="flex-1"
-                asChild
-              >
+              <Button variant="outline" size="lg" className="flex-1" asChild>
                 <a href="tel:+381">
                   <Phone className="mr-2 h-5 w-5" />
                   Pozovi
@@ -171,11 +166,16 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
             </CardHeader>
             <CardContent>
               <div className="prose prose-lg max-w-none">
-                {product.fullDescription.split('\n\n').map((paragraph, index) => (
-                  <p key={index} className="text-muted-foreground mb-4 whitespace-pre-line">
-                    {paragraph}
-                  </p>
-                ))}
+                {product.fullDescription
+                  .split("\n\n")
+                  .map((paragraph, index) => (
+                    <p
+                      key={index}
+                      className="text-muted-foreground mb-4 whitespace-pre-line"
+                    >
+                      {paragraph}
+                    </p>
+                  ))}
               </div>
             </CardContent>
           </Card>
@@ -189,7 +189,10 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {relatedProducts.map((relatedProduct) => (
-                <Card key={relatedProduct.id} className="overflow-hidden hover:shadow-lg transition-shadow">
+                <Card
+                  key={relatedProduct.id}
+                  className="overflow-hidden hover:shadow-lg transition-shadow"
+                >
                   <Link href={`/proizvodi/${relatedProduct.id}`}>
                     <div className="relative h-48 w-full bg-muted">
                       <Image
@@ -204,7 +207,7 @@ export default function ProductDetailPage({ params }: { params: Promise<{ id: st
                         {relatedProduct.name}
                       </h3>
                       <p className="text-2xl font-bold text-primary">
-                        {relatedProduct.price.toLocaleString('sr-RS')} RSD
+                        {relatedProduct.price.toLocaleString("sr-RS")} RSD
                       </p>
                     </CardContent>
                   </Link>
