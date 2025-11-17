@@ -98,7 +98,7 @@ export default function KorpaPage() {
     const encodedMessage = encodeURIComponent(message);
 
     // Phone number to send to
-    const phoneNumber = "+381641967267";
+    const phoneNumber = "381606338605";
 
     // Create Viber deep link
     const viberLink = `viber://contact?number=${phoneNumber}`;
