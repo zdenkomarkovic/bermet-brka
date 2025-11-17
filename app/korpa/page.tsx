@@ -54,73 +54,45 @@ export default function KorpaPage() {
   };
 
   const handleViberOrder = async () => {
-    // Validate required fields
-    if (!customerInfo.name.trim()) {
-      toast.error("Molimo unesite vaše ime");
-      return;
-    }
-    if (!customerInfo.phone.trim()) {
-      toast.error("Molimo unesite vaš telefon");
-      return;
-    }
-    if (!customerInfo.address.trim()) {
-      toast.error("Molimo unesite vašu adresu");
+    if (!customerInfo.name || !customerInfo.phone || !customerInfo.address) {
+      toast.error("Popunite obavezna polja!");
       return;
     }
 
-    // Create message
-    let message = `NOVA NARUDŽBINA\n\n`;
-    message += `Ime: ${customerInfo.name}\n`;
-    message += `Telefon: ${customerInfo.phone}\n`;
-    message += `Adresa: ${customerInfo.address}\n`;
+    // Kreiranje poruke
+    let message = `NOVA NARUDŽBINA\n\nIme: ${customerInfo.name}\nTelefon: ${customerInfo.phone}\nAdresa: ${customerInfo.address}\n`;
+    if (customerInfo.note) message += `Napomena: ${customerInfo.note}\n`;
 
-    if (customerInfo.note.trim()) {
-      message += `Napomena: ${customerInfo.note}\n`;
-    }
-
-    message += `\nPROIZVODI:\n`;
-    message += `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`;
-
-    cart.forEach((item, index) => {
-      message += `${index + 1}. ${item.name}\n`;
-      message += `   Količina: ${item.quantity} x ${item.price.toLocaleString(
-        "sr-RS"
-      )} RSD\n`;
-      message += `   Ukupno: ${(item.price * item.quantity).toLocaleString(
-        "sr-RS"
-      )} RSD\n\n`;
+    message += `\nPROIZVODI:\n━━━━━━━━━━━━━━\n`;
+    cart.forEach((item, idx) => {
+      message += `${idx + 1}. ${item.name} x ${item.quantity} = ${(
+        item.price * item.quantity
+      ).toLocaleString("sr-RS")} RSD\n`;
     });
-
-    message += `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n`;
-    message += `💰 UKUPNO: ${getTotalPrice().toLocaleString("sr-RS")} RSD`;
+    message += `━━━━━━━━━━━━━━\nUkupno: ${getTotalPrice().toLocaleString(
+      "sr-RS"
+    )} RSD`;
 
     const phoneNumber = "+381606338605";
 
-    // ANDROID — full auto works
-    const androidLink = `viber://chat?number=${encodeURIComponent(
-      phoneNumber
-    )}&text=${encodeURIComponent(message)}`;
-
-    // iPHONE — must use fallback (copy → open chat)
-    const iosLink = `viber://chat?number=${encodeURIComponent(phoneNumber)}`;
-
-    const isIOS =
-      typeof navigator !== "undefined" &&
-      /iPhone|iPad|iPod/i.test(navigator.userAgent);
+    const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
     if (isIOS) {
       try {
         await navigator.clipboard.writeText(message);
-        alert("Poruka je kopirana — samo nalepite u Viber 😊");
-      } catch (err) {
-        console.error(err);
-        alert("Kopiranje poruke nije uspelo, molimo nalepite ručno.");
+        alert("Poruka je kopirana! Otvoriće se Viber, samo nalepite poruku.");
+      } catch {
+        alert("Kopiranje nije uspelo, molimo nalepite poruku ručno.");
       }
-
-      window.location.href = iosLink;
+      window.location.href = `viber://chat?number=${encodeURIComponent(
+        phoneNumber
+      )}`;
     } else {
-      // ANDROID radi automatski
-      window.location.href = androidLink;
+      // Android / ostali
+      const viberLink = `viber://chat?number=${encodeURIComponent(
+        phoneNumber
+      )}&text=${encodeURIComponent(message)}`;
+      window.location.href = viberLink;
     }
   };
 
