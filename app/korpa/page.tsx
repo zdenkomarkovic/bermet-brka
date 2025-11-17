@@ -40,8 +40,6 @@ export default function KorpaPage() {
     address: "",
     note: "",
   });
-  const [showOrderPreview, setShowOrderPreview] = useState(false);
-  const [orderMessage, setOrderMessage] = useState("");
 
   const handleRemove = (productId: string, productName: string) => {
     removeFromCart(productId);
@@ -56,6 +54,7 @@ export default function KorpaPage() {
   };
 
   const handleViberOrder = () => {
+    // Validate required fields
     if (!customerInfo.name.trim()) {
       toast.error("Molimo unesite vaše ime");
       return;
@@ -69,6 +68,7 @@ export default function KorpaPage() {
       return;
     }
 
+    // Create message
     let message = `NOVA NARUDŽBINA\n\n`;
     message += `Ime: ${customerInfo.name}\n`;
     message += `Telefon: ${customerInfo.phone}\n`;
@@ -96,27 +96,11 @@ export default function KorpaPage() {
 
     const phoneNumber = "+381606338605";
 
+    // FINAL VIBER LINK — AUTOMATIC TEXT INSERT
     const viberLink = `viber://chat?number=${encodeURIComponent(
       phoneNumber
     )}&text=${encodeURIComponent(message)}`;
 
-    window.location.href = viberLink;
-  };
-
-  const handleCopyMessage = () => {
-    navigator.clipboard
-      .writeText(orderMessage)
-      .then(() => {
-        toast.success("Poruka kopirana u clipboard!");
-      })
-      .catch(() => {
-        toast.error("Greška pri kopiranju poruke");
-      });
-  };
-
-  const handleOpenViber = () => {
-    const phoneNumber = "381606338605";
-    const viberLink = `viber://chat?number=${encodeURIComponent(phoneNumber)}`;
     window.location.href = viberLink;
   };
 
@@ -352,54 +336,14 @@ export default function KorpaPage() {
                 </div>
               </CardContent>
               <CardFooter className="flex flex-col gap-3">
-                {!showOrderPreview ? (
-                  <>
-                    <Button
-                      className="w-full"
-                      size="lg"
-                      onClick={handleViberOrder}
-                    >
-                      <Send className="mr-2 h-5 w-5" />
-                      Nastavi na Viber
-                    </Button>
-                    <p className="text-xs text-center text-muted-foreground">
-                      Prikaži poruku i pošalji preko Vibera
-                    </p>
-                  </>
-                ) : (
-                  <>
-                    <div className="w-full p-4 bg-muted rounded-lg">
-                      <p className="text-xs font-semibold mb-2">Vaša poruka:</p>
-                      <pre className="text-xs whitespace-pre-wrap font-mono">
-                        {orderMessage}
-                      </pre>
-                    </div>
-                    <div className="grid grid-cols-2 gap-2 w-full">
-                      <Button
-                        variant="outline"
-                        onClick={handleCopyMessage}
-                        className="w-full"
-                      >
-                        Kopiraj poruku
-                      </Button>
-                      <Button onClick={handleOpenViber} className="w-full">
-                        Otvori Viber
-                      </Button>
-                    </div>
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      onClick={() => setShowOrderPreview(false)}
-                      className="w-full"
-                    >
-                      Nazad
-                    </Button>
-                    <p className="text-xs text-center text-muted-foreground">
-                      1. Kopiraj poruku • 2. Otvori Viber • 3. Nalepi (Paste) i
-                      pošalji
-                    </p>
-                  </>
-                )}
+                <Button className="w-full" size="lg" onClick={handleViberOrder}>
+                  <Send className="mr-2 h-5 w-5" />
+                  Pošalji porudžbinu na Viber
+                </Button>
+
+                <p className="text-xs text-center text-muted-foreground">
+                  Otvoriće se Viber sa već popunjenom porukom
+                </p>
               </CardFooter>
             </Card>
           </div>
