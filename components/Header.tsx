@@ -22,13 +22,18 @@ const mobTitleStyles = "text-lg py-2";
 
 const CartIcon = () => {
   const { getTotalItems } = useCart();
+  const [mounted, setMounted] = useState(false);
   const totalItems = getTotalItems();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <Link href="/korpa" className="relative">
       <motion.div whileHover={{ scale: 1.1 }} className="relative">
         <ShoppingCart className="text-primary cursor-pointer h-6 w-6" />
-        {totalItems > 0 && (
+        {mounted && totalItems > 0 && (
           <span className="absolute -top-2 -right-2 bg-primary text-primary-foreground text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
             {totalItems}
           </span>
