@@ -1119,4 +1119,215 @@ Upotreba
 
 3 do 4 puta dnevno po 15 kapi.`
   },
+  {
+    id: '21',
+    name: 'Bermet beli 0.187l',
+    price: 400,
+    description: 'Slatko, aromatično desertno vino proizvedeno maceracijom približno 15 biljaka i začina. Podseća na italijanski vermut, ali se proizvodi drugačije. Istorijski konzumiran na austrijskom dvoru, sa caricom Marijom Terezijom među njegovim obožavateljima.',
+    image: '/bermet-beli.jpg',
+    category: 'Bermet',
+    subtitle: 'Tradicionalno desertno vino - 15 lekovitih biljaka',
+    usage: 'Servira se ohlađeno kao aperitiv ili na sobnoj temperaturi kao desertno piće. Temperatura serviranja: 15°C.',
+    benefits: [
+      'Tradicionalno desertno vino',
+      'Maceracija 15 aromatičnih biljaka',
+      'Slatko i aromatično',
+      'Istorijski služeno na austrijskom dvoru',
+      'Carica Marija Terezija među obožavateljima',
+      'Može se koristiti kao aperitiv',
+      'Odlično uz deserte',
+      'Iz čuvenog Sremskih Karlovaca'
+    ],
+    fullDescription: `Bermet beli - Tradicionalno desertno aromatično vino
+
+Zapremina: 0.187 litara (187ml)
+Alkohol: 17% v/v
+Poreklo: Sremski Karlovci, region Fruška Gora, Srbija
+
+Bermet beli je slatko, aromatično desertno vino proizvedeno maceracijom približno 15 biljaka i začina. Ovo vino podseća na italijanski vermut, ali se proizvodi drugačije, kroz mačeraciju više od 20 različitih biljaka i začina.
+
+Istorija
+
+Bermet ima bogatu istoriju i bio je konzumiran na austrijskom dvoru, sa caricom Marijom Terezijom među njegovim obožavateljima. Sremski Karlovci su vekovima poznati po kvalitetnim vinima i čuvenom bermetu.
+
+Način serviranja
+
+Servira se ohlađeno kao aperitiv ili na sobnoj temperaturi kao desertno piće sa tortama i kolačima.
+
+Temperatura serviranja: 15°C
+
+Preporučeni paring
+
+• Peciva i kolači sa orasima
+• Sušeno voće, posebno kajsije
+• Deserti sa medom
+• Čokolada (tamna ili mlečna)
+
+Baron Bermet Aleks je zaštitni znak Vinarije Aleks, zaštićen na domaćem i međunarodnom tržištu.`
+  },
+  {
+    id: '22',
+    name: 'Bermet crveni 0.187l',
+    price: 400,
+    description: 'Slatko, aromatično vino koje podseća na italijanski vermut, proizvedeno maceracijom preko 30 različitih biljaka i začina. Recept je pažljivo čuvana porodična tajna. Istorijski proizvedeno u regionu Sremski Karlovci i tradicionalno uživano na austrijskom dvoru.',
+    image: '/bermet-crveni.jpg',
+    category: 'Bermet',
+    subtitle: 'Tradicionalno desertno vino - 30 lekovitih biljaka',
+    usage: 'Konzumira se kao aperitiv (ohlađeno) ili uz desert. Temperatura serviranja: 18°C.',
+    benefits: [
+      'Sadrži 30 aromatičnih biljaka i začina',
+      'Porodična tajna receptura',
+      'Istorijski uživano na austrijskom dvoru',
+      'Carica Marija Terezija među obožavateljima',
+      'Tradicionalno desertno vino',
+      'Afrodizijak',
+      'Lekovito za dušu i unutrašnje organe',
+      'Iz regiona Fruška Gora'
+    ],
+    fullDescription: `Bermet crveni - Tradicionalno desertno aromatično vino
+
+Zapremina: 0.187 litara (187ml)
+Alkohol: 17% v/v
+Tip: Desertno vino (slatko fortifikovano vino)
+Poreklo: Sremski Karlovci, region Fruška Gora, Srbija
+
+Bermet crveni je slatko, aromatično vino koje podseća na italijanski vermut, proizvedeno maceracijom preko 30 različitih biljaka i začina umesto tradicionalnih metoda vermuta.
+
+Ključne karakteristike
+
+Sadrži 30 aromatičnih biljaka i začina. Recept je pažljivo čuvana porodična tajna. Originalno proizvedeno u regionu Sremski Karlovci i istorijski uživano na austrijskom dvoru, uključujući caricu Mariju Tereziju.
+
+Način serviranja
+
+Konzumira se kao aperitiv (ohlađeno) ili uz desert.
+
+Temperatura serviranja: 18°C
+
+Preporučeni paring
+
+• Torte i kolači
+• Peciva sa orasima
+• Sušeno voće (posebno kajsije)
+• Deserti sa medom
+• Tamna čokolada
+
+Pogodno za restorane i komercijalne objekte.
+
+Baron Bermet Aleks
+
+Proizvedeno u Vinariji Aleks iz vinskog regiona Fruška Gora u Srbiji. Zaštitni znak Baron Bermet Aleks je zaštićen na domaćem i međunarodnom tržištu.
+
+U Srbiji 19. veka robu su plaćali sušenom šljivom, ali u Karlovcima – bermetom!`
+  },
+  {
+    id: '23',
+    name: 'Bermet beli 0.75l',
+    price: 1600,
+    description: 'Slatko, aromatično desertno vino proizvedeno maceracijom približno 15 biljaka i začina. Standardno pakovanje u boci od 0.75l. Istorijski konzumiran na austrijskom dvoru, sa caricom Marijom Terezijom među njegovim obožavateljima.',
+    image: '/bermet-beli.jpg',
+    category: 'Bermet',
+    subtitle: 'Tradicionalno desertno vino - 15 lekovitih biljaka (750ml)',
+    usage: 'Servira se ohlađeno kao aperitiv ili na sobnoj temperaturi kao desertno piće. Temperatura serviranja: 15°C.',
+    benefits: [
+      'Tradicionalno desertno vino',
+      'Maceracija 15 aromatičnih biljaka',
+      'Slatko i aromatično',
+      'Standardno pakovanje 0.75l',
+      'Istorijski služeno na austrijskom dvoru',
+      'Carica Marija Terezija među obožavateljima',
+      'Može se koristiti kao aperitiv',
+      'Odlično uz deserte',
+      'Iz čuvenog Sremskih Karlovaca'
+    ],
+    fullDescription: `Bermet beli - Tradicionalno desertno aromatično vino
+
+Zapremina: 0.75 litara (750ml) - Standardno pakovanje
+Alkohol: 17% v/v
+Poreklo: Sremski Karlovci, region Fruška Gora, Srbija
+
+Bermet beli je slatko, aromatično desertno vino proizvedeno maceracijom približno 15 biljaka i začina. Ovo vino podseća na italijanski vermut, ali se proizvodi drugačije, kroz mačeraciju više od 20 različitih biljaka i začina.
+
+Istorija
+
+Bermet ima bogatu istoriju i bio je konzumiran na austrijskom dvoru, sa caricom Marijom Terezijom među njegovim obožavateljima. Sremski Karlovci su vekovima poznati po kvalitetnim vinima i čuvenom bermetu. Karlovački bermet je služen na kraljevskim dvorovima, brodovima, pa čak i na čuvenom oceanu liner Titaniku.
+
+Način serviranja
+
+Servira se ohlađeno kao aperitiv ili na sobnoj temperaturi kao desertno piće sa tortama i kolačima.
+
+Temperatura serviranja: 15°C
+
+Preporučeni paring
+
+• Peciva i kolači sa orasima
+• Sušeno voće, posebno kajsije
+• Deserti sa medom
+• Čokolada (tamna ili mlečna)
+
+Baron Bermet Aleks je zaštitni znak Vinarije Aleks, zaštićen na domaćem i međunarodnom tržištu.
+
+Standardno pakovanje od 0.75l idealno je za porodična okupljanja i slavlja.`
+  },
+  {
+    id: '24',
+    name: 'Bermet crveni 0.75l',
+    price: 1600,
+    description: 'Slatko, aromatično vino koje podseća na italijanski vermut, proizvedeno maceracijom preko 30 različitih biljaka i začina. Standardno pakovanje u boci od 0.75l. Recept je pažljivo čuvana porodična tajna.',
+    image: '/bermet-crveni.jpg',
+    category: 'Bermet',
+    subtitle: 'Tradicionalno desertno vino - 30 lekovitih biljaka (750ml)',
+    usage: 'Konzumira se kao aperitiv (ohlađeno) ili uz desert. Temperatura serviranja: 18°C.',
+    benefits: [
+      'Sadrži 30 aromatičnih biljaka i začina',
+      'Porodična tajna receptura',
+      'Standardno pakovanje 0.75l',
+      'Istorijski uživano na austrijskom dvoru',
+      'Carica Marija Terezija među obožavateljima',
+      'Tradicionalno desertno vino',
+      'Afrodizijak',
+      'Lekovito za dušu i unutrašnje organe',
+      'Iz regiona Fruška Gora',
+      'Služeno na Titaniku'
+    ],
+    fullDescription: `Bermet crveni - Tradicionalno desertno aromatično vino
+
+Zapremina: 0.75 litara (750ml) - Standardno pakovanje
+Alkohol: 17% v/v
+Tip: Desertno vino (slatko fortifikovano vino)
+Poreklo: Sremski Karlovci, region Fruška Gora, Srbija
+
+Bermet crveni je slatko, aromatično vino koje podseća na italijanski vermut, proizvedeno maceracijom preko 30 različitih biljaka i začina umesto tradicionalnih metoda vermuta.
+
+Ključne karakteristike
+
+Sadrži 30 aromatičnih biljaka i začina. Recept je pažljivo čuvana porodična tajna. Originalno proizvedeno u regionu Sremski Karlovci i istorijski uživano na austrijskom dvoru, uključujući caricu Mariju Tereziju.
+
+Bermet je bio na početku korišćen kao lek. I danas se smatra lekovitim za dušu i unutrašnje organe, te afrodizijak za žene.
+
+Istorija
+
+Sremski Karlovci su vekovima poznati po kvalitetnim vinima i čuvenom bermetu. Karlovački bermet je služen na kraljevskim dvorovima, brodovima, pa čak i na čuvenom oceanu liner Titaniku.
+
+U Srbiji 19. veka robu su plaćali sušenom šljivom, ali u Karlovcima – bermetom!
+
+Način serviranja
+
+Konzumira se kao aperitiv (ohlađeno) ili uz desert.
+
+Temperatura serviranja: 18°C
+
+Preporučeni paring
+
+• Torte i kolači
+• Peciva sa orasima
+• Sušeno voće (posebno kajsije)
+• Deserti sa medom
+• Tamna čokolada
+
+Baron Bermet Aleks
+
+Proizvedeno u Vinariji Aleks iz vinskog regiona Fruška Gora u Srbiji. Zaštitni znak Baron Bermet Aleks je zaštićen na domaćem i međunarodnom tržištu.
+
+Standardno pakovanje od 0.75l idealno je za porodična okupljanja, slavlja i kao poklon.`
+  },
 ];
