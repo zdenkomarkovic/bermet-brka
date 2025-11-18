@@ -13,7 +13,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { ShoppingCart } from "lucide-react";
+import { ShoppingCart, Phone } from "lucide-react";
 import { toast } from "sonner";
 
 export default function ProizvodiPage() {
@@ -80,20 +80,32 @@ export default function ProizvodiPage() {
                 </p>
               </CardContent>
 
-              <CardFooter className="flex gap-2">
+              <CardFooter className="flex flex-col gap-2">
                 <Button
                   onClick={() => handleAddToCart(product)}
-                  className="flex-1"
+                  className="w-full"
                   variant="default"
                 >
                   <ShoppingCart className="mr-2 h-4 w-4" />
                   Dodaj u korpu
                 </Button>
-                <Link href={`/proizvodi/${product.id}`} className="flex-1">
-                  <Button variant="outline" className="w-full">
-                    Detalji
-                  </Button>
-                </Link>
+                <div className="flex items-center w-full gap-2">
+                  <div className="flex-1 h-px bg-border" />
+                  <span className="text-xs text-muted-foreground font-medium px-2">
+                    ILI
+                  </span>
+                  <div className="flex-1 h-px bg-border" />
+                </div>
+                <Button
+                  variant="outline"
+                  className="w-full"
+                  asChild
+                >
+                  <a href="tel:+381606338605">
+                    <Phone className="mr-2 h-4 w-4" />
+                    Nazovi i poruči
+                  </a>
+                </Button>
               </CardFooter>
             </Card>
           ))}

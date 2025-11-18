@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { ShoppingCart, Wine, Award, Heart, Leaf } from 'lucide-react';
+import { ShoppingCart, Wine, Award, Heart, Leaf, Phone } from 'lucide-react';
 import { toast } from 'sonner';
 
 export default function BermetPage() {
@@ -160,18 +160,30 @@ export default function BermetPage() {
                     {product.price.toLocaleString('sr-RS')} RSD
                   </p>
                 </CardContent>
-                <CardFooter className="flex gap-2">
+                <CardFooter className="flex flex-col gap-2">
                   <Button
-                    className="flex-1"
+                    className="w-full"
                     onClick={() => handleAddToCart(product)}
                   >
                     <ShoppingCart className="mr-2 h-4 w-4" />
                     Dodaj u korpu
                   </Button>
-                  <Button variant="outline" asChild>
-                    <Link href={`/proizvodi/${product.id}`}>
-                      Detalji
-                    </Link>
+                  <div className="flex items-center w-full gap-2">
+                    <div className="flex-1 h-px bg-border" />
+                    <span className="text-xs text-muted-foreground font-medium px-2">
+                      ILI
+                    </span>
+                    <div className="flex-1 h-px bg-border" />
+                  </div>
+                  <Button
+                    variant="outline"
+                    className="w-full"
+                    asChild
+                  >
+                    <a href="tel:+381606338605">
+                      <Phone className="mr-2 h-4 w-4" />
+                      Nazovi i poruči
+                    </a>
                   </Button>
                 </CardFooter>
               </Card>

@@ -114,15 +114,22 @@ export default function ProductDetailPage({
             </div>
 
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button onClick={handleAddToCart} size="lg" className="flex-1">
+            <div className="flex flex-col gap-4">
+              <Button onClick={handleAddToCart} size="lg" className="w-full">
                 <ShoppingCart className="mr-2 h-5 w-5" />
                 Dodaj u korpu
               </Button>
-              <Button variant="outline" size="lg" className="flex-1" asChild>
-                <a href="tel:+381">
+              <div className="flex items-center w-full gap-3">
+                <div className="flex-1 h-px bg-border" />
+                <span className="text-sm text-muted-foreground font-medium px-2">
+                  ILI
+                </span>
+                <div className="flex-1 h-px bg-border" />
+              </div>
+              <Button variant="outline" size="lg" className="w-full" asChild>
+                <a href="tel:+381606338605">
                   <Phone className="mr-2 h-5 w-5" />
-                  Pozovi
+                  Nazovi i poruči
                 </a>
               </Button>
             </div>
