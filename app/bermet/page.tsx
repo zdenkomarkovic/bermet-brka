@@ -6,7 +6,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
 import { ShoppingCart, Wine, Award, Heart, Leaf } from 'lucide-react';
 import { toast } from 'sonner';
 
@@ -106,11 +105,11 @@ export default function BermetPage() {
               te afrodizijak za žene.
             </p>
             <div className="flex flex-wrap gap-2 pt-4">
-              <Badge variant="secondary">Desertno vino</Badge>
-              <Badge variant="secondary">17% alkohola</Badge>
-              <Badge variant="secondary">Sremski Karlovci</Badge>
-              <Badge variant="secondary">Fruška Gora</Badge>
-              <Badge variant="secondary">Zaštićen trademark</Badge>
+              <span className="inline-flex items-center rounded-full bg-secondary px-3 py-1 text-xs font-medium text-secondary-foreground">Desertno vino</span>
+              <span className="inline-flex items-center rounded-full bg-secondary px-3 py-1 text-xs font-medium text-secondary-foreground">17% alkohola</span>
+              <span className="inline-flex items-center rounded-full bg-secondary px-3 py-1 text-xs font-medium text-secondary-foreground">Sremski Karlovci</span>
+              <span className="inline-flex items-center rounded-full bg-secondary px-3 py-1 text-xs font-medium text-secondary-foreground">Fruška Gora</span>
+              <span className="inline-flex items-center rounded-full bg-secondary px-3 py-1 text-xs font-medium text-secondary-foreground">Zaštićen trademark</span>
             </div>
           </CardContent>
         </Card>
@@ -137,9 +136,9 @@ export default function BermetPage() {
                 </Link>
                 <CardHeader className="flex-1">
                   <div className="flex items-start justify-between gap-2 mb-2">
-                    <Badge variant="outline" className="text-xs">
+                    <span className="inline-flex items-center rounded-full border border-input px-2.5 py-0.5 text-xs font-semibold">
                       {product.category}
-                    </Badge>
+                    </span>
                     <Wine className="h-5 w-5 text-primary flex-shrink-0" />
                   </div>
                   <Link href={`/proizvodi/${product.id}`}>
