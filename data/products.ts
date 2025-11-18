@@ -159,7 +159,7 @@ O gljivi
   {
     id: "3",
     name: "Kapi - zeleni orah",
-    price: 1500,
+    price: 1000,
     description:
       "Mladi zeleni orah sadrži belančevine, 65% ulja, fosfor, kalijum, magnezijum, vitamin B, gvožđe i veliku količinu C vitamina. Koristi se za čišćenje krvi, detoksikaciju organizma, čišćenje parazita i jačanje imuniteta.",
     image: "/BRKIN ZELENI ORAH. mala.jpg",
@@ -277,7 +277,7 @@ Retka pojava alergije i stomačnih problema.`,
   {
     id: "5",
     name: "Tinktura karanfilića",
-    price: 1500,
+    price: 1000,
     description:
       "Karanfilić sadrži eugenol, cariofilen i tanin, koje imaju jaka antimikrobna dejstva. Uništava parazite i njihova jajašca, mikroskopske protozoe, bakterije, viruse i gljivice. Jedina biljka sposobna da uništi jajašca parazita.",
     image: "/TINKTURA karanfilica.jpg",
@@ -328,7 +328,7 @@ NAPOMENA: Trudnicama, dojiljama i deci ispod 12 godina se ne savetuje uzimanje t
   {
     id: "6",
     name: "Tinktura - divlji kesten",
-    price: 1500,
+    price: 600,
     description:
       "Divlji kesten je vrlo dobar prirodni lek za terapiju proširenih vena i hemoroida. Sadrži escin koji blagotvorno deluje na stabilizaciju zidova venskih krvnih sudova i smanjenje otoka i bola. Za spoljnu upotrebu.",
     image: "/BRKIN DIVLJI KESTEN za spoljnu upotrebu.jpg",
@@ -376,8 +376,8 @@ Zdravi i veseli bili!`,
   },
   {
     id: "7",
-    name: "Tinktura sremuša",
-    price: 1500,
+    name: "Tinktura sremuša 30ml",
+    price: 300,
     description:
       "Sremuš (medveđi luk) deluje antioksidativno i čisti organizam. Snižava nivoa triglicerida i holesterola u krvi, snižava povišeni krvni pritisak, poboljšava cirkulaciju i blagotvorno deluje na rad srca.",
     image: "/BRKIN SREMUS0.030 ML.jpg",
@@ -422,7 +422,7 @@ NAPOMENA: Tinktura sremuša je prirodni dodatak ishrani i treba je koristiti u o
   {
     id: "8",
     name: "Tinktura sremuša 100ml",
-    price: 2500,
+    price: 1000,
     description:
       "Sremuš (medveđi luk) deluje antioksidativno i čisti organizam. Snižava nivoa triglicerida i holesterola u krvi, snižava povišeni krvni pritisak, poboljšava cirkulaciju i blagotvorno deluje na rad srca.",
     image: "/BRKIN SREMUS  0.100 ML.jpg",
@@ -471,7 +471,7 @@ NAPOMENA: Preparat ne bi trebalo da koriste deca do 14 godina, trudnice i osobe 
   {
     id: "9",
     name: "Tinktura - mlečika",
-    price: 1500,
+    price: 1000,
     description:
       "Mala mlečika (Epilobium parviflorum) je prirodni citostatik i jedno od najjačih prirodnih sredstava za prostatu. Koristi se za lečenje prostate, naročito kod benignih tumora, bešike, mokraćnih i polnih organa.",
     image: "/BRKINA MLECIKA ZA PROSTATU.jpg",
@@ -516,7 +516,7 @@ UPOZORENJE: Zbog nedostatka raspoloživih naučnih dokaza, tinktura male mlečik
   {
     id: "10",
     name: "Tinktura - ruzmarin",
-    price: 1500,
+    price: 1000,
     description:
       "Ruzmarin poboljšava cirkulaciju, normalizuje krvni pritisak i umiruje srce. Pospešuje mokrenje, poboljšava pamćenje i koristi se kod živčanih bolova, slabosti srca i opšte telesne slabosti.",
     image: "/BRKIN RUZMARIN  100.jpg",
@@ -566,7 +566,7 @@ NAPOMENA: Tinktura ruzmarina je prirodni dodatak ishrani i treba je koristiti u 
   {
     id: "11",
     name: "Tinktura - maslačak",
-    price: 1500,
+    price: 1000,
     description:
       'Maslačak se koristi kod visokog krvnog pritiska, "trovanja krvi", reumatoidnog artritisa, plućnih tegoba, žutice, bolesti bubrega i kožnih tegoba. Odlično deluje na čišćenje jetre, žuči i bubrega.',
     image: "/BRKIN MASLACAK.jpg",
@@ -627,8 +627,8 @@ NAPOMENA: Konsultujte se sa stručnjakom pre upotrebe, posebno ako imate zdravst
   },
   {
     id: "12",
-    name: "Tinktura - cimet",
-    price: 1500,
+    name: "Tinktura - cimet 30ml",
+    price: 300,
     description:
       "Cimet (Cinnamomum zeylanicum) povećava aktivnost inzulina i snižava nivo šećera u krvi. Smanjuje loš kolesterol i trigliceride, pojačava aktivnost mozga, pročišćava krv i pomaže kod dijabetesa tipa 2.",
     image: "/Cinnamonessentialoil2.jpg",
@@ -747,7 +747,7 @@ NAPOMENA: Konzultujte se sa stručnjakom pre upotrebe, posebno ako imate dijabet
   {
     id: "13",
     name: "Tinktura - đumbir",
-    price: 600,
+    price: 1500,
     description:
       "Tinktura od đumbira veoma je korisna kod prehlada, posebno kod virusnih infekcija. Zahvaljujući tinkturi od đumbira upalni procesi u organizmu brzo nestaju. Ova tinktura je odlično prirodno sredstvo za glavobolju, zubobolju, bolove u zglobovima i kod osteohondroza.",
     image: "/ginger.jpg",
@@ -822,7 +822,7 @@ Tinkturu možete koristiti 3 puta dnevno po 20 kapi, kašikica meda i limun. Na 
   {
     id: "14",
     name: "Tinktura - kopriva",
-    price: 600,
+    price: 1000,
     description:
       "Tinktura od koprive poboljšava rad probavnog sustava. Sadrži kalcij, kalij, željezo, fosfor, vitamine C i A i organske kiseline. Kopriva je biljka najbogatija željezom. Snažno utječe na organizam i za nju se s pravom može reći da djeluje na cijeli organizam.",
     image: "/BRKINA KOPRIVA.jpg",
@@ -897,7 +897,7 @@ Zahvaljujući prisustvu kvercetina, kopriva stabiliše mastocite (ćelije odgovo
   {
     id: "15",
     name: "Tinktura - protiv holesterola",
-    price: 1500,
+    price: 1000,
     description:
       "Biljne kapi za holesterol i trigliceride i visok nivo masti u krvi. Sadrži artičoku, kantarion, petrovac, neven, nana list, hajdučku travu i koren maslačka. Pomaže kod povećanog nivoa triglicerida koji ukazuje na loše funkcionisanje jetre i pankreasa.",
     image: "/TINKTURA povišenog holesterola_0x90.jpg",
@@ -945,7 +945,7 @@ Dnevno, do 3 x po 10 kapi u čaj ili na kašičici meda.`,
   {
     id: "16",
     name: "Tinktura - sikavica",
-    price: 1500,
+    price: 1000,
     description:
       "Sikavica biljka (Silybum Marianum) je jedan od najboljih regeneratora jetre kojeg nam je priroda dala. Ona ujedno i štiti ovaj organ. Preporučuje se osobama sklonim alkoholizmu i masnoj hrani, i dokazano pomaže kod mamurluka.",
     image: "/TINKTURA  SIKAVICE.jpg",
@@ -1033,7 +1033,7 @@ Boca je zapremine 100 ml.`,
   {
     id: "18",
     name: "Tinktura za menopauzu",
-    price: 1500,
+    price: 1000,
     description:
       "Tinktura za menopauzu pomaže u ublažavanju simptoma menopauze i hormonalnoj ravnoteži.",
     image: "/TINKTURA MENOPAUZA.jpg",
@@ -1052,7 +1052,7 @@ Boca je zapremine 100 ml.`,
   {
     id: "20",
     name: "Tinktura - glog",
-    price: 1500,
+    price: 1000,
     description:
       "Glog je najlekovitija biljka na svetu, snažan lek za srce. Uspešno sprečava infarkt, pomaže kod visokog pritiska, zaštićuje od povišenog holesterola i ateroskleroze. Ima široku korist za održavanje zdravlja krvnih sudova, kod slabljenja srčanog mišića i srčane aritmije.",
     image: "/TINKTURA  GLOGA.jpg",
@@ -1259,7 +1259,7 @@ U Srbiji 19. veka robu su plaćali sušenom šljivom, ali u Karlovcima – berme
   {
     id: "23",
     name: "Bermet beli 0.75l",
-    price: 1600,
+    price: 1200,
     description:
       "Slatko, aromatično desertno vino proizvedeno maceracijom približno 15 biljaka i začina. Standardno pakovanje u boci od 0.75l. Istorijski konzumiran na austrijskom dvoru, sa caricom Marijom Terezijom među njegovim obožavateljima.",
     image: "/baron_bermet_beli_051.png",
@@ -1310,7 +1310,7 @@ Standardno pakovanje od 0.75l idealno je za porodična okupljanja i slavlja.`,
   {
     id: "24",
     name: "Bermet crveni 0.75l",
-    price: 1600,
+    price: 1200,
     description:
       "Slatko, aromatično vino koje podseća na italijanski vermut, proizvedeno maceracijom preko 30 različitih biljaka i začina. Standardno pakovanje u boci od 0.75l. Recept je pažljivo čuvana porodična tajna.",
     image: "/baron_bermet_aleks_crveni_051.png",
