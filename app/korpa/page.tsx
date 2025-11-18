@@ -36,6 +36,7 @@ export default function KorpaPage() {
   } = useCart();
   const [customerInfo, setCustomerInfo] = useState({
     name: "",
+    email: "",
     phone: "",
     address: "",
     note: "",
@@ -58,6 +59,16 @@ export default function KorpaPage() {
     // Validate required fields
     if (!customerInfo.name.trim()) {
       toast.error("Molimo unesite vaše ime");
+      return;
+    }
+    if (!customerInfo.email.trim()) {
+      toast.error("Molimo unesite vaš email");
+      return;
+    }
+    // Basic email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(customerInfo.email)) {
+      toast.error("Molimo unesite validan email");
       return;
     }
     if (!customerInfo.phone.trim()) {
@@ -88,11 +99,11 @@ export default function KorpaPage() {
 
       if (data.success) {
         toast.success(
-          "Narudžbina uspešno poslata! Uskoro ćemo vas kontaktirati."
+          "Narudžbina uspešno poslata! Potvrda je poslata na vaš email."
         );
         // Clear cart and form
         clearCart();
-        setCustomerInfo({ name: "", phone: "", address: "", note: "" });
+        setCustomerInfo({ name: "", email: "", phone: "", address: "", note: "" });
       } else {
         toast.error("Greška pri slanju narudžbine. Molimo pokušajte ponovo.");
       }
@@ -287,6 +298,19 @@ export default function KorpaPage() {
                     value={customerInfo.name}
                     onChange={(e) =>
                       setCustomerInfo({ ...customerInfo, name: e.target.value })
+                    }
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="email">Email *</Label>
+                  <Input
+                    id="email"
+                    type="email"
+                    placeholder="Unesite vaš email"
+                    value={customerInfo.email}
+                    onChange={(e) =>
+                      setCustomerInfo({ ...customerInfo, email: e.target.value })
                     }
                   />
                 </div>
