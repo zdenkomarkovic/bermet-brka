@@ -40,7 +40,7 @@ export default function ProductDetailPage({
     .slice(0, 3);
 
   return (
-    <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen pt-24 pb-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Back Button */}
         <Link href="/proizvodi">
@@ -57,9 +57,9 @@ export default function ProductDetailPage({
           <Image
             src={product.image}
             alt={product.name}
-            width={300}
-            height={300}
-            className="w-full object-cover rounded-lg"
+            width={600}
+            height={400}
+            className=" h-[700px] object-contain rounded-lg"
             priority
           />
 
@@ -71,7 +71,7 @@ export default function ProductDetailPage({
               </span>
             </div>
 
-            <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
+            <h1 className="text-3xl md:text-4xl font-bold text-primary mb-2">
               {product.name}
             </h1>
 

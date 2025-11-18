@@ -1,5 +1,5 @@
-import { NextRequest, NextResponse } from 'next/server';
-import nodemailer from 'nodemailer';
+import { NextRequest, NextResponse } from "next/server";
+import nodemailer from "nodemailer";
 
 export async function POST(request: NextRequest) {
   try {
@@ -9,7 +9,7 @@ export async function POST(request: NextRequest) {
     // Create transporter
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
-      port: parseInt(process.env.SMTP_PORT || '587'),
+      port: parseInt(process.env.SMTP_PORT || "587"),
       secure: false, // true for 465, false for other ports
       auth: {
         user: process.env.SMTP_USER,
@@ -26,7 +26,11 @@ export async function POST(request: NextRequest) {
       <p><strong>Email:</strong> ${customerInfo.email}</p>
       <p><strong>Telefon:</strong> ${customerInfo.phone}</p>
       <p><strong>Adresa:</strong> ${customerInfo.address}</p>
-      ${customerInfo.note ? `<p><strong>Napomena:</strong> ${customerInfo.note}</p>` : ''}
+      ${
+        customerInfo.note
+          ? `<p><strong>Napomena:</strong> ${customerInfo.note}</p>`
+          : ""
+      }
 
       <h3>Naručeni proizvodi:</h3>
       <table style="border-collapse: collapse; width: 100%; margin-top: 10px;">
@@ -42,14 +46,20 @@ export async function POST(request: NextRequest) {
     `;
 
     // Build product table rows
-    let productRows = '';
+    let productRows = "";
     cart.forEach((item: { name: string; quantity: number; price: number }) => {
       productRows += `
           <tr>
             <td style="border: 1px solid #ddd; padding: 8px;">${item.name}</td>
-            <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">${item.quantity}</td>
-            <td style="border: 1px solid #ddd; padding: 8px; text-align: right;">${item.price.toLocaleString('sr-RS')} RSD</td>
-            <td style="border: 1px solid #ddd; padding: 8px; text-align: right;">${(item.price * item.quantity).toLocaleString('sr-RS')} RSD</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: center;">${
+              item.quantity
+            }</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: right;">${item.price.toLocaleString(
+              "sr-RS"
+            )} RSD</td>
+            <td style="border: 1px solid #ddd; padding: 8px; text-align: right;">${(
+              item.price * item.quantity
+            ).toLocaleString("sr-RS")} RSD</td>
           </tr>
       `;
     });
@@ -59,7 +69,9 @@ export async function POST(request: NextRequest) {
         </tbody>
       </table>
 
-      <h3 style="margin-top: 20px;">Ukupna cena: ${totalPrice.toLocaleString('sr-RS')} RSD</h3>
+      <h3 style="margin-top: 20px;">Ukupna cena: ${totalPrice.toLocaleString(
+        "sr-RS"
+      )} RSD</h3>
 
       <hr style="margin: 20px 0;">
       <p style="color: #666; font-size: 12px;">Ovu narudžbinu je poslao kupac sa vašeg sajta.</p>
@@ -68,11 +80,13 @@ export async function POST(request: NextRequest) {
     // Create confirmation email for customer
     const customerEmail = `
       <div style="max-width: 600px; margin: 0 auto; font-family: Arial, sans-serif;">
-        <h2 style="color: #7c2d12;">Hvala na narudžbini! 🍷</h2>
+        <h2 style="color: #7c2d12;">Hvala na narudžbini!</h2>
 
         <p>Poštovani/a ${customerInfo.name},</p>
 
-        <p>Primili smo vašu narudžbinu i uskoro ćemo vas kontaktirati na broj telefona <strong>${customerInfo.phone}</strong> radi potvrde.</p>
+        <p>Primili smo vašu narudžbinu i uskoro ćemo vas kontaktirati na broj telefona <strong>${
+          customerInfo.phone
+        }</strong> radi potvrde.</p>
 
         <h3 style="color: #7c2d12;">Detalji narudžbine:</h3>
 
@@ -90,11 +104,19 @@ export async function POST(request: NextRequest) {
           </tbody>
         </table>
 
-        <h3 style="margin-top: 20px; color: #7c2d12;">Ukupna cena: ${totalPrice.toLocaleString('sr-RS')} RSD</h3>
+        <h3 style="margin-top: 20px; color: #7c2d12;">Ukupna cena: ${totalPrice.toLocaleString(
+          "sr-RS"
+        )} RSD</h3>
 
         <div style="margin-top: 20px; padding: 15px; background-color: #fef3c7; border-left: 4px solid #f59e0b;">
-          <p style="margin: 0;"><strong>Adresa dostave:</strong> ${customerInfo.address}</p>
-          ${customerInfo.note ? `<p style="margin: 10px 0 0 0;"><strong>Vaša napomena:</strong> ${customerInfo.note}</p>` : ''}
+          <p style="margin: 0;"><strong>Adresa dostave:</strong> ${
+            customerInfo.address
+          }</p>
+          ${
+            customerInfo.note
+              ? `<p style="margin: 10px 0 0 0;"><strong>Vaša napomena:</strong> ${customerInfo.note}</p>`
+              : ""
+          }
         </div>
 
         <hr style="margin: 30px 0; border: none; border-top: 1px solid #ddd;">
@@ -102,10 +124,7 @@ export async function POST(request: NextRequest) {
         <p style="color: #666; font-size: 14px;">
           Bermet Brka - Vinarija Aleks<br>
           Čuvar tradicije bermeta i lekovitog bilja<br>
-          <br>
-          <strong>Lokacije:</strong><br>
-          📍 Novi Sad: Paje Markovića Adamova 26<br>
-          📍 Sremski Karlovci: Petrovaradinska 5
+      
         </p>
 
         <p style="color: #999; font-size: 12px; margin-top: 20px;">
@@ -126,15 +145,18 @@ export async function POST(request: NextRequest) {
     await transporter.sendMail({
       from: process.env.SMTP_USER,
       to: customerInfo.email,
-      subject: 'Potvrda narudžbine - Bermet Brka',
+      subject: "Potvrda narudžbine - Bermet Brka",
       html: customerEmail,
     });
 
-    return NextResponse.json({ success: true, message: 'Emailovi uspešno poslati!' });
+    return NextResponse.json({
+      success: true,
+      message: "Emailovi uspešno poslati!",
+    });
   } catch (error) {
-    console.error('Error sending email:', error);
+    console.error("Error sending email:", error);
     return NextResponse.json(
-      { success: false, message: 'Greška pri slanju emaila' },
+      { success: false, message: "Greška pri slanju emaila" },
       { status: 500 }
     );
   }

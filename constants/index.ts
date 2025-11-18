@@ -4,15 +4,16 @@ export const navList = [
     link: "/",
   },
   {
-    title: "Bermet",
-    link: "/bermet",
-  },
-  {
     title: "Tinkture",
     link: "/proizvodi",
   },
   {
+    title: "Bermet",
+    link: "/bermet",
+  },
+
+  {
     title: "Kontakt",
-    link: "/kontakt",
+    link: "#kontakt",
   },
 ];

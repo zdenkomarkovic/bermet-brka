@@ -19,16 +19,20 @@ import { toast } from "sonner";
 export default function ProizvodiPage() {
   const { addToCart } = useCart();
 
+  const tinktureProducts = products.filter(
+    (product) => product.category === "Tinkture"
+  );
+
   const handleAddToCart = (product: (typeof products)[0]) => {
     addToCart(product);
     toast.success(`${product.name} dodat u korpu!`);
   };
 
   return (
-    <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen pt-24 pb-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4 md:pt-10">
+          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4 md:pt-10">
             Tinkture Bermet Brka
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -42,7 +46,7 @@ export default function ProizvodiPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {products.map((product) => (
+          {tinktureProducts.map((product) => (
             <Card
               key={product.id}
               className="flex flex-col overflow-hidden hover:shadow-lg transition-shadow"
@@ -96,11 +100,7 @@ export default function ProizvodiPage() {
                   </span>
                   <div className="flex-1 h-px bg-border" />
                 </div>
-                <Button
-                  variant="outline"
-                  className="w-full"
-                  asChild
-                >
+                <Button variant="outline" className="w-full" asChild>
                   <a href="tel:+381606338605">
                     <Phone className="mr-2 h-4 w-4" />
                     Nazovi i poruči

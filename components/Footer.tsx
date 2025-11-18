@@ -6,7 +6,8 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <motion.footer
-      className="bg-muted/50 py-12 mt-20"
+      id="kontakt"
+      className="bg-muted/50 py-12"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.5 }}
@@ -16,14 +17,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold text-primary mb-4">
-              Bermet Brka
-            </h3>
+            <h3 className="text-xl font-bold text-primary mb-4">Bermet Brka</h3>
             <p className="text-sm text-muted-foreground mb-4">
               Vinarija Aleks - Čuvar tradicije bermeta i lekovitog bilja
             </p>
             <p className="text-sm text-muted-foreground">
-              Nenad Ratković &quot;Brka&quot; nastavlja porodičnu tradiciju od 1990. godine
+              Nenad Ratković &quot;Brka&quot; nastavlja porodičnu tradiciju od
+              1990. godine
             </p>
           </div>
 
@@ -53,7 +53,8 @@ export default function Footer() {
         <div className="border-t border-border pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center text-center gap-4 text-sm text-muted-foreground">
             <p>
-              &copy; {new Date().getFullYear()} Bermet Brka - Vinarija Aleks. Sva prava zadržana.
+              &copy; {new Date().getFullYear()} Bermet Brka - Vinarija Aleks.
+              Sva prava zadržana.
             </p>
             <a
               href="https://www.manikamwebsolutions.com/"
@@ -62,7 +63,9 @@ export default function Footer() {
               className="hover:text-primary transition-colors"
             >
               Izrada sajta:{" "}
-              <span className="font-bold text-primary">ManikamWebSolutions</span>
+              <span className="font-bold text-primary">
+                ManikamWebSolutions
+              </span>
             </a>
           </div>
         </div>

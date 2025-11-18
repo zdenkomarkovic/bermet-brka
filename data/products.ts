@@ -1,4 +1,4 @@
-import { Product } from '@/contexts/CartContext';
+import { Product } from "@/contexts/CartContext";
 
 export interface ProductDetails extends Product {
   subtitle?: string;
@@ -9,26 +9,27 @@ export interface ProductDetails extends Product {
 
 export const products: ProductDetails[] = [
   {
-    id: '1',
-    name: 'Tinktura - crni orah',
+    id: "1",
+    name: "Tinktura - crni orah",
     price: 1500,
-    description: 'Crni orah (lat. Juglans nigra) vrsta je cvjetajućeg drveta iz porodice oraha, koja je poreklom iz Severne Amerike. Crni orah obiluje jodom i mineralima, sadrži linoleičnu kiselinu i vitamin C.',
-    image: '/TINKTURA CRNOG ORAHA.jpg',
-    category: 'Tinkture',
-    subtitle: 'Crni orah - čudesno blago u ljusci',
-    usage: '6 do 10 kapi crnog oraha ujutru',
+    description:
+      "Crni orah (lat. Juglans nigra) vrsta je cvjetajućeg drveta iz porodice oraha, koja je poreklom iz Severne Amerike. Crni orah obiluje jodom i mineralima, sadrži linoleičnu kiselinu i vitamin C.",
+    image: "/TINKTURA CRNOG ORAHA.jpg",
+    category: "Tinkture",
+    subtitle: "Crni orah - čudesno blago u ljusci",
+    usage: "6 do 10 kapi crnog oraha ujutru",
     benefits: [
-      'Ubija parazite',
-      'Deluje protiv gljivica i bakterija',
-      'Ima anti-tumorska svojstva',
-      'Poboljšava probavu',
-      'Štiti jetru',
-      'Leči bradavice i hemoroide',
-      'Poboljšava rad štitnjače',
-      'Pomaže kod alergija, psorijaze i artritisa',
-      'Štiti zdravlje srca i krvnih žila',
-      'Poboljšava pamćenje i koncentraciju',
-      'Deluje protiv herpes virusa'
+      "Ubija parazite",
+      "Deluje protiv gljivica i bakterija",
+      "Ima anti-tumorska svojstva",
+      "Poboljšava probavu",
+      "Štiti jetru",
+      "Leči bradavice i hemoroide",
+      "Poboljšava rad štitnjače",
+      "Pomaže kod alergija, psorijaze i artritisa",
+      "Štiti zdravlje srca i krvnih žila",
+      "Poboljšava pamćenje i koncentraciju",
+      "Deluje protiv herpes virusa",
     ],
     fullDescription: `Crni orah - čudesno blago u ljusci
 
@@ -97,29 +98,31 @@ Zbog obilja omega-3 kiselina, pomaže i kod alergija, psorijaze, artritisa, oste
 
 Visok deo joda u crnom orahu utiče pravilno funkcionisanje štitnjače i ubija bakterije.
 
-NAPOMENA: Osobe koje boluju na jetru ili bubrege trebaju pažljivo koristiti crni orah. Trudnice i dojilje trebaju ga izbjegavati.`
+NAPOMENA: Osobe koje boluju na jetru ili bubrege trebaju pažljivo koristiti crni orah. Trudnice i dojilje trebaju ga izbjegavati.`,
   },
   {
-    id: '2',
-    name: 'Tinktura - čagi gljiva',
+    id: "2",
+    name: "Tinktura - čagi gljiva",
     price: 1500,
-    description: 'Čaga je parazitska gljiva koja raste na ruskim brezama. Sadrži preko 200 nutritivnih supstanci uključujući aminokiseline, enzime, minerale, vitamine B1, B2, B5, K, D2, polisaharide, beta glukane i betulinske kiseline.',
-    image: '/caga.jpg',
-    category: 'Tinkture',
-    subtitle: 'Tinktura čagi gljive iz Sibira',
-    usage: '3 x dnevno po 20 kapi pre jela. Vodeno - alkoholni rastvor 42%v/v, zapremine 100 ml.',
+    description:
+      "Čaga je parazitska gljiva koja raste na ruskim brezama. Sadrži preko 200 nutritivnih supstanci uključujući aminokiseline, enzime, minerale, vitamine B1, B2, B5, K, D2, polisaharide, beta glukane i betulinske kiseline.",
+    image: "/caga.jpg",
+    category: "Tinkture",
+    subtitle: "Tinktura čagi gljive iz Sibira",
+    usage:
+      "3 x dnevno po 20 kapi pre jela. Vodeno - alkoholni rastvor 42%v/v, zapremine 100 ml.",
     benefits: [
-      'Moćan antioksidans',
-      'Jača imuni sistem',
-      'Pomaže kod lečenja raka',
-      'Deluje protiv gastritisa i čireva',
-      'Pomaže kod tuberkuloze kostiju',
-      'Smanjuje upale',
-      'Reguliše krvni pritisak',
-      'Poboljšava probavu',
-      'Detoksikuje organizam',
-      'Usporava starenje',
-      'Pomaže kod dijabetesa'
+      "Moćan antioksidans",
+      "Jača imuni sistem",
+      "Pomaže kod lečenja raka",
+      "Deluje protiv gastritisa i čireva",
+      "Pomaže kod tuberkuloze kostiju",
+      "Smanjuje upale",
+      "Reguliše krvni pritisak",
+      "Poboljšava probavu",
+      "Detoksikuje organizam",
+      "Usporava starenje",
+      "Pomaže kod dijabetesa",
     ],
     fullDescription: `O SIBIRSKOJ ČAGI
 
@@ -151,26 +154,28 @@ O gljivi
 
 Čaga, parazitska gljiva, sadrži biološki aktivne materije koje lekovito deluju na organizam. Postala je široko poznata nakon što se u romanu „Odeljenje za rak" Aleksandara Solženjicina glavni junak izlečio od raka uz njenu pomoć...
 
-Čaga (Inonotus Obliquus) – gljiva koja raste na brezi - koristi se u narodnoj medicini mnogih istočnoevropskih zemalja, uključujući i Rusiju, za lečenje gastritisa, čireva, tuberkuloze kostiju, raka…`
+Čaga (Inonotus Obliquus) – gljiva koja raste na brezi - koristi se u narodnoj medicini mnogih istočnoevropskih zemalja, uključujući i Rusiju, za lečenje gastritisa, čireva, tuberkuloze kostiju, raka…`,
   },
   {
-    id: '3',
-    name: 'Kapi - zeleni orah',
+    id: "3",
+    name: "Kapi - zeleni orah",
     price: 1500,
-    description: 'Mladi zeleni orah sadrži belančevine, 65% ulja, fosfor, kalijum, magnezijum, vitamin B, gvožđe i veliku količinu C vitamina. Koristi se za čišćenje krvi, detoksikaciju organizma, čišćenje parazita i jačanje imuniteta.',
-    image: '/BRKIN ZELENI ORAH. mala.jpg',
-    category: 'Kapi',
-    subtitle: 'Alkoholno - vodeni ekstrakt mladog zelenog oraha',
-    usage: 'Deca do 6 godina - 2 x 15 kapi. Deca od 6 do 12 godina - 2 x 20 kapi. Deca starija od 12 godina i odrasli - 3 x 20 kapi. Kapi se mogu piti sa malo vode, čaja ili prirodnog soka. Boca je zapremine 100 ml.',
+    description:
+      "Mladi zeleni orah sadrži belančevine, 65% ulja, fosfor, kalijum, magnezijum, vitamin B, gvožđe i veliku količinu C vitamina. Koristi se za čišćenje krvi, detoksikaciju organizma, čišćenje parazita i jačanje imuniteta.",
+    image: "/BRKIN ZELENI ORAH. mala.jpg",
+    category: "Tinkture",
+    subtitle: "Alkoholno - vodeni ekstrakt mladog zelenog oraha",
+    usage:
+      "Deca do 6 godina - 2 x 15 kapi. Deca od 6 do 12 godina - 2 x 20 kapi. Deca starija od 12 godina i odrasli - 3 x 20 kapi. Kapi se mogu piti sa malo vode, čaja ili prirodnog soka. Boca je zapremine 100 ml.",
     benefits: [
-      'Čišćenje krvi',
-      'Detoksikacija organizma',
-      'Čišćenje parazita',
-      'Jačanje otpornosti organizma',
-      'Bogat vitaminom C',
-      'Sadrži fosfor, kalijum i magnezijum',
-      'Prirodan izvor gvožđa',
-      'Bezbedno za trudnice i dojilje'
+      "Čišćenje krvi",
+      "Detoksikacija organizma",
+      "Čišćenje parazita",
+      "Jačanje otpornosti organizma",
+      "Bogat vitaminom C",
+      "Sadrži fosfor, kalijum i magnezijum",
+      "Prirodan izvor gvožđa",
+      "Bezbedno za trudnice i dojilje",
     ],
     fullDescription: `Kapi od Zelenog oraha
 
@@ -199,26 +204,28 @@ Kontraindikacije nisu poznate. Kapi mogu piti trudnice i dojilje.
 
 NAPOMENA: Kapi od zelenog oraha su prirodni dodaci ishrani i ne mogu se koristiti kao zamjena za ishranu.
 
-Boca je zapremine 100 ml.`
+Boca je zapremine 100 ml.`,
   },
   {
-    id: '4',
-    name: 'Kapi za zdrave vene',
+    id: "4",
+    name: "Kapi za zdrave vene",
     price: 1500,
-    description: 'Brkine kapi za zdrave vene sadrže mešavinu tinktura lekovitih biljaka koje povoljno deluju na zid venskih krvnih sudova čineći ih elastičnijim, smanjuju otok, umanjuju bol i osećaj teških nogu.',
-    image: '/BRKA ZA ZDRAVE VENE,.jpg',
-    category: 'Kapi',
-    subtitle: 'Brkine kapi za zdrave vene',
-    usage: '3 puta na dan popiti pola kašičice ili 25 kapi tinkture. Pakovanje: 100ml',
+    description:
+      "Brkine kapi za zdrave vene sadrže mešavinu tinktura lekovitih biljaka koje povoljno deluju na zid venskih krvnih sudova čineći ih elastičnijim, smanjuju otok, umanjuju bol i osećaj teških nogu.",
+    image: "/BRKA ZA ZDRAVE VENE,.jpg",
+    category: "Tinkture",
+    subtitle: "Brkine kapi za zdrave vene",
+    usage:
+      "3 puta na dan popiti pola kašičice ili 25 kapi tinkture. Pakovanje: 100ml",
     benefits: [
-      'Povoljno deluje na zid venskih krvnih sudova',
-      'Čini vene elastičnijim',
-      'Smanjuje otok',
-      'Umanjuje bol',
-      'Smanjuje osećaj teških nogu',
-      'Pomaže kod proširenih vena na nogama',
-      'Pomaže kod hemoroida',
-      'Pomaže kod tromboflebitisa'
+      "Povoljno deluje na zid venskih krvnih sudova",
+      "Čini vene elastičnijim",
+      "Smanjuje otok",
+      "Umanjuje bol",
+      "Smanjuje osećaj teških nogu",
+      "Pomaže kod proširenih vena na nogama",
+      "Pomaže kod hemoroida",
+      "Pomaže kod tromboflebitisa",
     ],
     fullDescription: `BRKINE KAPI ZA ZDRAVE VENE
 
@@ -265,30 +272,32 @@ Na sobnoj temperaturi, suvom i tamnom mestu, van domašaja dece.
 
 NEŽELJENA DEJSTVA:
 
-Retka pojava alergije i stomačnih problema.`
+Retka pojava alergije i stomačnih problema.`,
   },
   {
-    id: '5',
-    name: 'Tinktura karanfilića',
+    id: "5",
+    name: "Tinktura karanfilića",
     price: 1500,
-    description: 'Karanfilić sadrži eugenol, cariofilen i tanin, koje imaju jaka antimikrobna dejstva. Uništava parazite i njihova jajašca, mikroskopske protozoe, bakterije, viruse i gljivice. Jedina biljka sposobna da uništi jajašca parazita.',
-    image: '/TINKTURA karanfilica.jpg',
-    category: 'Tinkture',
-    subtitle: '(Syzygium aromaticus)',
-    usage: 'Preporučen unos je od 15 do 25 kapi, 3 puta dnevno sa vodom, pre jela. Zapremina boce je 100 ml.',
+    description:
+      "Karanfilić sadrži eugenol, cariofilen i tanin, koje imaju jaka antimikrobna dejstva. Uništava parazite i njihova jajašca, mikroskopske protozoe, bakterije, viruse i gljivice. Jedina biljka sposobna da uništi jajašca parazita.",
+    image: "/TINKTURA karanfilica.jpg",
+    category: "Tinkture",
+    subtitle: "(Syzygium aromaticus)",
+    usage:
+      "Preporučen unos je od 15 do 25 kapi, 3 puta dnevno sa vodom, pre jela. Zapremina boce je 100 ml.",
     benefits: [
-      'Uništava parazite i njihova jajašca',
-      'Jaka antimikrobna dejstva',
-      'Uništava mikroskopske protozoe',
-      'Leči malariju, tuberkulozu, koleru i šugu',
-      'Deluje protiv bakterija, virusa i gljivica',
-      'Uništava Candidu',
-      'Uništava pseudomonas aeruginosa',
-      'Uništava stafilokoke i streptokoke',
-      'Pomaže kod mučnine i bolova u stomaku',
-      'Pospešuje probavu',
-      'Smanjuje holesterol i trigliceride',
-      'Snažan antiseptik i analgetik'
+      "Uništava parazite i njihova jajašca",
+      "Jaka antimikrobna dejstva",
+      "Uništava mikroskopske protozoe",
+      "Leči malariju, tuberkulozu, koleru i šugu",
+      "Deluje protiv bakterija, virusa i gljivica",
+      "Uništava Candidu",
+      "Uništava pseudomonas aeruginosa",
+      "Uništava stafilokoke i streptokoke",
+      "Pomaže kod mučnine i bolova u stomaku",
+      "Pospešuje probavu",
+      "Smanjuje holesterol i trigliceride",
+      "Snažan antiseptik i analgetik",
     ],
     fullDescription: `Tinktura KARANFILIĆA (KLINČIĆA) - (Syzygium aromaticus)
 
@@ -314,30 +323,32 @@ Sastav:
 
 Vodeno-etanolni ekstrakt karanfilića.
 
-NAPOMENA: Trudnicama, dojiljama i deci ispod 12 godina se ne savetuje uzimanje tinkture.`
+NAPOMENA: Trudnicama, dojiljama i deci ispod 12 godina se ne savetuje uzimanje tinkture.`,
   },
   {
-    id: '6',
-    name: 'Tinktura - divlji kesten',
+    id: "6",
+    name: "Tinktura - divlji kesten",
     price: 1500,
-    description: 'Divlji kesten je vrlo dobar prirodni lek za terapiju proširenih vena i hemoroida. Sadrži escin koji blagotvorno deluje na stabilizaciju zidova venskih krvnih sudova i smanjenje otoka i bola. Za spoljnu upotrebu.',
-    image: '/BRKIN DIVLJI KESTEN za spoljnu upotrebu.jpg',
-    category: 'Tinkture',
-    subtitle: 'Divlji kesten za proširene vene',
-    usage: 'Tinkturu koristiti svakodnevno. Blago utrljavati na obolela mesta. Utrljati u kožu svako veče pre spavanja, tokom deset dana. SAMO ZA SPOLJNU UPOTREBU. Zapremina boce je 100 ml.',
+    description:
+      "Divlji kesten je vrlo dobar prirodni lek za terapiju proširenih vena i hemoroida. Sadrži escin koji blagotvorno deluje na stabilizaciju zidova venskih krvnih sudova i smanjenje otoka i bola. Za spoljnu upotrebu.",
+    image: "/BRKIN DIVLJI KESTEN za spoljnu upotrebu.jpg",
+    category: "Tinkture",
+    subtitle: "Divlji kesten za proširene vene",
+    usage:
+      "Tinkturu koristiti svakodnevno. Blago utrljavati na obolela mesta. Utrljati u kožu svako veče pre spavanja, tokom deset dana. SAMO ZA SPOLJNU UPOTREBU. Zapremina boce je 100 ml.",
     benefits: [
-      'Smanjuje simptome kod oboljenja vena',
-      'Pomaže kod proširenih vena',
-      'Umanjuje bol i umor',
-      'Smanjuje otok nogu i edem',
-      'Stabilizuje zidove venskih krvnih sudova',
-      'Umanjuje upalne procese',
-      'Povećava čvrstinu krvnih sudova',
-      'Pojačava otpor venskih kapilara',
-      'Smanjuje opterećenje venskih krvnih sudova',
-      'Oslobađa osećaja težine u nogama',
-      'Umanjuje bolove i grčeve',
-      'Pomaže kod hemoroida'
+      "Smanjuje simptome kod oboljenja vena",
+      "Pomaže kod proširenih vena",
+      "Umanjuje bol i umor",
+      "Smanjuje otok nogu i edem",
+      "Stabilizuje zidove venskih krvnih sudova",
+      "Umanjuje upalne procese",
+      "Povećava čvrstinu krvnih sudova",
+      "Pojačava otpor venskih kapilara",
+      "Smanjuje opterećenje venskih krvnih sudova",
+      "Oslobađa osećaja težine u nogama",
+      "Umanjuje bolove i grčeve",
+      "Pomaže kod hemoroida",
     ],
     fullDescription: `Divlji kesten za proširene vene
 
@@ -361,26 +372,28 @@ Tinkturu utrljati u kožu svako veče pre spavanja, tokom deset dana.
 
 NAPOMENA: SAMO ZA SPOLJNU UPOTREBU. Ne gutati.
 
-Zdravi i veseli bili!`
+Zdravi i veseli bili!`,
   },
   {
-    id: '7',
-    name: 'Tinktura sremuša',
+    id: "7",
+    name: "Tinktura sremuša",
     price: 1500,
-    description: 'Sremuš (medveđi luk) deluje antioksidativno i čisti organizam. Snižava nivoa triglicerida i holesterola u krvi, snižava povišeni krvni pritisak, poboljšava cirkulaciju i blagotvorno deluje na rad srca.',
-    image: '/BRKIN SREMUS0.030 ML.jpg',
-    category: 'Tinkture',
-    subtitle: 'Tinktura sremuša (medveđi luk)',
-    usage: 'Piti 20 kapi 3 puta dnevno pre jela, uz čašu vode. Zapremina boce je 30 ml.',
+    description:
+      "Sremuš (medveđi luk) deluje antioksidativno i čisti organizam. Snižava nivoa triglicerida i holesterola u krvi, snižava povišeni krvni pritisak, poboljšava cirkulaciju i blagotvorno deluje na rad srca.",
+    image: "/BRKIN SREMUS0.030 ML.jpg",
+    category: "Tinkture",
+    subtitle: "Tinktura sremuša (medveđi luk)",
+    usage:
+      "Piti 20 kapi 3 puta dnevno pre jela, uz čašu vode. Zapremina boce je 30 ml.",
     benefits: [
-      'Deluje antioksidativno',
-      'Čisti organizam',
-      'Snižava nivo triglicerida u krvi',
-      'Snižava nivo holesterola u krvi',
-      'Snižava povišeni krvni pritisak',
-      'Poboljšava cirkulaciju',
-      'Blagotvorno deluje na rad srca',
-      'Jača kardiovaskularni sistem'
+      "Deluje antioksidativno",
+      "Čisti organizam",
+      "Snižava nivo triglicerida u krvi",
+      "Snižava nivo holesterola u krvi",
+      "Snižava povišeni krvni pritisak",
+      "Poboljšava cirkulaciju",
+      "Blagotvorno deluje na rad srca",
+      "Jača kardiovaskularni sistem",
     ],
     fullDescription: `Tinktura sremuša (medveđi luk)
 
@@ -404,26 +417,28 @@ Način upotrebe
 
 Piti 20 kapi 3 puta dnevno pre jela, uz čašu vode.
 
-NAPOMENA: Tinktura sremuša je prirodni dodatak ishrani i treba je koristiti u okviru zdrave ishrane i životnog stila.`
+NAPOMENA: Tinktura sremuša je prirodni dodatak ishrani i treba je koristiti u okviru zdrave ishrane i životnog stila.`,
   },
   {
-    id: '8',
-    name: 'Tinktura sremuša 100ml',
+    id: "8",
+    name: "Tinktura sremuša 100ml",
     price: 2500,
-    description: 'Sremuš (medveđi luk) deluje antioksidativno i čisti organizam. Snižava nivoa triglicerida i holesterola u krvi, snižava povišeni krvni pritisak, poboljšava cirkulaciju i blagotvorno deluje na rad srca.',
-    image: '/BRKIN SREMUS  0.100 ML.jpg',
-    category: 'Tinkture',
-    subtitle: 'Tinktura sremuša (medveđi luk)',
-    usage: 'Piti 20 kapi 3 puta dnevno, pre jela, uz čašu vode. Zapremina boce je 100 ml.',
+    description:
+      "Sremuš (medveđi luk) deluje antioksidativno i čisti organizam. Snižava nivoa triglicerida i holesterola u krvi, snižava povišeni krvni pritisak, poboljšava cirkulaciju i blagotvorno deluje na rad srca.",
+    image: "/BRKIN SREMUS  0.100 ML.jpg",
+    category: "Tinkture",
+    subtitle: "Tinktura sremuša (medveđi luk)",
+    usage:
+      "Piti 20 kapi 3 puta dnevno, pre jela, uz čašu vode. Zapremina boce je 100 ml.",
     benefits: [
-      'Deluje antioksidativno',
-      'Čisti organizam',
-      'Snižava nivo triglicerida u krvi',
-      'Snižava nivo holesterola u krvi',
-      'Snižava povišeni krvni pritisak',
-      'Poboljšava cirkulaciju',
-      'Blagotvorno deluje na rad srca',
-      'Jača kardiovaskularni sistem'
+      "Deluje antioksidativno",
+      "Čisti organizam",
+      "Snižava nivo triglicerida u krvi",
+      "Snižava nivo holesterola u krvi",
+      "Snižava povišeni krvni pritisak",
+      "Poboljšava cirkulaciju",
+      "Blagotvorno deluje na rad srca",
+      "Jača kardiovaskularni sistem",
     ],
     fullDescription: `Tinktura sremuša (medveđi luk)
 
@@ -451,26 +466,28 @@ Način čuvanja
 
 Na hladnom i tamnom mestu, van domašaja dece.
 
-NAPOMENA: Preparat ne bi trebalo da koriste deca do 14 godina, trudnice i osobe koje su preosetljive na neki od sastojaka.`
+NAPOMENA: Preparat ne bi trebalo da koriste deca do 14 godina, trudnice i osobe koje su preosetljive na neki od sastojaka.`,
   },
   {
-    id: '9',
-    name: 'Tinktura - mlečika',
+    id: "9",
+    name: "Tinktura - mlečika",
     price: 1500,
-    description: 'Mala mlečika (Epilobium parviflorum) je prirodni citostatik i jedno od najjačih prirodnih sredstava za prostatu. Koristi se za lečenje prostate, naročito kod benignih tumora, bešike, mokraćnih i polnih organa.',
-    image: '/BRKINA MLECIKA ZA PROSTATU.jpg',
-    category: 'Tinkture',
-    subtitle: 'Epilobium parviflorum',
-    usage: '3 puta dnevno po 20 kapi rastvoriti u mlaku vodu, čaj ili mleko. Boca je zapremine 100 ml.',
+    description:
+      "Mala mlečika (Epilobium parviflorum) je prirodni citostatik i jedno od najjačih prirodnih sredstava za prostatu. Koristi se za lečenje prostate, naročito kod benignih tumora, bešike, mokraćnih i polnih organa.",
+    image: "/BRKINA MLECIKA ZA PROSTATU.jpg",
+    category: "Tinkture",
+    subtitle: "Epilobium parviflorum",
+    usage:
+      "3 puta dnevno po 20 kapi rastvoriti u mlaku vodu, čaj ili mleko. Boca je zapremine 100 ml.",
     benefits: [
-      'Prirodni citostatik',
-      'Jedno od najjačih prirodnih sredstava za prostatu',
-      'Antiurolitik',
-      'Pomaže kod benignih tumora prostate',
-      'Pomaže kod oboljenja bešike',
-      'Pomaže kod oboljenja mokraćnih organa',
-      'Pomaže kod oboljenja polnih organa',
-      'Sadrži lecitine i flavonoide'
+      "Prirodni citostatik",
+      "Jedno od najjačih prirodnih sredstava za prostatu",
+      "Antiurolitik",
+      "Pomaže kod benignih tumora prostate",
+      "Pomaže kod oboljenja bešike",
+      "Pomaže kod oboljenja mokraćnih organa",
+      "Pomaže kod oboljenja polnih organa",
+      "Sadrži lecitine i flavonoide",
     ],
     fullDescription: `Mala mlečika - Epilobium parviflorum
 
@@ -494,31 +511,33 @@ Upotreba tinkture
 
 3 puta dnevno po 20 kapi rastvoriti u mlaku vodu, čaj ili mleko.
 
-UPOZORENJE: Zbog nedostatka raspoloživih naučnih dokaza, tinktura male mlečike se ne preporučuje u trudnoći i tokom dojenja.`
+UPOZORENJE: Zbog nedostatka raspoloživih naučnih dokaza, tinktura male mlečike se ne preporučuje u trudnoći i tokom dojenja.`,
   },
   {
-    id: '10',
-    name: 'Tinktura - ruzmarin',
+    id: "10",
+    name: "Tinktura - ruzmarin",
     price: 1500,
-    description: 'Ruzmarin poboljšava cirkulaciju, normalizuje krvni pritisak i umiruje srce. Pospešuje mokrenje, poboljšava pamćenje i koristi se kod živčanih bolova, slabosti srca i opšte telesne slabosti.',
-    image: '/BRKIN RUZMARIN  100.jpg',
-    category: 'Tinkture',
-    subtitle: 'Poboljšava cirkulaciju, normalizuje pritisak/tlak, umiruje srce',
-    usage: 'Uzima se 5-10 kapi dnevno na kocki šećera. Boca je zapremine 100 ml.',
+    description:
+      "Ruzmarin poboljšava cirkulaciju, normalizuje krvni pritisak i umiruje srce. Pospešuje mokrenje, poboljšava pamćenje i koristi se kod živčanih bolova, slabosti srca i opšte telesne slabosti.",
+    image: "/BRKIN RUZMARIN  100.jpg",
+    category: "Tinkture",
+    subtitle: "Poboljšava cirkulaciju, normalizuje pritisak/tlak, umiruje srce",
+    usage:
+      "Uzima se 5-10 kapi dnevno na kocki šećera. Boca je zapremine 100 ml.",
     benefits: [
-      'Poboljšava cirkulaciju',
-      'Normalizuje krvni pritisak',
-      'Umiruje srce',
-      'Pospešuje mokrenje',
-      'Koristi se kod vodene bolesti',
-      'Pomaže kod reume i gihta',
-      'Pomaže kod upale zglobova',
-      'Poboljšava pamćenje',
-      'Koristi se kod živčanih bolova',
-      'Pomaže kod slabosti srca',
-      'Pomaže kod opšte telesne slabosti',
-      'Pojačava koren kose i poboljšava rast',
-      'Uklanja bradavice (prema iskustvima korisnika)'
+      "Poboljšava cirkulaciju",
+      "Normalizuje krvni pritisak",
+      "Umiruje srce",
+      "Pospešuje mokrenje",
+      "Koristi se kod vodene bolesti",
+      "Pomaže kod reume i gihta",
+      "Pomaže kod upale zglobova",
+      "Poboljšava pamćenje",
+      "Koristi se kod živčanih bolova",
+      "Pomaže kod slabosti srca",
+      "Pomaže kod opšte telesne slabosti",
+      "Pojačava koren kose i poboljšava rast",
+      "Uklanja bradavice (prema iskustvima korisnika)",
     ],
     fullDescription: `TINKTURA RUZMARINA
 
@@ -542,29 +561,30 @@ Način upotrebe
 
 Uzima se 5-10 kapi dnevno na kocki šećera.
 
-NAPOMENA: Tinktura ruzmarina je prirodni dodatak ishrani i treba je koristiti u okviru zdrave ishrane i životnog stila.`
+NAPOMENA: Tinktura ruzmarina je prirodni dodatak ishrani i treba je koristiti u okviru zdrave ishrane i životnog stila.`,
   },
   {
-    id: '11',
-    name: 'Tinktura - maslačak',
+    id: "11",
+    name: "Tinktura - maslačak",
     price: 1500,
-    description: 'Maslačak se koristi kod visokog krvnog pritiska, "trovanja krvi", reumatoidnog artritisa, plućnih tegoba, žutice, bolesti bubrega i kožnih tegoba. Odlično deluje na čišćenje jetre, žuči i bubrega.',
-    image: '/BRKIN MASLACAK.jpg',
-    category: 'Tinkture',
-    subtitle: 'Delovi biljke koji se koriste',
-    usage: '3 puta 15 kapi dnevno. Boca je zapremine 100 ml.',
+    description:
+      'Maslačak se koristi kod visokog krvnog pritiska, "trovanja krvi", reumatoidnog artritisa, plućnih tegoba, žutice, bolesti bubrega i kožnih tegoba. Odlično deluje na čišćenje jetre, žuči i bubrega.',
+    image: "/BRKIN MASLACAK.jpg",
+    category: "Tinkture",
+    subtitle: "Delovi biljke koji se koriste",
+    usage: "3 puta 15 kapi dnevno. Boca je zapremine 100 ml.",
     benefits: [
-      'Pomaže kod visokog krvnog pritiska',
-      'Čisti krv',
-      'Pomaže kod reumatoidnog artritisa',
-      'Pomaže kod plućnih tegoba',
-      'Pomaže kod žutice',
-      'Pomaže kod bolesti bubrega',
-      'Pomaže kod kožnih tegoba',
-      'Čišćenje jetre',
-      'Poboljšava rad žuči',
-      'Poboljšava rad bubrega',
-      'Deluje na organe za izlučivanje'
+      "Pomaže kod visokog krvnog pritiska",
+      "Čisti krv",
+      "Pomaže kod reumatoidnog artritisa",
+      "Pomaže kod plućnih tegoba",
+      "Pomaže kod žutice",
+      "Pomaže kod bolesti bubrega",
+      "Pomaže kod kožnih tegoba",
+      "Čišćenje jetre",
+      "Poboljšava rad žuči",
+      "Poboljšava rad bubrega",
+      "Deluje na organe za izlučivanje",
     ],
     fullDescription: `Tinktura od Maslačka
 
@@ -603,45 +623,46 @@ U slučaju boli, mučnine i drugih simptoma, treba prestati piti pripravke masla
 
 Maslačak trebaju izbjegavati osobe alergične na cijelu obitelj Asteraceae, kojoj maslačak i pripada.
 
-NAPOMENA: Konsultujte se sa stručnjakom pre upotrebe, posebno ako imate zdravstvene probleme ili uzimate lekove.`
+NAPOMENA: Konsultujte se sa stručnjakom pre upotrebe, posebno ako imate zdravstvene probleme ili uzimate lekove.`,
   },
   {
-    id: '12',
-    name: 'Tinktura - cimet',
+    id: "12",
+    name: "Tinktura - cimet",
     price: 1500,
-    description: 'Cimet (Cinnamomum zeylanicum) povećava aktivnost inzulina i snižava nivo šećera u krvi. Smanjuje loš kolesterol i trigliceride, pojačava aktivnost mozga, pročišćava krv i pomaže kod dijabetesa tipa 2.',
-    image: '/Cinnamonessentialoil2.jpg',
-    category: 'Tinkture',
-    subtitle: '(Cinnamomum zeylanicum)',
-    usage: '3 x 20 kapi na dan. Tinktura cimeta, zapremine 30 ml.',
+    description:
+      "Cimet (Cinnamomum zeylanicum) povećava aktivnost inzulina i snižava nivo šećera u krvi. Smanjuje loš kolesterol i trigliceride, pojačava aktivnost mozga, pročišćava krv i pomaže kod dijabetesa tipa 2.",
+    image: "/Cinnamonessentialoil2.jpg",
+    category: "Tinkture",
+    subtitle: "(Cinnamomum zeylanicum)",
+    usage: "3 x 20 kapi na dan. Tinktura cimeta, zapremine 30 ml.",
     benefits: [
-      'Povećava aktivnost inzulina',
-      'Snižava nivo šećera u krvi',
-      'Snižava nivo lošeg kolesterola',
-      'Snižava nivo triglicerida u krvi',
-      'Pojačava aktivnost mozga',
-      'Pomaže u uklanjanju nervne napetosti',
-      'Pomaže kod gubitka pamćenja',
-      'Pročišćava krv',
-      'Poboljšava cirkulaciju krvi',
-      'Smanjuje šanse za srčani udar',
-      'Antifungalno, antibakterijsko, antivirusno i antiseptičko',
-      'Pomaže u uništavanju mikroba u žučnom mehuru',
-      'Zaustavlja krvarenje i olakšava ozdravljenje',
-      'Deluje protuupalno',
-      'Ublažava bolove i ukočenost mišića i zglobova',
-      'Preporučuje se za artritis',
-      'Pomaže kod glavobolje zbog hladnoće',
-      'Kontroliše šećer u krvi kod dijabetesa tipa 2',
-      'Pruža zaštitu od bolesti srca',
-      'Pomaže kod koronarne arterije',
-      'Poboljšava zdravlje debelog crijeva',
-      'Uklanja loš zadah',
-      'Pomaže kod probavnih smetnji',
-      'Pomaže kod prehlade, gripe i upale grla',
-      'Pomaže kod menstrualnih grčeva',
-      'Prirodni diuretik',
-      'Afrodizijak'
+      "Povećava aktivnost inzulina",
+      "Snižava nivo šećera u krvi",
+      "Snižava nivo lošeg kolesterola",
+      "Snižava nivo triglicerida u krvi",
+      "Pojačava aktivnost mozga",
+      "Pomaže u uklanjanju nervne napetosti",
+      "Pomaže kod gubitka pamćenja",
+      "Pročišćava krv",
+      "Poboljšava cirkulaciju krvi",
+      "Smanjuje šanse za srčani udar",
+      "Antifungalno, antibakterijsko, antivirusno i antiseptičko",
+      "Pomaže u uništavanju mikroba u žučnom mehuru",
+      "Zaustavlja krvarenje i olakšava ozdravljenje",
+      "Deluje protuupalno",
+      "Ublažava bolove i ukočenost mišića i zglobova",
+      "Preporučuje se za artritis",
+      "Pomaže kod glavobolje zbog hladnoće",
+      "Kontroliše šećer u krvi kod dijabetesa tipa 2",
+      "Pruža zaštitu od bolesti srca",
+      "Pomaže kod koronarne arterije",
+      "Poboljšava zdravlje debelog crijeva",
+      "Uklanja loš zadah",
+      "Pomaže kod probavnih smetnji",
+      "Pomaže kod prehlade, gripe i upale grla",
+      "Pomaže kod menstrualnih grčeva",
+      "Prirodni diuretik",
+      "Afrodizijak",
     ],
     fullDescription: `Tinktura od Cimeta (Cinnamomum zeylanicum)
 
@@ -721,40 +742,42 @@ Upotreba
 
 3 x 20 kapi na dan.
 
-NAPOMENA: Konzultujte se sa stručnjakom pre upotrebe, posebno ako imate dijabetes i koristite insulin ili druge lekove.`
+NAPOMENA: Konzultujte se sa stručnjakom pre upotrebe, posebno ako imate dijabetes i koristite insulin ili druge lekove.`,
   },
   {
-    id: '13',
-    name: 'Tinktura - đumbir',
+    id: "13",
+    name: "Tinktura - đumbir",
     price: 600,
-    description: 'Tinktura od đumbira veoma je korisna kod prehlada, posebno kod virusnih infekcija. Zahvaljujući tinkturi od đumbira upalni procesi u organizmu brzo nestaju. Ova tinktura je odlično prirodno sredstvo za glavobolju, zubobolju, bolove u zglobovima i kod osteohondroza.',
-    image: '/ginger.jpg',
-    category: 'Tinkture',
-    subtitle: 'Vrlo je dobra za lečenje upale grla, krajnika, angine',
-    usage: 'Tinkturu možete koristiti 3 puta dnevno po 20 kapi, kašikica meda i limun. Na taj način ćete obradovati organizam.',
+    description:
+      "Tinktura od đumbira veoma je korisna kod prehlada, posebno kod virusnih infekcija. Zahvaljujući tinkturi od đumbira upalni procesi u organizmu brzo nestaju. Ova tinktura je odlično prirodno sredstvo za glavobolju, zubobolju, bolove u zglobovima i kod osteohondroza.",
+    image: "/ginger.jpg",
+    category: "Tinkture",
+    subtitle: "Vrlo je dobra za lečenje upale grla, krajnika, angine",
+    usage:
+      "Tinkturu možete koristiti 3 puta dnevno po 20 kapi, kašikica meda i limun. Na taj način ćete obradovati organizam.",
     benefits: [
-      'Korisna kod prehlada i virusnih infekcija',
-      'Brzo smanjuje upalne procese u organizmu',
-      'Pomaže kod glavobolje',
-      'Pomaže kod zubobolje',
-      'Ublažava bolove u zglobovima',
-      'Pomaže kod osteohondroza',
-      'Lečenje upale grla, krajnika, angine',
-      'Poboljšava vid',
-      'Povećava seksualnu aktivnost kod žena i muškaraca',
-      'Pomaže u mršavljenju',
-      'Smanjuje apetit',
-      'Tonizira organizam',
-      'Čisti organizam od toksina',
-      'Čisti krv',
-      'Poboljšava varenje',
-      'Oslobađa suvišnih masnih naslaga',
-      'Čisti jetru',
-      'Pomaže kod alkoholizma',
-      'Pomaže nakon hemioterapije',
-      'Poboljšava ten kože',
-      'Vraća sjaj u očima',
-      'Poboljšava raspoloženje'
+      "Korisna kod prehlada i virusnih infekcija",
+      "Brzo smanjuje upalne procese u organizmu",
+      "Pomaže kod glavobolje",
+      "Pomaže kod zubobolje",
+      "Ublažava bolove u zglobovima",
+      "Pomaže kod osteohondroza",
+      "Lečenje upale grla, krajnika, angine",
+      "Poboljšava vid",
+      "Povećava seksualnu aktivnost kod žena i muškaraca",
+      "Pomaže u mršavljenju",
+      "Smanjuje apetit",
+      "Tonizira organizam",
+      "Čisti organizam od toksina",
+      "Čisti krv",
+      "Poboljšava varenje",
+      "Oslobađa suvišnih masnih naslaga",
+      "Čisti jetru",
+      "Pomaže kod alkoholizma",
+      "Pomaže nakon hemioterapije",
+      "Poboljšava ten kože",
+      "Vraća sjaj u očima",
+      "Poboljšava raspoloženje",
     ],
     fullDescription: `Tinktura od đumbira - drevni prirodni lijek
 
@@ -794,47 +817,48 @@ Boca je zapremine 100 ml.
 
 Upotreba
 
-Tinkturu možete koristiti 3 puta dnevno po 20 kapi, kašikica meda i limun. Na taj način ćete obradovati organizam.`
+Tinkturu možete koristiti 3 puta dnevno po 20 kapi, kašikica meda i limun. Na taj način ćete obradovati organizam.`,
   },
   {
-    id: '14',
-    name: 'Tinktura - kopriva',
+    id: "14",
+    name: "Tinktura - kopriva",
     price: 600,
-    description: 'Tinktura od koprive poboljšava rad probavnog sustava. Sadrži kalcij, kalij, željezo, fosfor, vitamine C i A i organske kiseline. Kopriva je biljka najbogatija željezom. Snažno utječe na organizam i za nju se s pravom može reći da djeluje na cijeli organizam.',
-    image: '/BRKINA KOPRIVA.jpg',
-    category: 'Tinkture',
-    subtitle: '(Urtica dioica), Boca je zapremine 100 ml',
-    usage: 'Piti 3 x dnevno po 15 kapi u deci vode, soka ili čaja.',
+    description:
+      "Tinktura od koprive poboljšava rad probavnog sustava. Sadrži kalcij, kalij, željezo, fosfor, vitamine C i A i organske kiseline. Kopriva je biljka najbogatija željezom. Snažno utječe na organizam i za nju se s pravom može reći da djeluje na cijeli organizam.",
+    image: "/BRKINA KOPRIVA.jpg",
+    category: "Tinkture",
+    subtitle: "(Urtica dioica), Boca je zapremine 100 ml",
+    usage: "Piti 3 x dnevno po 15 kapi u deci vode, soka ili čaja.",
     benefits: [
-      'Izrazito dobra protiv opadanja kose',
-      'Prokrvljuje vlasište kose',
-      'Kontrolira lučenje sebuma vlasišta',
-      'Ojačava korijen kose',
-      'Sprječava opadanje kose',
-      'Potiče mladu kosu na rast',
-      'Poboljšava rad probavnog sustava',
-      'Koristi se kod anemije',
-      'Utiče na porast crvenih krvnih zrnaca',
-      'Ima diuretski efekat',
-      'Pomaže kod bolesti urinarnog sistema',
-      'Pomaže kod upale bubrega i mokraćnih kanala',
-      'Pomaže kod kamena u bubregu',
-      'Pomaže kod uvećane prostate',
-      'Omogućava pojačano izlučivanje mokraćne kiseline',
-      'Koristi se kod gihta',
-      'Pomaže kod krvarenja',
-      'Pomaže kod čira na želudcu i duodenumu',
-      'Pomaže kod pojačanog menstrualnog krvarenja',
-      'Pomaže kod hemoroida',
-      'Deluje analgetski (protiv bolova)',
-      'Savetuje se kod bolova u kičmi i zglobovima',
-      'Ima antibakterijsko dejstvo',
-      'Ima antivirusno dejstvo',
-      'Koristi se kod različitih upalnih procesa',
-      'Jedan od najboljih čuvara funkcije jetre',
-      'Pomaže u regulaciji nivoa šećera u krvi',
-      'Stabiliše mastocite',
-      'Sprečava oslobađanje histamina kod alergijskih reakcija'
+      "Izrazito dobra protiv opadanja kose",
+      "Prokrvljuje vlasište kose",
+      "Kontrolira lučenje sebuma vlasišta",
+      "Ojačava korijen kose",
+      "Sprječava opadanje kose",
+      "Potiče mladu kosu na rast",
+      "Poboljšava rad probavnog sustava",
+      "Koristi se kod anemije",
+      "Utiče na porast crvenih krvnih zrnaca",
+      "Ima diuretski efekat",
+      "Pomaže kod bolesti urinarnog sistema",
+      "Pomaže kod upale bubrega i mokraćnih kanala",
+      "Pomaže kod kamena u bubregu",
+      "Pomaže kod uvećane prostate",
+      "Omogućava pojačano izlučivanje mokraćne kiseline",
+      "Koristi se kod gihta",
+      "Pomaže kod krvarenja",
+      "Pomaže kod čira na želudcu i duodenumu",
+      "Pomaže kod pojačanog menstrualnog krvarenja",
+      "Pomaže kod hemoroida",
+      "Deluje analgetski (protiv bolova)",
+      "Savetuje se kod bolova u kičmi i zglobovima",
+      "Ima antibakterijsko dejstvo",
+      "Ima antivirusno dejstvo",
+      "Koristi se kod različitih upalnih procesa",
+      "Jedan od najboljih čuvara funkcije jetre",
+      "Pomaže u regulaciji nivoa šećera u krvi",
+      "Stabiliše mastocite",
+      "Sprečava oslobađanje histamina kod alergijskih reakcija",
     ],
     fullDescription: `TINKTURA OD KOPRIVE (Urtica dioica)
 
@@ -868,28 +892,30 @@ Kopriva je jedan od najboljih čuvara funkcije jetre.
 
 Svojim uticajem na gušteraču pomaže u regulaciji nivoa šećera u krvi.
 
-Zahvaljujući prisustvu kvercetina, kopriva stabiliše mastocite (ćelije odgovorne za alergijske simptome) i sprečava oslobađanje histamina kod alergijskih reakcija.`
+Zahvaljujući prisustvu kvercetina, kopriva stabiliše mastocite (ćelije odgovorne za alergijske simptome) i sprečava oslobađanje histamina kod alergijskih reakcija.`,
   },
   {
-    id: '15',
-    name: 'Tinktura - protiv holesterola',
+    id: "15",
+    name: "Tinktura - protiv holesterola",
     price: 1500,
-    description: 'Biljne kapi za holesterol i trigliceride i visok nivo masti u krvi. Sadrži artičoku, kantarion, petrovac, neven, nana list, hajdučku travu i koren maslačka. Pomaže kod povećanog nivoa triglicerida koji ukazuje na loše funkcionisanje jetre i pankreasa.',
-    image: '/TINKTURA povišenog holesterola_0x90.jpg',
-    category: 'Tinkture',
-    subtitle: 'TINKTURA protiv povišenog holesterola i triglicerida',
-    usage: 'Dnevno, do 3 x po 10 kapi u čaj ili na kašičici meda. Boca je zapremine 100 ml.',
+    description:
+      "Biljne kapi za holesterol i trigliceride i visok nivo masti u krvi. Sadrži artičoku, kantarion, petrovac, neven, nana list, hajdučku travu i koren maslačka. Pomaže kod povećanog nivoa triglicerida koji ukazuje na loše funkcionisanje jetre i pankreasa.",
+    image: "/TINKTURA povišenog holesterola_0x90.jpg",
+    category: "Tinkture",
+    subtitle: "TINKTURA protiv povišenog holesterola i triglicerida",
+    usage:
+      "Dnevno, do 3 x po 10 kapi u čaj ili na kašičici meda. Boca je zapremine 100 ml.",
     benefits: [
-      'Smanjivanje triglicerida u krvi',
-      'Smanjivanje holesterola u krvi',
-      'Jačanje krvne slike',
-      'Povećanja gvožđa u krvi',
-      'Poboljšava funkcionisanje jetre',
-      'Poboljšava funkcionisanje pankreasa',
-      'Sprečava zapušavanje arterija štetnim naslagama',
-      'Smanjuje LDL holesterol',
-      'Sprečava nagomilavanje naslaga',
-      'Pomaže u prevenciji srčanih oboljenja'
+      "Smanjivanje triglicerida u krvi",
+      "Smanjivanje holesterola u krvi",
+      "Jačanje krvne slike",
+      "Povećanja gvožđa u krvi",
+      "Poboljšava funkcionisanje jetre",
+      "Poboljšava funkcionisanje pankreasa",
+      "Sprečava zapušavanje arterija štetnim naslagama",
+      "Smanjuje LDL holesterol",
+      "Sprečava nagomilavanje naslaga",
+      "Pomaže u prevenciji srčanih oboljenja",
     ],
     fullDescription: `TINKTURA protiv povišenog holesterola i triglicerida
 
@@ -914,28 +940,30 @@ Preporučuje se za:
 
 Primena
 
-Dnevno, do 3 x po 10 kapi u čaj ili na kašičici meda.`
+Dnevno, do 3 x po 10 kapi u čaj ili na kašičici meda.`,
   },
   {
-    id: '16',
-    name: 'Tinktura - sikavica',
+    id: "16",
+    name: "Tinktura - sikavica",
     price: 1500,
-    description: 'Sikavica biljka (Silybum Marianum) je jedan od najboljih regeneratora jetre kojeg nam je priroda dala. Ona ujedno i štiti ovaj organ. Preporučuje se osobama sklonim alkoholizmu i masnoj hrani, i dokazano pomaže kod mamurluka.',
-    image: '/TINKTURA  SIKAVICE.jpg',
-    category: 'Tinkture',
-    subtitle: 'Silybum Marianum, jedan od najboljih regeneratora jetre',
-    usage: '4 do 5 puta dnevno po 20 kapi sa vodom, čajem. Kad koristite Sikavicu nemojte konzumirati alkohol. Boca je zapremine 100 ml.',
+    description:
+      "Sikavica biljka (Silybum Marianum) je jedan od najboljih regeneratora jetre kojeg nam je priroda dala. Ona ujedno i štiti ovaj organ. Preporučuje se osobama sklonim alkoholizmu i masnoj hrani, i dokazano pomaže kod mamurluka.",
+    image: "/TINKTURA  SIKAVICE.jpg",
+    category: "Tinkture",
+    subtitle: "Silybum Marianum, jedan od najboljih regeneratora jetre",
+    usage:
+      "4 do 5 puta dnevno po 20 kapi sa vodom, čajem. Kad koristite Sikavicu nemojte konzumirati alkohol. Boca je zapremine 100 ml.",
     benefits: [
-      'Najbolji prirodni regenerator jetre',
-      'Štiti jetru',
-      'Preporučuje se osobama sklonim alkoholizmu',
-      'Preporučuje se osobama sklonim masnoj hrani',
-      'Pomaže kod mamurluka',
-      'Jača organizam',
-      'Regulira probavu',
-      'Pomaže kod zatvora',
-      'Zaustavlja krvarenja',
-      'Jača krvne žile'
+      "Najbolji prirodni regenerator jetre",
+      "Štiti jetru",
+      "Preporučuje se osobama sklonim alkoholizmu",
+      "Preporučuje se osobama sklonim masnoj hrani",
+      "Pomaže kod mamurluka",
+      "Jača organizam",
+      "Regulira probavu",
+      "Pomaže kod zatvora",
+      "Zaustavlja krvarenja",
+      "Jača krvne žile",
     ],
     fullDescription: `SIKAVICA BILJKA JE NAJBOLJI PRIRODNI REGENERATOR JETRE
 
@@ -955,28 +983,30 @@ Upotreba
 
 Kad koristite Sikavicu nemojte konzumirati alkohol.
 
-Boca je zapremine 100 ml.`
+Boca je zapremine 100 ml.`,
   },
   {
-    id: '17',
-    name: 'Tinktura za cirkulaciju',
+    id: "17",
+    name: "Tinktura za cirkulaciju",
     price: 1500,
-    description: 'Tinktura za cirkulaciju poboljšava cirkulaciju i rad srca, otklanja bol, zaustavlja krvarenje, vrlo je efikasna protiv infekcija. Ljuta aleva paprika je neprikosnovena u poboljšavanju protoka i strujenja krvi kroz organizam, u kombinaciji sa belim lukom ima još efektivnije dejstvo.',
-    image: '/BRKINA TINKTURA ZA CIRKULACIJU  2 CVET.jpg',
-    category: 'Tinkture',
-    subtitle: 'Tinktura za cirkulaciju',
-    usage: 'Jedna čajna kašičica tri puta dnevno. Kod težih oboljenja 60 kapi 6-8 puta dnevno. Najčešće se pije 60 kapi pet puta na dan. Može se piti sa vodom, sokom ili mlakim čajem. Promuckati pre upotrebe. Boca je zapremine 100 ml.',
+    description:
+      "Tinktura za cirkulaciju poboljšava cirkulaciju i rad srca, otklanja bol, zaustavlja krvarenje, vrlo je efikasna protiv infekcija. Ljuta aleva paprika je neprikosnovena u poboljšavanju protoka i strujenja krvi kroz organizam, u kombinaciji sa belim lukom ima još efektivnije dejstvo.",
+    image: "/BRKINA TINKTURA ZA CIRKULACIJU  2 CVET.jpg",
+    category: "Tinkture",
+    subtitle: "Tinktura za cirkulaciju",
+    usage:
+      "Jedna čajna kašičica tri puta dnevno. Kod težih oboljenja 60 kapi 6-8 puta dnevno. Najčešće se pije 60 kapi pet puta na dan. Može se piti sa vodom, sokom ili mlakim čajem. Promuckati pre upotrebe. Boca je zapremine 100 ml.",
     benefits: [
-      'Poboljšava cirkulaciju',
-      'Poboljšava rad srca',
-      'Otklanja bol',
-      'Zaustavlja krvarenje',
-      'Vrlo efikasna protiv infekcija',
-      'Poboljšava protok i strujenje krvi kroz organizam',
-      'Sadrži ljutu alevu papriku',
-      'Sadrži beli luk za sinergijsko dejstvo',
-      'Nema nuspojave i neželjene efekte',
-      'Potpuno prirodan ekstrahovano bilje'
+      "Poboljšava cirkulaciju",
+      "Poboljšava rad srca",
+      "Otklanja bol",
+      "Zaustavlja krvarenje",
+      "Vrlo efikasna protiv infekcija",
+      "Poboljšava protok i strujenje krvi kroz organizam",
+      "Sadrži ljutu alevu papriku",
+      "Sadrži beli luk za sinergijsko dejstvo",
+      "Nema nuspojave i neželjene efekte",
+      "Potpuno prirodan ekstrahovano bilje",
     ],
     fullDescription: `Tinktura za cirkulaciju
 
@@ -998,64 +1028,67 @@ Ljuta aleva paprika je neprikosnovena u poboljšavanju protoka i strujenja krvi 
 
 Na sobnoj temperaturi, na tamnom mestu, van domašaja dece.
 
-Boca je zapremine 100 ml.`
+Boca je zapremine 100 ml.`,
   },
   {
-    id: '18',
-    name: 'Tinktura za menopauzu',
+    id: "18",
+    name: "Tinktura za menopauzu",
     price: 1500,
-    description: 'Tinktura za menopauzu pomaže u ublažavanju simptoma menopauze i hormonalnoj ravnoteži.',
-    image: '/TINKTURA MENOPAUZA.jpg',
-    category: 'Tinkture'
+    description:
+      "Tinktura za menopauzu pomaže u ublažavanju simptoma menopauze i hormonalnoj ravnoteži.",
+    image: "/TINKTURA MENOPAUZA.jpg",
+    category: "Tinkture",
   },
   {
-    id: '19',
-    name: 'Brka za dobar sex',
+    id: "19",
+    name: "Brka za dobar sex",
     price: 1500,
-    description: 'Tinktura za dobar seks - prirodno rešenje za poboljšanje seksualne funkcije i vitalnosti.',
-    image: '/BRKA ZA DOBAR SEX etiketa.jpg',
-    category: 'Tinkture',
-    subtitle: 'Tinktura za dobar seks'
+    description:
+      "Tinktura za dobar seks - prirodno rešenje za poboljšanje seksualne funkcije i vitalnosti.",
+    image: "/BRKA ZA DOBAR  SEX  etiketa.jpg",
+    category: "Tinkture",
+    subtitle: "Tinktura za dobar seks",
   },
   {
-    id: '20',
-    name: 'Tinktura - glog',
+    id: "20",
+    name: "Tinktura - glog",
     price: 1500,
-    description: 'Glog je najlekovitija biljka na svetu, snažan lek za srce. Uspešno sprečava infarkt, pomaže kod visokog pritiska, zaštićuje od povišenog holesterola i ateroskleroze. Ima široku korist za održavanje zdravlja krvnih sudova, kod slabljenja srčanog mišića i srčane aritmije.',
-    image: '/TINKTURA GLOGA.jpg',
-    category: 'Tinkture',
-    subtitle: 'Najlekovitija biljka na svetu, Boca je zapremine 100 ml.',
-    usage: '3 do 4 puta dnevno po 15 kapi. Boca je zapremine 100 ml.',
+    description:
+      "Glog je najlekovitija biljka na svetu, snažan lek za srce. Uspešno sprečava infarkt, pomaže kod visokog pritiska, zaštićuje od povišenog holesterola i ateroskleroze. Ima široku korist za održavanje zdravlja krvnih sudova, kod slabljenja srčanog mišića i srčane aritmije.",
+    image: "/TINKTURA  GLOGA.jpg",
+    category: "Tinkture",
+    subtitle: "Najlekovitija biljka na svetu, Boca je zapremine 100 ml.",
+    usage: "3 do 4 puta dnevno po 15 kapi. Boca je zapremine 100 ml.",
     benefits: [
-      'Snažan lek za srce',
-      'Uspešno sprečava infarkt',
-      'Pomaže kod visokog pritiska',
-      'Zaštita od povišenog holesterola',
-      'Zaštita od ateroskleroze',
-      'Održavanje zdravlja krvnih sudova',
-      'Pomaže kod slabljenja srčanog mišića',
-      'Pomaže kod srčane aritmije',
-      'Povećava cirkulaciju krvnih sudova',
-      'Preporučuje se nakon srčanog udara',
-      'Jača smirujući učinak',
-      'Pomaže kod umora i manjka energije',
-      'Pomaže kod lošeg sna',
-      'Pomaže kod teškog disanja',
-      'Pomaže kod vrtoglavica',
-      'Pomaže kod lupanja srca',
-      'Pomaže kod nervoze',
-      'Pomaže kod šuma u ušima',
-      'Vredan u menopauzi',
-      'Pomaže kod mršavljenja',
-      'Potstiče izbacivanje viška vode',
-      'Pomaže kod celulita i edema',
-      'Pomaže kod bolesti zglobova',
-      'Jača vezivno tkivo na zglobovima',
-      'Antiupalno delovanje',
-      'Kod ulcerativnog kolitisa',
-      'Kod probavnih problema',
-      'Štiti od slobodnih radikala',
-      'Sprečava arteriosklerozu'
+      "Snažan lek za srce",
+      "Uspešno sprečava infarkt",
+      "Pomaže kod visokog pritiska",
+      "Zaštita od povišenog holesterola",
+      "Zaštita od ateroskleroze",
+      "Održavanje zdravlja krvnih sudova",
+      "Pomaže kod slabljenja srčanog mišića",
+      "Pomaže kod srčane aritmije",
+      "Povećava cirkulaciju krvnih sudova",
+      "Preporučuje se nakon srčanog udara",
+      "Jača smirujući učinak",
+      "Pomaže kod umora i manjka energije",
+      "Pomaže kod lošeg sna",
+      "Pomaže kod teškog disanja",
+      "Pomaže kod vrtoglavica",
+      "Pomaže kod lupanja srca",
+      "Pomaže kod nervoze",
+      "Pomaže kod šuma u ušima",
+      "Vredan u menopauzi",
+      "Pomaže kod mršavljenja",
+      "Potstiče izbacivanje viška vode",
+      "Pomaže kod celulita i edema",
+      "Pomaže kod bolesti zglobova",
+      "Jača vezivno tkivo na zglobovima",
+      "Antiupalno delovanje",
+      "Kod ulcerativnog kolitisa",
+      "Kod probavnih problema",
+      "Štiti od slobodnih radikala",
+      "Sprečava arteriosklerozu",
     ],
     fullDescription: `GLOG: najlekovitija biljka na svetu
 
@@ -1117,26 +1150,28 @@ Međutim, glog se ne preporučuje trudnicama i dojiljama.
 
 Upotreba
 
-3 do 4 puta dnevno po 15 kapi.`
+3 do 4 puta dnevno po 15 kapi.`,
   },
   {
-    id: '21',
-    name: 'Bermet beli 0.187l',
+    id: "21",
+    name: "Bermet beli 0.187l",
     price: 400,
-    description: 'Slatko, aromatično desertno vino proizvedeno maceracijom približno 15 biljaka i začina. Podseća na italijanski vermut, ali se proizvodi drugačije. Istorijski konzumiran na austrijskom dvoru, sa caricom Marijom Terezijom među njegovim obožavateljima.',
-    image: '/bermet-beli.jpg',
-    category: 'Bermet',
-    subtitle: 'Tradicionalno desertno vino - 15 lekovitih biljaka',
-    usage: 'Servira se ohlađeno kao aperitiv ili na sobnoj temperaturi kao desertno piće. Temperatura serviranja: 15°C.',
+    description:
+      "Slatko, aromatično desertno vino proizvedeno maceracijom približno 15 biljaka i začina. Podseća na italijanski vermut, ali se proizvodi drugačije. Istorijski konzumiran na austrijskom dvoru, sa caricom Marijom Terezijom među njegovim obožavateljima.",
+    image: "/bermet 187 beli.jpg",
+    category: "Bermet",
+    subtitle: "Tradicionalno desertno vino - 15 lekovitih biljaka",
+    usage:
+      "Servira se ohlađeno kao aperitiv ili na sobnoj temperaturi kao desertno piće. Temperatura serviranja: 15°C.",
     benefits: [
-      'Tradicionalno desertno vino',
-      'Maceracija 15 aromatičnih biljaka',
-      'Slatko i aromatično',
-      'Istorijski služeno na austrijskom dvoru',
-      'Carica Marija Terezija među obožavateljima',
-      'Može se koristiti kao aperitiv',
-      'Odlično uz deserte',
-      'Iz čuvenog Sremskih Karlovaca'
+      "Tradicionalno desertno vino",
+      "Maceracija 15 aromatičnih biljaka",
+      "Slatko i aromatično",
+      "Istorijski služeno na austrijskom dvoru",
+      "Carica Marija Terezija među obožavateljima",
+      "Može se koristiti kao aperitiv",
+      "Odlično uz deserte",
+      "Iz čuvenog Sremskih Karlovaca",
     ],
     fullDescription: `Bermet beli - Tradicionalno desertno aromatično vino
 
@@ -1163,26 +1198,28 @@ Preporučeni paring
 • Deserti sa medom
 • Čokolada (tamna ili mlečna)
 
-Baron Bermet Aleks je zaštitni znak Vinarije Aleks, zaštićen na domaćem i međunarodnom tržištu.`
+Baron Bermet Aleks je zaštitni znak Vinarije Aleks, zaštićen na domaćem i međunarodnom tržištu.`,
   },
   {
-    id: '22',
-    name: 'Bermet crveni 0.187l',
+    id: "22",
+    name: "Bermet crveni 0.187l",
     price: 400,
-    description: 'Slatko, aromatično vino koje podseća na italijanski vermut, proizvedeno maceracijom preko 30 različitih biljaka i začina. Recept je pažljivo čuvana porodična tajna. Istorijski proizvedeno u regionu Sremski Karlovci i tradicionalno uživano na austrijskom dvoru.',
-    image: '/bermet-crveni.jpg',
-    category: 'Bermet',
-    subtitle: 'Tradicionalno desertno vino - 30 lekovitih biljaka',
-    usage: 'Konzumira se kao aperitiv (ohlađeno) ili uz desert. Temperatura serviranja: 18°C.',
+    description:
+      "Slatko, aromatično vino koje podseća na italijanski vermut, proizvedeno maceracijom preko 30 različitih biljaka i začina. Recept je pažljivo čuvana porodična tajna. Istorijski proizvedeno u regionu Sremski Karlovci i tradicionalno uživano na austrijskom dvoru.",
+    image: "/bermet 187 crveni5.jpg",
+    category: "Bermet",
+    subtitle: "Tradicionalno desertno vino - 30 lekovitih biljaka",
+    usage:
+      "Konzumira se kao aperitiv (ohlađeno) ili uz desert. Temperatura serviranja: 18°C.",
     benefits: [
-      'Sadrži 30 aromatičnih biljaka i začina',
-      'Porodična tajna receptura',
-      'Istorijski uživano na austrijskom dvoru',
-      'Carica Marija Terezija među obožavateljima',
-      'Tradicionalno desertno vino',
-      'Afrodizijak',
-      'Lekovito za dušu i unutrašnje organe',
-      'Iz regiona Fruška Gora'
+      "Sadrži 30 aromatičnih biljaka i začina",
+      "Porodična tajna receptura",
+      "Istorijski uživano na austrijskom dvoru",
+      "Carica Marija Terezija među obožavateljima",
+      "Tradicionalno desertno vino",
+      "Afrodizijak",
+      "Lekovito za dušu i unutrašnje organe",
+      "Iz regiona Fruška Gora",
     ],
     fullDescription: `Bermet crveni - Tradicionalno desertno aromatično vino
 
@@ -1217,27 +1254,29 @@ Baron Bermet Aleks
 
 Proizvedeno u Vinariji Aleks iz vinskog regiona Fruška Gora u Srbiji. Zaštitni znak Baron Bermet Aleks je zaštićen na domaćem i međunarodnom tržištu.
 
-U Srbiji 19. veka robu su plaćali sušenom šljivom, ali u Karlovcima – bermetom!`
+U Srbiji 19. veka robu su plaćali sušenom šljivom, ali u Karlovcima – bermetom!`,
   },
   {
-    id: '23',
-    name: 'Bermet beli 0.75l',
+    id: "23",
+    name: "Bermet beli 0.75l",
     price: 1600,
-    description: 'Slatko, aromatično desertno vino proizvedeno maceracijom približno 15 biljaka i začina. Standardno pakovanje u boci od 0.75l. Istorijski konzumiran na austrijskom dvoru, sa caricom Marijom Terezijom među njegovim obožavateljima.',
-    image: '/bermet-beli.jpg',
-    category: 'Bermet',
-    subtitle: 'Tradicionalno desertno vino - 15 lekovitih biljaka (750ml)',
-    usage: 'Servira se ohlađeno kao aperitiv ili na sobnoj temperaturi kao desertno piće. Temperatura serviranja: 15°C.',
+    description:
+      "Slatko, aromatično desertno vino proizvedeno maceracijom približno 15 biljaka i začina. Standardno pakovanje u boci od 0.75l. Istorijski konzumiran na austrijskom dvoru, sa caricom Marijom Terezijom među njegovim obožavateljima.",
+    image: "/baron_bermet_beli_051.png",
+    category: "Bermet",
+    subtitle: "Tradicionalno desertno vino - 15 lekovitih biljaka (750ml)",
+    usage:
+      "Servira se ohlađeno kao aperitiv ili na sobnoj temperaturi kao desertno piće. Temperatura serviranja: 15°C.",
     benefits: [
-      'Tradicionalno desertno vino',
-      'Maceracija 15 aromatičnih biljaka',
-      'Slatko i aromatično',
-      'Standardno pakovanje 0.75l',
-      'Istorijski služeno na austrijskom dvoru',
-      'Carica Marija Terezija među obožavateljima',
-      'Može se koristiti kao aperitiv',
-      'Odlično uz deserte',
-      'Iz čuvenog Sremskih Karlovaca'
+      "Tradicionalno desertno vino",
+      "Maceracija 15 aromatičnih biljaka",
+      "Slatko i aromatično",
+      "Standardno pakovanje 0.75l",
+      "Istorijski služeno na austrijskom dvoru",
+      "Carica Marija Terezija među obožavateljima",
+      "Može se koristiti kao aperitiv",
+      "Odlično uz deserte",
+      "Iz čuvenog Sremskih Karlovaca",
     ],
     fullDescription: `Bermet beli - Tradicionalno desertno aromatično vino
 
@@ -1266,28 +1305,30 @@ Preporučeni paring
 
 Baron Bermet Aleks je zaštitni znak Vinarije Aleks, zaštićen na domaćem i međunarodnom tržištu.
 
-Standardno pakovanje od 0.75l idealno je za porodična okupljanja i slavlja.`
+Standardno pakovanje od 0.75l idealno je za porodična okupljanja i slavlja.`,
   },
   {
-    id: '24',
-    name: 'Bermet crveni 0.75l',
+    id: "24",
+    name: "Bermet crveni 0.75l",
     price: 1600,
-    description: 'Slatko, aromatično vino koje podseća na italijanski vermut, proizvedeno maceracijom preko 30 različitih biljaka i začina. Standardno pakovanje u boci od 0.75l. Recept je pažljivo čuvana porodična tajna.',
-    image: '/bermet-crveni.jpg',
-    category: 'Bermet',
-    subtitle: 'Tradicionalno desertno vino - 30 lekovitih biljaka (750ml)',
-    usage: 'Konzumira se kao aperitiv (ohlađeno) ili uz desert. Temperatura serviranja: 18°C.',
+    description:
+      "Slatko, aromatično vino koje podseća na italijanski vermut, proizvedeno maceracijom preko 30 različitih biljaka i začina. Standardno pakovanje u boci od 0.75l. Recept je pažljivo čuvana porodična tajna.",
+    image: "/baron_bermet_aleks_crveni_051.png",
+    category: "Bermet",
+    subtitle: "Tradicionalno desertno vino - 30 lekovitih biljaka (750ml)",
+    usage:
+      "Konzumira se kao aperitiv (ohlađeno) ili uz desert. Temperatura serviranja: 18°C.",
     benefits: [
-      'Sadrži 30 aromatičnih biljaka i začina',
-      'Porodična tajna receptura',
-      'Standardno pakovanje 0.75l',
-      'Istorijski uživano na austrijskom dvoru',
-      'Carica Marija Terezija među obožavateljima',
-      'Tradicionalno desertno vino',
-      'Afrodizijak',
-      'Lekovito za dušu i unutrašnje organe',
-      'Iz regiona Fruška Gora',
-      'Služeno na Titaniku'
+      "Sadrži 30 aromatičnih biljaka i začina",
+      "Porodična tajna receptura",
+      "Standardno pakovanje 0.75l",
+      "Istorijski uživano na austrijskom dvoru",
+      "Carica Marija Terezija među obožavateljima",
+      "Tradicionalno desertno vino",
+      "Afrodizijak",
+      "Lekovito za dušu i unutrašnje organe",
+      "Iz regiona Fruška Gora",
+      "Služeno na Titaniku",
     ],
     fullDescription: `Bermet crveni - Tradicionalno desertno aromatično vino
 
@@ -1328,6 +1369,6 @@ Baron Bermet Aleks
 
 Proizvedeno u Vinariji Aleks iz vinskog regiona Fruška Gora u Srbiji. Zaštitni znak Baron Bermet Aleks je zaštićen na domaćem i međunarodnom tržištu.
 
-Standardno pakovanje od 0.75l idealno je za porodična okupljanja, slavlja i kao poklon.`
+Standardno pakovanje od 0.75l idealno je za porodična okupljanja, slavlja i kao poklon.`,
   },
 ];
