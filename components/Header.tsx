@@ -124,18 +124,19 @@ export default function Header() {
           />
         </Link>
         <DesktopNav />
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2 md:gap-4">
           <CartIcon />
-          <Link href="tel:+381606338605" className="hidden sm:block">
+          <Link href="tel:+381606338605">
             <motion.button
               whileHover={{
                 color: "hsl(var(--foreground))",
                 backgroundColor: "hsl(var(--primary))",
               }}
-              className=" items-center justify-center rounded-full text-primary border-primary border-2 text-sm md:text-lg py-1 px-2 md:py-2 md:px-4 transition-colors flex"
+              className="items-center justify-center rounded-full text-primary border-primary border-2 text-xs sm:text-sm md:text-lg py-1 px-2 md:py-2 md:px-4 transition-colors flex gap-1 md:gap-2"
             >
-              <PhoneIcon />
-              <p className="">+38160 633 8605</p>
+              <PhoneIcon className="h-4 w-4 md:h-5 md:w-5" />
+              <p className="hidden xs:inline">+38160 633 8605</p>
+              <p className="inline xs:hidden">Pozovi</p>
             </motion.button>
           </Link>
           <MobileMenu />
