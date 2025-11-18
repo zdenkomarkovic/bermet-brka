@@ -20,7 +20,7 @@ export default function Home() {
               Vinarija Aleks - Čuvar tradicije bermeta i lekovitog bilja
             </p>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Nenad Ratković "Brka" - najprepoznatljivija ličnost srpske vinske scene i majstor bermeta
+              Nenad Ratković &quot;Brka&quot; - najprepoznatljivija ličnost srpske vinske scene i majstor bermeta
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild>
@@ -52,14 +52,14 @@ export default function Home() {
               </div>
               <div className="space-y-4 text-lg text-muted-foreground">
                 <p>
-                  <strong className="text-foreground">Nenad Ratković</strong>, poznatiji kao <strong className="text-foreground">"Brka"</strong> ili <strong className="text-foreground">"Aleks Bermet"</strong>, najprepoznatljivija je ličnost na srpskoj vinskoj sceni.
+                  <strong className="text-foreground">Nenad Ratković</strong>, poznatiji kao <strong className="text-foreground">&quot;Brka&quot;</strong> ili <strong className="text-foreground">&quot;Aleks Bermet&quot;</strong>, najprepoznatljivija je ličnost na srpskoj vinskoj sceni.
                   Sa 72 godine, ovaj najfotografisaniji čovek među srpskim vinarima odmah se prepoznaje po tradicionalnoj nošnji iz Srema - crnom šeširu i prsluku, nakrobanoj beloj košulji i širokim belim pantalonama.
                 </p>
                 <p>
-                  <strong className="text-foreground">Vinarija "Aleks"</strong> je na srpskoj vinskoj sceni od 1990. godine. Porodična je kompanija koju zajedno vode supružnici Nenad Ratković i Ljiljana Bjelogrlić.
+                  <strong className="text-foreground">Vinarija &quot;Aleks&quot;</strong> je na srpskoj vinskoj sceni od 1990. godine. Porodična je kompanija koju zajedno vode supružnici Nenad Ratković i Ljiljana Bjelogrlić.
                 </p>
                 <p>
-                  Zaštitni znak Vinarije Aleks je <strong className="text-foreground">"Bermet Aleks"</strong>, a žig je zaštićen na domaćem i međunarodnom tržištu.
+                  Zaštitni znak Vinarije Aleks je <strong className="text-foreground">&quot;Bermet Aleks&quot;</strong>, a žig je zaštićen na domaćem i međunarodnom tržištu.
                   Osvojili smo brojne nagrade za naš Bermet, a 2008. godine Vinarija Aleks je dobila titulu <strong className="text-foreground">Kraljevskog opskrbljivača</strong> od strane Kraljevskog dvora Karađorđević u Beogradu.
                 </p>
               </div>

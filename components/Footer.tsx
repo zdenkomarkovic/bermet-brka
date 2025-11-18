@@ -23,7 +23,7 @@ export default function Footer() {
               Vinarija Aleks - Čuvar tradicije bermeta i lekovitog bilja
             </p>
             <p className="text-sm text-muted-foreground">
-              Nenad Ratković "Brka" nastavlja porodičnu tradiciju od 1990. godine
+              Nenad Ratković &quot;Brka&quot; nastavlja porodičnu tradiciju od 1990. godine
             </p>
           </div>
 

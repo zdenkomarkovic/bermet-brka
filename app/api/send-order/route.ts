@@ -43,7 +43,7 @@ export async function POST(request: NextRequest) {
 
     // Build product table rows
     let productRows = '';
-    cart.forEach((item: any) => {
+    cart.forEach((item: { name: string; quantity: number; price: number }) => {
       productRows += `
           <tr>
             <td style="border: 1px solid #ddd; padding: 8px;">${item.name}</td>
@@ -66,7 +66,7 @@ export async function POST(request: NextRequest) {
     `;
 
     // Create confirmation email for customer
-    let customerEmail = `
+    const customerEmail = `
       <div style="max-width: 600px; margin: 0 auto; font-family: Arial, sans-serif;">
         <h2 style="color: #7c2d12;">Hvala na narudžbini! 🍷</h2>
 
