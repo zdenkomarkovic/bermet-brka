@@ -336,54 +336,19 @@ export default function KorpaPage() {
                 </div>
               </CardContent>
               <CardFooter className="flex flex-col gap-3">
-                {!showOrderPreview ? (
-                  <>
-                    <Button
-                      className="w-full"
-                      size="lg"
-                      onClick={handleViberOrder}
-                    >
-                      <Send className="mr-2 h-5 w-5" />
-                      Nastavi na Viber
-                    </Button>
-                    <p className="text-xs text-center text-muted-foreground">
-                      Prikaži poruku i pošalji preko Vibera
-                    </p>
-                  </>
-                ) : (
-                  <>
-                    <div className="w-full p-4 bg-muted rounded-lg">
-                      <p className="text-xs font-semibold mb-2">Vaša poruka:</p>
-                      <pre className="text-xs whitespace-pre-wrap font-mono">
-                        {orderMessage}
-                      </pre>
-                    </div>
-                    <div className="grid grid-cols-2 gap-2 w-full">
-                      <Button
-                        variant="outline"
-                        onClick={handleCopyMessage}
-                        className="w-full"
-                      >
-                        Kopiraj poruku
-                      </Button>
-                      <Button onClick={handleOpenViber} className="w-full">
-                        Otvori Viber
-                      </Button>
-                    </div>
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      onClick={() => setShowOrderPreview(false)}
-                      className="w-full"
-                    >
-                      Nazad
-                    </Button>
-                    <p className="text-xs text-center text-muted-foreground">
-                      1. Kopiraj poruku • 2. Otvori Viber • 3. Nalepi (Paste) i
-                      pošalji
-                    </p>
-                  </>
-                )}
+                <Button
+                  className="w-full"
+                  size="lg"
+                  onClick={handleSubmitOrder}
+                  disabled={isSubmitting}
+                >
+                  <Send className="mr-2 h-5 w-5" />
+                  {isSubmitting ? "Slanje..." : "Pošalji narudžbinu"}
+                </Button>
+                <p className="text-xs text-center text-muted-foreground">
+                  Narudžbina će biti poslata na email i bićete kontaktirani
+                  uskoro
+                </p>
               </CardFooter>
             </Card>
           </div>
