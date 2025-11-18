@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { MapPin, Phone, Mail } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer() {
@@ -13,7 +13,7 @@ export default function Footer() {
     >
       <div className="container mx-auto px-4 md:px-10 max-w-7xl">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           {/* Company Info */}
           <div>
             <h3 className="text-xl font-bold text-primary mb-4">
@@ -27,27 +27,6 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Locations */}
-          <div>
-            <h3 className="text-lg font-bold mb-4">Naše lokacije</h3>
-            <div className="space-y-3">
-              <div className="flex items-start gap-2 text-sm">
-                <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                <div>
-                  <p className="font-semibold">Novi Sad</p>
-                  <p className="text-muted-foreground">Paje Markovića Adamova 26</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-2 text-sm">
-                <MapPin className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                <div>
-                  <p className="font-semibold">Sremski Karlovci</p>
-                  <p className="text-muted-foreground">Petrovaradinska 5</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
           {/* Contact */}
           <div>
             <h3 className="text-lg font-bold mb-4">Kontakt</h3>
@@ -59,10 +38,13 @@ export default function Footer() {
                 <Phone className="h-5 w-5 text-primary" />
                 <span>+381 60 633 8605</span>
               </Link>
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+              <a
+                href="mailto:vinarija.aleks@gmail.com"
+                className="flex items-center gap-2 text-sm hover:text-primary transition-colors"
+              >
                 <Mail className="h-5 w-5 text-primary" />
-                <span>Radno vreme: Pon-Sub 9-18h</span>
-              </div>
+                <span>vinarija.aleks@gmail.com</span>
+              </a>
             </div>
           </div>
         </div>
