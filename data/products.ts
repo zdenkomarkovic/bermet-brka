@@ -1258,7 +1258,7 @@ U Srbiji 19. veka robu su plaćali sušenom šljivom, ali u Karlovcima – berme
   },
   {
     id: "23",
-    name: "Bermet beli 0.75l",
+    name: "Bermet beli 0.5l",
     price: 1200,
     description:
       "Slatko, aromatično desertno vino proizvedeno maceracijom približno 15 biljaka i začina. Standardno pakovanje u boci od 0.75l. Istorijski konzumiran na austrijskom dvoru, sa caricom Marijom Terezijom među njegovim obožavateljima.",
@@ -1309,7 +1309,7 @@ Standardno pakovanje od 0.75l idealno je za porodična okupljanja i slavlja.`,
   },
   {
     id: "24",
-    name: "Bermet crveni 0.75l",
+    name: "Bermet crveni 0.5l",
     price: 1200,
     description:
       "Slatko, aromatično vino koje podseća na italijanski vermut, proizvedeno maceracijom preko 30 različitih biljaka i začina. Standardno pakovanje u boci od 0.75l. Recept je pažljivo čuvana porodična tajna.",
