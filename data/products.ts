@@ -1371,4 +1371,234 @@ Proizvedeno u Vinariji Aleks iz vinskog regiona Fruška Gora u Srbiji. Zaštitni
 
 Standardno pakovanje od 0.75l idealno je za porodična okupljanja, slavlja i kao poklon.`,
   },
+  {
+    id: "25",
+    name: "Tinktura Godzi bobica 100ml",
+    price: 1500,
+    description:
+      "Gođi bobice se nalaze na prvom mestu biljaka po količini antioksidanata koje poseduje u uništavanju slobodnih radikala. Poboljšava opštu otpornost organizma. Doprinosi smanjenju koncetracije lipida u krvi.",
+    image: "/gojibobice.jpeg",
+    category: "Tinkture",
+    subtitle: "Najjači prirodni antioksidans",
+    usage:
+      "Preporučuje se uzimanje tinkture prema uputstvu. Zapremina boce je 100 ml.",
+    benefits: [
+      "Prvo mesto po količini antioksidanata",
+      "Uništava slobodne radikale",
+      "Poboljšava opštu otpornost organizma",
+      "Smanjuje koncentraciju lipida u krvi",
+      "Jača imuni sistem",
+      "Prirodan izvor antioksidanata",
+      "Pomaže u detoksikaciji organizma",
+    ],
+    fullDescription: `Tinktura Gođi bobica - Najjači prirodni antioksidans
+
+Zapremina boce je 100 ml.
+
+Gođi bobice se nalaze na prvom mestu biljaka po količini antioksidanata koje poseduje u uništavanju slobodnih radikala.
+
+Dejstvo
+
+Poboljšava opštu otpornost organizma.
+
+Doprinosi smanjenju koncetracije lipida u krvi.
+
+Gođi bobice su poznate kao superfood zbog izuzetno visokog sadržaja antioksidanata koji pomažu u borbi protiv slobodnih radikala u organizmu.
+
+Način upotrebe
+
+Preporučuje se uzimanje tinkture prema uputstvu.
+
+NAPOMENA: Tinktura Gođi bobica je prirodni dodatak ishrani i treba je koristiti u okviru zdrave ishrane i životnog stila.`,
+  },
+  {
+    id: "26",
+    name: "Tinktura za potenciju - Ja mogu",
+    price: 1500,
+    description:
+      "Biljne kapi se koriste kao deo funkcionalne ishrane kod osoba sa problemima prostatitisa. Veliki broj muškaraca koji imaju problem sa prostatom ima manje ili više problema sa svojom seksualnom funkcijom.",
+    image: "/potencija.jpeg",
+    category: "Tinkture",
+    subtitle: "Prirodno rešenje za poboljšanje muške potencije",
+    usage:
+      "Preporučuje se uzimanje prema uputstvu. Zapremina boce je 100 ml.",
+    benefits: [
+      "Pomaže kod problema sa prostatom",
+      "Poboljšava seksualnu funkciju kod muškaraca",
+      "Koristi se kao deo funkcionalne ishrane",
+      "Pomaže kod prostatitisa",
+      "Prirodno rešenje za mušku potenciju",
+      "Povećava otpornost organizma na rak prostate",
+      "Podržava seksualnu aktivnost",
+    ],
+    fullDescription: `Tinktura za potenciju - Ja mogu
+
+Zapremina boce je 100 ml.
+
+Biljne kapi se koriste kao deo funkcionalne ishrane kod osoba sa problemima prostatitisa.
+
+Dejstvo
+
+Veliki broj muškaraca koji imaju problem sa prostatom ima manje ili više problema sa svojom seksualnom funkcijom.
+
+Istraživanja pokazuju da muškarci u pedesetim godinama koji su seksualno aktivni, više od deset odnosa mesečno, imaju daleko veću otpornost organizma na rak prostate.
+
+Ova tinktura pomaže kod problema sa prostatom i doprinosi poboljšanju seksualne funkcije kod muškaraca.
+
+Način upotrebe
+
+Preporučuje se uzimanje prema uputstvu.
+
+NAPOMENA: Tinktura za potenciju je prirodni dodatak ishrani i treba je koristiti u okviru zdrave ishrane i životnog stila.`,
+  },
+  {
+    id: "27",
+    name: "Tinktura Rastavića",
+    price: 1000,
+    description:
+      "Rastavić olakšava izlučivanje mokraće bez poremećaja elektrolita. Koristan je kod tuberkuloze, zaustavlja krvarenje i leči upalu mokraćnih kanala. Pospešuje stvaranje crvenih krvnih zrnaca.",
+    image: "/rastavic.jpeg",
+    category: "Tinkture",
+    subtitle: "Prirodno sredstvo za zdravlje mokraćnog sistema",
+    usage:
+      "Preporučuje se uzimanje prema uputstvu. Zapremina boce je 100 ml.",
+    benefits: [
+      "Olakšava izlučivanje mokraće",
+      "Bez poremećaja elektrolita",
+      "Koristan kod tuberkuloze",
+      "Zaustavlja krvarenje",
+      "Leči upalu mokraćnih kanala",
+      "Pospešuje stvaranje crvenih krvnih zrnaca",
+      "Prirodno diuretičko sredstvo",
+      "Pomaže kod infekcija mokraćnog sistema",
+    ],
+    fullDescription: `Tinktura Rastavića - Prirodno sredstvo za zdravlje mokraćnog sistema
+
+Zapremina boce je 100 ml.
+
+Rastavić je lekovita biljka koja se tradicionalno koristi u narodnoj medicini za lečenje problema mokraćnog sistema.
+
+Dejstvo
+
+Rastavić olakšava izlučivanje mokraće bez poremećaja elektrolita, što je veoma važno za održavanje pravilne ravnoteže tečnosti u organizmu.
+
+Koristan je kod tuberkuloze.
+
+Zaustavlja krvarenje i leči upalu mokraćnih kanala.
+
+Pospešuje stvaranje crvenih krvnih zrnaca, što doprinosi poboljšanju opšteg zdravlja.
+
+Način upotrebe
+
+Preporučuje se uzimanje prema uputstvu.
+
+NAPOMENA: Tinktura Rastavića je prirodni dodatak ishrani i treba je koristiti u okviru zdrave ishrane i životnog stila. Konsultujte se sa lekarom pre upotrebe, posebno ako imate hronična oboljenja ili uzimate druge lekove.`,
+  },
+  {
+    id: "28",
+    name: "Tinktura za masnu jetru",
+    price: 1000,
+    description:
+      "Jetra je jedan od najmoćnijih organa u našem telu. Služi eliminaciji svih toksičnih supstanci iz našeg organizma. Ima ulogu da naš organizam zaštiti od štetnih materija i održi ga zdravim.",
+    image: "/jetra.jpeg",
+    category: "Tinkture",
+    subtitle: "Prirodno rešenje za zdravlje jetre",
+    usage:
+      "Preporučuje se uzimanje prema uputstvu. Zapremina boce je 100 ml.",
+    benefits: [
+      "Pomaže kod masne jetre",
+      "Eliminacija toksičnih supstanci",
+      "Regeneracija jetrenih ćelija",
+      "Zaštita jetre od štetnih materija",
+      "Detoksikacija organizma",
+      "Pomaže u normalizovanju funkcije jetre",
+      "Podržava prirodne procese čišćenja",
+      "Poboljšava rad jetre",
+    ],
+    fullDescription: `Tinktura za masnu jetru - Prirodno rešenje za zdravlje jetre
+
+Zapremina boce je 100 ml.
+
+O jetri
+
+Jetra je jedan od najmoćnijih organa u našem telu. Služi eliminaciji svih toksičnih supstanci iz našeg organizma. Ima ulogu da naš organizam zaštiti od štetnih materija i održi ga zdravim.
+
+Masna jetra
+
+Masna jetra je stanje u kojem se masnoće nakupljaju u jetri, što može dovesti do oštećenja jetrenih ćelija i poremećaja funkcije jetre.
+
+Dejstvo
+
+Ova tinktura pomaže u detoksikaciji jetre i podržava njenu prirodnu sposobnost regeneracije.
+
+Eliminiše toksične supstance i pomaže u normalizovanju funkcije jetre.
+
+Podržava prirodne procese čišćenja organizma i poboljšava opšte zdravlje jetre.
+
+Način upotrebe
+
+Preporučuje se uzimanje prema uputstvu.
+
+NAPOMENA: Tinktura za masnu jetru je prirodni dodatak ishrani i treba je koristiti u okviru zdrave ishrane i životnog stila. Preporučuje se konsultacija sa lekarom pre upotrebe, posebno kod postojećih oboljenja jetre.`,
+  },
+  {
+    id: "29",
+    name: "Tinktura Moringe za imunitet i smanjenje šećera",
+    price: 1500,
+    description:
+      "Sušeni i samleveni prah lista Moringe sadrži 20 vrsta amino kiselina, 90 vrsta nutrijanata, 46 antioksidanata, što ga čini jednim od najboljih suplemenata. Povećava imunitet, čisti krvne sudove, obnavlja ćelije. Snižava nivo triglicerida i holesterola.",
+    image: "/moringa.jpeg",
+    category: "Tinkture",
+    subtitle: "Superfood sa 90 vrsta nutrijanata",
+    usage:
+      "Preporučuje se uzimanje prema uputstvu. Zapremina boce je 100 ml.",
+    benefits: [
+      "Sadrži 20 vrsta amino kiselina",
+      "Sadrži 90 vrsta nutrijanata",
+      "Sadrži 46 antioksidanata",
+      "Povećava imunitet",
+      "Čisti krvne sudove",
+      "Obnavlja ćelije",
+      "Snižava nivo triglicerida",
+      "Snižava nivo holesterola",
+      "Smanjuje nivo šećera u krvi",
+      "Jedan od najboljih prirodnih suplemenata",
+    ],
+    fullDescription: `Tinktura Moringe za imunitet i smanjenje šećera - Superfood sa 90 vrsta nutrijanata
+
+Zapremina boce je 100 ml.
+
+O Moringi
+
+Moringa oleifera, poznata i kao "drvo čuda" ili "drvo života", je jedna od najhranljivijih biljaka na planeti.
+
+Sušeni i samleveni prah lista Moringe sadrži 20 vrsta amino kiselina, 90 vrsta nutrijanata i 46 antioksidanata, što ga čini jednim od najboljih prirodnih suplemenata.
+
+Sastav
+
+• 20 vrsta amino kiselina
+• 90 vrsta nutrijanata
+• 46 antioksidanata
+• Vitamini A, C, E
+• Minerali (kalcijum, kalijum, gvožđe)
+• Omega 3, 6 i 9 masne kiseline
+
+Dejstvo
+
+Povećava imunitet i jača odbrambene sposobnosti organizma.
+
+Čisti krvne sudove i poboljšava cirkulaciju.
+
+Obnavlja ćelije na nivou celog organizma.
+
+Snižava nivo triglicerida i holesterola u krvi.
+
+Pomaže u regulaciji nivoa šećera u krvi.
+
+Način upotrebe
+
+Preporučuje se uzimanje prema uputstvu.
+
+NAPOMENA: Tinktura Moringe je prirodni dodatak ishrani i treba je koristiti u okviru zdrave ishrane i životnog stila. Konsultujte se sa lekarom pre upotrebe, posebno ako uzimate lekove za dijabetes ili imaju drugih hroničnih oboljenja.`,
+  },
 ];
