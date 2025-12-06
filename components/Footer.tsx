@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <motion.footer
       id="kontakt"
-      className="bg-muted/50 py-12"
+      className="bg-muted/50 py-12 drop-shadow-xl"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.5 }}
@@ -16,7 +16,7 @@ export default function Footer() {
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           {/* Company Info */}
-          <div>
+          <div className="text-center">
             <h3 className="text-xl font-bold text-primary mb-4">Bermet Brka</h3>
             <p className="text-sm text-muted-foreground mb-4">
               Vinarija Aleks - Čuvar tradicije bermeta i lekovitog bilja
@@ -28,12 +28,12 @@ export default function Footer() {
           </div>
 
           {/* Contact */}
-          <div>
+          <div className="text-center   mx-auto">
             <h3 className="text-lg font-bold mb-4">Kontakt</h3>
-            <div className="space-y-3">
+            <div className="space-y-3 text-center">
               <Link
                 href="tel:+381606338605"
-                className="flex items-center gap-2 text-sm hover:text-primary transition-colors"
+                className="flex mx-auto items-center gap-2 text-sm hover:text-primary transition-colors"
               >
                 <Phone className="h-5 w-5 text-primary" />
                 <span>+381 60 633 8605</span>
