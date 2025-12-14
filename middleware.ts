@@ -25,7 +25,15 @@ const BLOCKED_USER_AGENTS = [
 const SUSPICIOUS_PATHS = [
   '/.env', '/wp-admin', '/wp-login', '/admin', '/phpmyadmin', '/.git',
   '/config', '/backup', '/test', '/demo', '/.well-known', '/api/graphql',
-  '/xmlrpc.php', '/wp-content', '/wordpress', '/joomla'
+  '/xmlrpc.php', '/wp-content', '/wordpress', '/joomla',
+  // SQL injection patterns
+  '/index.php', '/moja-prodavnica', 'by,', 'results,', '%60', 'product_sku',
+  'product_name', 'category_name', 'ordering', 'mf_name', 'dirDesc',
+  // Common attack patterns
+  'union', 'select', 'insert', 'update', 'delete', 'drop', 'exec',
+  '../', '..\\', '<script', 'javascript:', 'onerror=', 'onload=',
+  // Query param attacks
+  'iccaldate=', 'id=', 'cat=', 'page='
 ]
 
 function getRateLimitKey(ip: string, pathname: string): string {
@@ -85,9 +93,9 @@ export function middleware(request: NextRequest) {
     return new NextResponse('Forbidden', { status: 403 })
   }
 
-  // Block suspicious paths
+  // Block suspicious paths with 410 Gone (stronger signal to bots)
   if (isSuspiciousPath(pathname)) {
-    return new NextResponse('Not Found', { status: 404 })
+    return new NextResponse('Gone', { status: 410 })
   }
 
   // Block requests without referer (except for direct navigation)
