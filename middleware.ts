@@ -6,8 +6,8 @@ const rateLimitMap = new Map<string, { count: number; resetTime: number }>()
 
 // Configuration
 const RATE_LIMIT_WINDOW = 60 * 1000 // 1 minute
-const MAX_REQUESTS_PER_WINDOW = 5 // REDUCED: 5 requests per minute (was 10)
-const API_RATE_LIMIT = 2 // REDUCED: 2 API calls per minute (was 3)
+const MAX_REQUESTS_PER_WINDOW = 30 // 30 requests per minute (normal browsing)
+const API_RATE_LIMIT = 5 // 5 API calls per minute
 
 // Known bad bots and crawlers
 const BLOCKED_USER_AGENTS = [
@@ -74,6 +74,19 @@ function isBot(userAgent: string): boolean {
   if (!userAgent) return true // No user agent = suspicious
 
   const ua = userAgent.toLowerCase()
+
+  // Allow legitimate browsers explicitly
+  const legitimateBrowsers = ['mozilla', 'chrome', 'safari', 'edge', 'firefox', 'opera']
+  const hasLegitBrowser = legitimateBrowsers.some(browser => ua.includes(browser))
+
+  // If it looks like a real browser AND contains bot keyword, check more carefully
+  if (hasLegitBrowser && ua.includes('mozilla/5.0')) {
+    // Only block if it's DEFINITELY a bot (not just contains "bot" in user agent)
+    const definitelyBot = ['ahrefsbot', 'semrushbot', 'dotbot', 'mj12bot', 'gptbot',
+                           'claudebot', 'ccbot', 'bytespider', 'petalbot'].some(bot => ua.includes(bot))
+    return definitelyBot
+  }
+
   return BLOCKED_USER_AGENTS.some(bot => ua.includes(bot))
 }
 
