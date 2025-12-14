@@ -44,7 +44,9 @@ setInterval(() => {
 }, 60000) // Clean every minute
 
 export function middleware(request: NextRequest) {
-  const ip = request.ip || request.headers.get('x-forwarded-for') || 'unknown'
+  const ip = request.headers.get('x-forwarded-for') ||
+             request.headers.get('x-real-ip') ||
+             'unknown'
   const pathname = request.nextUrl.pathname
 
   // Apply stricter rate limiting for API routes

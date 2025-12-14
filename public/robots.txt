@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.vinarijaaleks.co.rs/
+
+# Sitemaps
+Sitemap: https://www.vinarijaaleks.co.rs/sitemap.xml

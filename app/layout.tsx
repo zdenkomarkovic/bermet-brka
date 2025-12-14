@@ -18,6 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.vinarijaaleks.co.rs'),
   title: "Bermet Brka - Vinarija Aleks | Tradicionalno desertno vino i lekovite tinkture",
   description: "Vinarija Aleks - Nenad Ratković 'Brka', najprepoznatljivija ličnost srpske vinske scene. Proizvođač čuvenog bermeta iz Sremskih Karlovaca, lekovitih tinktura i prirodnih preparata. Kraljevski opskrbljivač od 2008. godine.",
   keywords: [

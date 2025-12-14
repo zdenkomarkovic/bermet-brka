@@ -25,7 +25,9 @@ function isSpam(ip: string): boolean {
 export async function POST(request: NextRequest) {
   try {
     // Get IP for spam protection
-    const ip = request.ip || request.headers.get('x-forwarded-for') || 'unknown';
+    const ip = request.headers.get('x-forwarded-for') ||
+               request.headers.get('x-real-ip') ||
+               'unknown';
 
     // Check for spam
     if (isSpam(ip)) {
