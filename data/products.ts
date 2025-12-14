@@ -1601,4 +1601,570 @@ Preporučuje se uzimanje prema uputstvu.
 
 NAPOMENA: Tinktura Moringe je prirodni dodatak ishrani i treba je koristiti u okviru zdrave ishrane i životnog stila. Konsultujte se sa lekarom pre upotrebe, posebno ako uzimate lekove za dijabetes ili imaju drugih hroničnih oboljenja.`,
   },
+  {
+    id: "30",
+    name: "Tinktura Peruanska Maka",
+    price: 1500,
+    description:
+      "Tinktura otklanja bolove kod težih bolesti. Povećava celokupnu energiju. Pruža osećaj dobrobiti, povećava libido i reguliše seksualne funkcije. Vaši hormoni, energija, snaga, raspoloženje, libido i plodnost je pod kontrolom. Tinktura je za oba pola.",
+    image: "/peruanska-maka.jpeg",
+    category: "Tinkture",
+    subtitle: "Prirodni afrodizijak i regulator hormona za oba pola",
+    usage: "Dnevno 3 x 20 kapi.",
+    benefits: [
+      "Otklanja bolove kod težih bolesti",
+      "Povećava celokupnu energiju organizma",
+      "Pruža osećaj dobrobiti i vitalnosti",
+      "Povećava libido kod muškaraca i žena",
+      "Reguliše seksualne funkcije",
+      "Balansira hormone",
+      "Povećava snagu i izdržljivost",
+      "Poboljšava raspoloženje",
+      "Povećava plodnost",
+      "Prirodni afrodizijak",
+      "Pogodna za oba pola",
+    ],
+    fullDescription: `Tinktura Peruanska Maka - Prirodni afrodizijak i regulator hormona
+
+Zapremina boce je 100 ml.
+
+O Peruanskoj Maki
+
+Peruanska maka (Lepidium meyenii) je drevna biljka koja raste na visokim planinama Perua. Vekovima se koristi kao prirodni afrodizijak i lek za povećanje energije, snage i plodnosti.
+
+Maka je adaptogen - biljka koja pomaže organizmu da se prilagodi stresu i održava ravnotežu.
+
+Dejstvo
+
+Otklanja bolove kod težih bolesti i pruža olakšanje.
+
+Povećava celokupnu energiju organizma i pruža osećaj vitalnosti.
+
+Pruža osećaj dobrobiti i pozitivno utiče na raspoloženje.
+
+Povećava libido i seksualno zadovoljstvo kod oba pola.
+
+Reguliše seksualne funkcije i poboljšava intimni život.
+
+Balansira hormone i doprinosi hormonalnoj ravnoteži.
+
+Povećava snagu, energiju i fizičku izdržljivost.
+
+Poboljšava plodnost kod muškaraca i žena.
+
+Način upotrebe
+
+Dnevno 3 x 20 kapi.
+
+Za oba pola
+
+Ova tinktura je jednako efikasna i za muškarce i za žene. Vaši hormoni, energija, snaga, raspoloženje, libido i plodnost će biti pod kontrolom.
+
+NAPOMENA: Tinktura Peruanske Make je prirodni dodatak ishrani. Preporučuje se konsultacija sa lekarom pre upotrebe, posebno kod trudnoće, dojenja ili uzimanja hormonskih lekova.`,
+  },
+  {
+    id: "31",
+    name: "Tinktura Hajdučke Trave",
+    price: 1000,
+    description:
+      "Poboljšava varenje, apetit, eliminiše gasove, reguliše žuć i grčeve u stomaku. Preporučuje se kod \"ženskih bolesti\", kod anemije ili u slučaju neredovnih menstruacija za normalizovanje mesečnog ciklusa.",
+    image: "/hajducka-trava.jpg",
+    category: "Tinkture",
+    subtitle: "Prirodni lek za varenje i ženske tegobe",
+    usage: "Preporučuje se uzimanje prema uputstvu. Zapremina boce je 100 ml.",
+    benefits: [
+      "Poboljšava varenje i apetit",
+      "Eliminiše gasove iz stomaka",
+      "Reguliše žuč",
+      "Otklanja grčeve u stomaku",
+      "Pomaže kod ženskih bolesti",
+      "Koristi se kod anemije",
+      "Normalizuje mesečni ciklus",
+      "Reguliše neredovne menstruacije",
+      "Prirodno poboljšava probavu",
+      "Pomaže kod stomačnih tegoba",
+    ],
+    fullDescription: `Tinktura Hajdučke Trave - Prirodni lek za varenje i ženske tegobe
+
+Zapremina boce je 100 ml.
+Cena: 1.000 dinara
+
+O Hajdučkoj Travi
+
+Hajdučka trava (Achillea millefolium), poznata i kao hajdučica ili stolisnik, je ljekovita biljka koja se vekovima koristi u narodnoj medicini.
+
+Ova biljka raste divlje na livadama i pašnjacima, a prepoznatljiva je po svojim sitnim belim ili ružičastim cvjetovima.
+
+Dejstvo na probavni sistem
+
+Poboljšava varenje i stimuliše apetit.
+
+Eliminiše gasove iz stomaka i creva.
+
+Reguliše lučenje žuči i poboljšava rad jetre.
+
+Otklanja grčeve i bolove u stomaku.
+
+Umiruje probavni trakt i smanjuje nadutost.
+
+Dejstvo kod ženskih tegoba
+
+Preporučuje se kod "ženskih bolesti" i ginekoloških problema.
+
+Pomaže kod anemije i nedostatka gvožđa.
+
+Normalizuje mesečni ciklus kod neredovnih menstruacija.
+
+Ublažava menstrualne bolove i grčeve.
+
+Reguliše hormonalnu ravnotežu kod žena.
+
+Način upotrebe
+
+Preporučuje se uzimanje prema uputstvu.
+
+Zapremina boce je 100 ml.
+
+Tradicionalna upotreba
+
+Hajdučka trava se tradicionalno koristi kao čaj ili tinktura. Naši preci su je koristili za različite zdravstvene probleme, od probavnih tegoba do ženskih bolesti.
+
+NAPOMENA: Tinktura Hajdučke Trave je prirodni dodatak ishrani. Preporučuje se konsultacija sa lekarom pre upotrebe, posebno kod trudnoće, dojenja, alergija ili uzimanja lekova. Nije preporučljivo kod preosjetljivosti na biljke iz familije glavočika.`,
+  },
+  {
+    id: "32",
+    name: "Tinktura Ćuranov Rep",
+    price: 1500,
+    description:
+      "Ima jaka antivirusna, antibakterijska, antiparazitska dejstva i stimuliše imuni sistem. Koristi se za jačanje pluća, sistem za varenje. Povećava nivo energije i oporavak od dugotrajnih bolesti. Štiti jetru. Poseduje antikarcerogena svojstva.",
+    image: "/curanov-rep.jpg",
+    category: "Tinkture",
+    subtitle: "Snažan imunitet i zaštita od virusa i bakterija",
+    usage: "Preporučuje se uzimanje prema uputstvu. Zapremina boce je 100 ml.",
+    benefits: [
+      "Jaka antivirusna dejstva",
+      "Antibakterijska svojstva",
+      "Antiparazitska dejstva",
+      "Stimuliše i jača imuni sistem",
+      "Jača pluća i disajni sistem",
+      "Poboljšava varenje",
+      "Povećava nivo energije",
+      "Ubrzava oporavak od dugotrajnih bolesti",
+      "Štiti jetru i detoksikuje organizam",
+      "Poseduje antikarcerogena svojstva",
+      "Prirodni zaštitnik organizma",
+    ],
+    fullDescription: `Tinktura Ćuranov Rep - Snažan imunitet i zaštita od virusa i bakterija
+
+Zapremina boce je 100 ml.
+Cena: 1.500 dinara
+
+O Ćuranovom Repu
+
+Ćuranov rep (Verbascum thapsus), poznat i kao divizma ili volovsko uho, je visoka ljekovita biljka sa žutim cvetovima koja raste na livadama i kamenjaru.
+
+Ova biljka se vekovima koristi u narodnoj medicini kao moćan prirodni lek za različite bolesti, posebno respiratornog i probavnog sistema.
+
+Antivirusna i antibakterijska dejstva
+
+Ima jaka antivirusna dejstva koja pomažu u borbi protiv virusnih infekcija.
+
+Poseduje snažna antibakterijska svojstva protiv štetnih bakterija.
+
+Deluje antiparazitski i pomaže u čišćenju organizma od parazita.
+
+Stimulacija imuniteta
+
+Stimuliše i jača imuni sistem organizma.
+
+Povećava otpornost tela na infekcije i bolesti.
+
+Pomaže organizmu da se brže oporavi od bolesti.
+
+Dejstvo na respiratorni sistem
+
+Koristi se za jačanje pluća i čišćenje disajnih puteva.
+
+Pomaže kod kašlja, bronhitisa i astme.
+
+Umiruje upalu grla i krajnika.
+
+Olakšava disanje i izbacivanje sluzi.
+
+Dejstvo na probavu i jetru
+
+Poboljšava sistem za varenje i rad želuca.
+
+Štiti jetru i pomaže u njenom čišćenju i regeneraciji.
+
+Detoksikuje organizam od štetnih materija.
+
+Dodatna dejstva
+
+Povećava nivo energije i vitalnosti.
+
+Ubrzava oporavak od dugotrajnih i hroničnih bolesti.
+
+Poseduje antikarcerogena svojstva i štiti ćelije.
+
+Deluje antiinflamatorno i smanjuje upale.
+
+Način upotrebe
+
+Preporučuje se uzimanje prema uputstvu.
+
+Zapremina boce je 100 ml.
+
+Tradicionalna primena
+
+Ćuranov rep se tradicionalno koristi kao čaj ili tinktura. U narodnoj medicini poznat je kao "biljka sa sto bolesti" zbog širokog spektra dejstva.
+
+NAPOMENA: Tinktura Ćuranovog Repa je prirodni dodatak ishrani. Preporučuje se konsultacija sa lekarom pre upotrebe, posebno kod trudnoće, dojenja, hroničnih respiratornih bolesti ili uzimanja lekova.`,
+  },
+  {
+    id: "33",
+    name: "Tinktura Lavlje Grive",
+    price: 2000,
+    description:
+      "Tinktura Lavlje Grive uspešno obnavlja omotač nervnih ćelija, pa ih tako čuva od propadanja. Konzumiranje tokom četiri meseca značajno poboljšava mentalno funkcionisanje.",
+    image: "/lavlja-griva.jpg",
+    category: "Tinkture",
+    subtitle: "Obnova nervnih ćelija i poboljšanje mentalnog funkcionisanja",
+    usage: "Preporučuje se konzumiranje tokom četiri meseca za optimalne rezultate. Zapremina boce je 100 ml.",
+    benefits: [
+      "Obnavlja omotač nervnih ćelija (mijelin)",
+      "Čuva nervne ćelije od propadanja",
+      "Značajno poboljšava mentalno funkcionisanje",
+      "Poboljšava memoriju i koncentraciju",
+      "Štiti mozak od degenerativnih bolesti",
+      "Pomaže kod Alchajmerove i Parkinsonove bolesti",
+      "Povećava neuronsku regeneraciju",
+      "Jača kognitivne funkcije",
+      "Pomaže kod depresije i anksioznosti",
+      "Prirodni nootropik za mozak",
+      "Dugotrajni pozitivni efekti posle 4 meseca",
+    ],
+    fullDescription: `Tinktura Lavlje Grive - Obnova nervnih ćelija i poboljšanje mentalnog funkcionisanja
+
+Zapremina boce je 100 ml.
+Cena: 2.000 dinara
+
+O Lavljoj Grivi
+
+Lavlja griva (Hericium erinaceus), poznata i kao Lion's Mane, je ljekovita gljiva koja raste na stablima listopodnog drveća.
+
+Ova jedinstvena gljiva dobila je ime po svom izgledu koji podsjeća na lavlju grivu, a u tradiciji kineske i japanske medicine koristi se već hiljadama godina.
+
+Obnova nervnih ćelija
+
+Lavlja griva uspešno obnavlja omotač nervnih ćelija (mijelin), pa ih tako čuva od propadanja.
+
+Stimuliše proizvodnju NGF (Nerve Growth Factor) - faktora rasta nervnih ćelija.
+
+Pomaže u regeneraciji oštećenih neurona i nervnog tkiva.
+
+Štiti nervne ćelije od oksidativnog stresa i upala.
+
+Mentalno funkcionisanje
+
+Konzumiranje tokom četiri meseca značajno poboljšava mentalno funkcionisanje.
+
+Poboljšava memoriju, koncentraciju i fokus.
+
+Jača kognitivne sposobnosti i mentalne performanse.
+
+Pomaže kod zaboravnosti i mentalnog zamora.
+
+Zaštita mozga
+
+Pomaže u prevenciji i usporavanju Alchajmerove bolesti.
+
+Koristan kod Parkinsonove bolesti i drugih neurodegenerativnih stanja.
+
+Štiti mozak od starenja i opadanja kognitivnih funkcija.
+
+Smanjuje rizik od demencije.
+
+Mentalno zdravlje
+
+Pomaže kod depresije i poboljšava raspoloženje.
+
+Smanjuje anksioznost i stres.
+
+Doprinosi emocionalnoj stabilnosti.
+
+Poboljšava kvalitet sna i mentalni odmor.
+
+Dodatna dejstva
+
+Jača imuni sistem i ima antikancerogena svojstva.
+
+Pomaže kod bolesti probavnog sistema.
+
+Ima antiinflamatorna i antioksidantna dejstva.
+
+Način upotrebe
+
+Preporučuje se redovno konzumiranje tokom četiri meseca za postizanje optimalnih rezultata.
+
+Zapremina boce je 100 ml.
+
+Naučna potvrda
+
+Brojne naučne studije su potvrdile efikasnost Lavlje Grive u obnovi nervnog sistema i poboljšanju kognitivnih funkcija. Efekti su najizraženiji nakon kontinuirane upotrebe tokom 3-4 meseca.
+
+NAPOMENA: Tinktura Lavlje Grive je prirodni dodatak ishrani. Preporučuje se konsultacija sa lekarom pre upotrebe, posebno kod trudnoće, dojenja, neuroloških oboljenja ili uzimanja lekova koji utiču na nervni sistem.`,
+  },
+  {
+    id: "34",
+    name: "Tinktura Lincure",
+    price: 1000,
+    description:
+      "Koren lincure sadrži sekoridoidne glikozide, ksantone, alkaloide, ugljenehidrate, pektin, tanine. Aktivni sastojci lincure svojom gorčinom podstiču apetit. Poboljšava sastav krvi, povećava broj crvenih i belih krvnih zrnaca. Pospešuje probavu, otklanja pritisak u želucu, mučninu i napade nesvestice.",
+    image: "/lincura.jpg",
+    category: "Tinkture",
+    subtitle: "Poboljšava sastav krvi i podstiče probavu",
+    usage: "Preporučuje se uzimanje prema uputstvu. Zapremina boce je 100 ml.",
+    benefits: [
+      "Podstiče apetit svojom gorčinom",
+      "Poboljšava sastav krvi",
+      "Povećava broj crvenih krvnih zrnaca",
+      "Povećava broj belih krvnih zrnaca",
+      "Jača imuni sistem",
+      "Pospešuje probavu",
+      "Otklanja pritisak u želucu",
+      "Smanjuje mučninu",
+      "Sprečava napade nesvestice",
+      "Sadrži prirodne glikozide i ksantone",
+      "Pomaže kod anemije",
+    ],
+    fullDescription: `Tinktura Lincure - Poboljšava sastav krvi i podstiče probavu
+
+Zapremina boce je 100 ml.
+Cena: 1.000 dinara
+
+O Lincuri
+
+Lincura (Gentiana lutea), poznata i kao žuti lincura ili gentijan, je ljekovita biljka koja raste na planinskim livadama.
+
+Koren lincure je izuzetno bogat aktivnim sastojcima koji imaju brojna pozitivna dejstva na organizam.
+
+Sastav korena lincure
+
+Koren lincure sadrži brojne aktivne sastojke:
+
+• Sekoridoidne glikozide - glavni aktivni sastojci
+• Ksantone - antioksidantna jedinjenja
+• Alkaloide - prirodna biološki aktivna jedinjenja
+• Ugljenehidrate - izvor energije
+• Pektin - korisna dijetalna vlakna
+• Tanine - adstringentna jedinjenja
+
+Dejstvo na apetit i probavu
+
+Aktivni sastojci lincure svojom gorčinom podstiču apetit.
+
+Pospešuje probavu i lučenje probavnih sokova.
+
+Otklanja pritisak u želucu i osećaj nadutosti.
+
+Smanjuje mučninu i stomačne tegobe.
+
+Poboljšava rad jetre i žučne kese.
+
+Dejstvo na krv
+
+Poboljšava sastav krvi i njene komponente.
+
+Povećava broj crvenih krvnih zrnaca (eritrocita).
+
+Povećava broj belih krvnih zrnaca (leukocita).
+
+Pomaže kod anemije i manjka gvožđa.
+
+Jača imuni sistem kroz povećanje broja belih krvnih zrnaca.
+
+Dodatna dejstva
+
+Sprečava napade nesvestice i slabosti.
+
+Pomaže kod opšte slabosti organizma.
+
+Tonizuje nervni sistem.
+
+Deluje antiinflamatorno i antioksidantno.
+
+Način upotrebe
+
+Preporučuje se uzimanje prema uputstvu.
+
+Zapremina boce je 100 ml.
+
+Tradicionalna upotreba
+
+Lincura se vekovima koristi u narodnoj medicini kao "gorka trava" koja podstiče apetit i jača organizam. Posebno je cenjena zbog svojih svojstava poboljšanja krvi.
+
+Gorčina kao lek
+
+Karakteristična gorčina lincure nije nedostatak - to je njena glavna lekovita osobina. Gorke materije stimulišu probavni sistem i povećavaju apetit prirodnim putem.
+
+NAPOMENA: Tinktura Lincure je prirodni dodatak ishrani. Preporučuje se konsultacija sa lekarom pre upotrebe, posebno kod trudnoće, dojenja, čira na želucu ili uzimanja lekova. Nije preporučljivo kod prekomerne kiselosti želuca.`,
+  },
+  {
+    id: "35",
+    name: "Brkina Rakija - I Ja Mogu",
+    price: 1000,
+    description:
+      "Napravio sam tinkturu pa sam te trave ubacio u rakiju. Jedinstvena travarska rakija koja spaja tradiciju domaće rakije sa moćnim lekovitim biljem. Motivacija i snaga u svakoj kapi.",
+    image: "/ija-mogu.jpg",
+    category: "Rakija",
+    subtitle: "Travarska rakija sa lekovitim biljem - 0.5L",
+    usage: "Konzumirati umjereno. Zapremina boce je 0.5L (pola litra).",
+    benefits: [
+      "Kombinacija rakije i lekovitog bilja",
+      "Travarska formula po Brkinoj recepturi",
+      "Prirodna lekovita svojstva biljaka",
+      "Tradicionalna domaća proizvodnja",
+      "Motivaciona formula - I Ja Mogu!",
+      "Jedinstvena kombinacija ukusa i dejstva",
+      "Ručno pravljeno sa pažnjom",
+      "0.5L zapremina",
+    ],
+    fullDescription: `Brkina Rakija - I Ja Mogu - Travarska rakija sa lekovitim biljem
+
+Zapremina: 0.5L (pola litra)
+Cena: 1.000 dinara
+
+Brkin poseban recept
+
+"Napravio sam tinkturu pa sam te trave ubacio u rakiju." - Nenad Ratković "Brka"
+
+Ova rakija je nastala kao rezultat Brkinog dugogodišnjeg iskustva u radu sa lekovitim biljem. Kombinujući znanje o tinkturama sa umećem pravljenja rakije, stvorio je jedinstvenu travarsku rakiju.
+
+Jedinstvenost
+
+Rakija "I Ja Mogu" nije obična rakija - to je spoj tradicionalne domaće rakije najvišeg kvaliteta sa lekovitim travama koje su prethodno macerirane kao tinktura.
+
+Ovaj proces daje rakiji ne samo poseban ukus, već i lekovita svojstva biljaka koje su u njoj.
+
+Naziv sa porukom
+
+"I Ja Mogu" - naziv nije slučajan. To je motivaciona poruka koja podseća da uz volju, znanje i tradiciju možemo postići velike stvari.
+
+Svaka kap ove rakije nosi u sebi Brkinu posvećenost zanatstvu i veru u prirodne lekovite moći.
+
+Proizvodnja
+
+Rakija je ručno pravljena po tradicionalnom postupku.
+
+Lekovito bilje je prvo macerirano u alkoholu (proces pravljenja tinkture).
+
+Zatim su te trave ubačene u kvalitetnu domaću rakiju.
+
+Rezultat je jedinstvena travarska rakija sa punim ukusom i aromom.
+
+Brkin potpis
+
+Svaka flaša rakije "I Ja Mogu" nosi Brkin lični pečat kvaliteta.
+
+Ovo nije masovna proizvodnja - svaka šarža je rađena sa pažnjom i posvećenošću.
+
+Način upotrebe
+
+Konzumirati umjereno, kao i svaku jaču rakiju.
+
+Zapremina boce je 0.5L (pola litra).
+
+Čuvati na hladnom i tamnom mestu.
+
+NAPOMENA: Rakija "I Ja Mogu" je alkoholno piće. Preporučuje se umjerena konzumacija. Nije preporučljivo za trudnice, dojilje, osobe sa zdravstvenim problemima ili one koji upravljaju vozilima. Konzumacija alkohola može biti štetna po zdravlje.`,
+  },
+  {
+    id: "36",
+    name: "Brkina Rakija Lincura",
+    price: 1000,
+    description:
+      "Tradicionalna rakija na Balkanu. Pravi se potapanjem korena lincure u domaću rakiju lozu ili komovicu. Rakija se ceni zbog svog lekovitog dejstva na želudac, varenje i imunitet. Ima gorak ukus koji je čini posebnom. Jedna čašica ujutru.",
+    image: "/rakija-lincura.jpg",
+    category: "Rakija",
+    subtitle: "Gorka lincura rakija za želudac i varenje - 0.5L",
+    usage: "Jedna čašica ujutru. Zapremina boce je 0.5L (pola litra).",
+    benefits: [
+      "Lekovito dejstvo na želudac",
+      "Poboljšava varenje",
+      "Jača imunitet",
+      "Tradicionalna balkanska rakija",
+      "Koren lincure maceriran u rakiji",
+      "Karakterističan gorak ukus",
+      "Pomaže kod probavnih tegoba",
+      "Podstiče apetit",
+      "Jedna čašica ujutru dovoljna",
+      "0.5L zapremina",
+    ],
+    fullDescription: `Brkina Rakija Lincura - Gorka lincura rakija za želudac i varenje
+
+Zapremina: 0.5L (pola litra)
+Cena: 1.000 dinara
+
+Tradicionalna balkanska rakija
+
+Rakija od lincure je tradicionalna rakija na Balkanu koja se vekovima koristi kao lek za želudac i varenje.
+
+Pravi se potapanjem korena lincure u domaću rakiju - lozu ili komovicu.
+
+Proces maceracije traje dovoljno dugo da koren lincure prenese sve svoje lekovite materije u rakiju.
+
+O lincuri
+
+Lincura (Gentiana lutea), poznata i kao žuti lincura ili gentijan, je ljekovita planinska biljka.
+
+Koren lincure sadrži sekoridoidne glikozide, ksantone i druge aktivne materije koje imaju lekovito dejstvo.
+
+Upravo ove gorke materije iz korena prelaze u rakiju i daju joj karakterističan gorak ukus.
+
+Lekovita dejstva
+
+Rakija od lincure se ceni zbog svog lekovitog dejstva:
+
+• Pomaže želudac i probavu
+• Poboljšava varenje i lučenje probavnih sokova
+• Jača imunitet
+• Podstiče apetit svojom gorčinom
+• Pomaže kod stomačnih tegoba
+• Tonizuje organizam
+
+Gorak ukus
+
+Rakija od lincure ima karakterističan gorak ukus koji je čini posebnom.
+
+Gorčina nije nedostatak - to je znak prisustva lekovitih materija iz korena lincure.
+
+Upravo ta gorčina stimuliše probavni sistem i podstiče lučenje želudačnog soka.
+
+Tradicionalna upotreba
+
+Jedna čašica ujutru.
+
+Pije se obično na prazan želudac, pre doručka, kako bi stimulisala varenje tokom dana.
+
+Dovoljno je mala količina - jedna čašica (20-30ml).
+
+Brkin zanat
+
+Ovu rakiju Brka pravi po tradicionalnom receptu koji se prenosi generacijama.
+
+Koristi se samo najbolja domaća rakija (loza ili komoviča) i kvalitetan koren lincure.
+
+Proces maceracije traje nedelјama, uz pažljivo praćenje, dok rakija ne dobije savršenu gorčinu i boju.
+
+Način upotrebe
+
+Jedna čašica ujutru, najbolje na prazan želudac.
+
+Zapremina boce je 0.5L (pola litra).
+
+Čuvati na hladnom i tamnom mestu.
+
+NAPOMENA: Rakija od Lincure je alkoholno piće. Preporučuje se umjerena konzumacija - jedna čašica dnevno. Nije preporučljivo za trudnice, dojilje, osobe sa zdravstvenim problemima ili one koji upravljaju vozilima. Kod čira na želucu i prekomerne kiselosti konsultovati lekara. Konzumacija alkohola može biti štetna po zdravlje.`,
+  },
 ];
