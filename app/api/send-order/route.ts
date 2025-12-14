@@ -1,10 +1,67 @@
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
+// Simple in-memory request tracking (for production use Redis/database)
+const requestTracker = new Map<string, number[]>();
+
+function isSpam(ip: string): boolean {
+  const now = Date.now();
+  const requests = requestTracker.get(ip) || [];
+
+  // Remove requests older than 1 hour
+  const recentRequests = requests.filter(time => now - time < 3600000);
+
+  // Block if more than 5 requests in last hour
+  if (recentRequests.length >= 5) {
+    return true;
+  }
+
+  recentRequests.push(now);
+  requestTracker.set(ip, recentRequests);
+
+  return false;
+}
+
 export async function POST(request: NextRequest) {
   try {
+    // Get IP for spam protection
+    const ip = request.ip || request.headers.get('x-forwarded-for') || 'unknown';
+
+    // Check for spam
+    if (isSpam(ip)) {
+      return NextResponse.json(
+        { success: false, message: 'Previše zahteva. Pokušajte kasnije.' },
+        { status: 429 }
+      );
+    }
+
     const body = await request.json();
     const { customerInfo, cart, totalPrice } = body;
+
+    // Validate required fields
+    if (!customerInfo?.name || !customerInfo?.email || !customerInfo?.phone || !customerInfo?.address) {
+      return NextResponse.json(
+        { success: false, message: 'Nedostaju obavezna polja' },
+        { status: 400 }
+      );
+    }
+
+    // Validate cart
+    if (!Array.isArray(cart) || cart.length === 0) {
+      return NextResponse.json(
+        { success: false, message: 'Korpa je prazna' },
+        { status: 400 }
+      );
+    }
+
+    // Validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(customerInfo.email)) {
+      return NextResponse.json(
+        { success: false, message: 'Neispravna email adresa' },
+        { status: 400 }
+      );
+    }
 
     // Create transporter
     const transporter = nodemailer.createTransport({
