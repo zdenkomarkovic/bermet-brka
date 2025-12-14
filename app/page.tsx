@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/card";
 import { Wine, Leaf, Award, Heart, ShoppingBag, User } from "lucide-react";
 import Image from "@/node_modules/next/image";
+import ImageSlider from "@/components/ImageSlider";
 
 export default function Home() {
   return (
@@ -152,8 +153,23 @@ export default function Home() {
         </div>
       </section>
 
-      {/* O Bermetu */}
+      {/* Image Slider */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/30">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Galerija
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              Brka i njegova tradicija u slikama
+            </p>
+          </div>
+          <ImageSlider />
+        </div>
+      </section>
+
+      {/* O Bermetu */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-background">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-3 mb-4">
