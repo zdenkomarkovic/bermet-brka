@@ -1,18 +1,28 @@
 # Optimizacija sajta - smanjenje edge requests
 
 ## Problem
-Sajt je imao preko milion edge requests dnevno na Vercelu, što može biti uzrok:
-- Bot napadi na API endpoint
-- Nedostatak rate limiting-a
-- Loše keširanje statičkih fajlova
+Sajt je imao preko milion edge requests dnevno (1500-2000/sat čak i noću) na Vercelu, što je uzrok:
+- ❌ Bot napadi na API endpoint
+- ❌ Nedostatak rate limiting-a
+- ❌ Loše keširanje statičkih fajlova
+- ❌ Botovi ignorišu robots.txt
+- ❌ Automatski crawleri (SEO tools, AI scrapers)
 
 ## Implementirana rešenja
 
-### 1. Middleware sa Rate Limiting (`middleware.ts`)
-- **Opšti rate limit**: 10 zahteva po minuti po IP adresi
-- **API rate limit**: 3 zahteva po minuti za `/api/*` rute
+### 1. **AGRESIVNI** Middleware sa Bot Blocking (`middleware.ts`)
+- **REDUCED rate limit**: 5 zahteva po minuti po IP adresi (bilo 10)
+- **REDUCED API rate limit**: 2 zahteva po minuti za `/api/*` rute (bilo 3)
 - **Security headers**: HSTS, XSS Protection, Frame Options, itd.
-- Automatsko blokiranje pri prekoračenju limita (HTTP 429)
+- **Bot detection**: Blokira 40+ poznatih bot user-agentova
+  - AI botovi: GPTBot, ClaudeBot, CCBot, anthropic-ai
+  - SEO botovi: AhrefsBot, SemrushBot, DotBot, Majestic
+  - Crawleri: Bingbot, Yandex, Baidu, Sogou
+  - Headless: Puppeteer, Playwright, Selenium, PhantomJS
+  - HTTP clients: curl, wget, axios, python, go-http-client
+- **Suspicious path blocking**: WordPress, admin panels, .env, .git
+- **Referer validation**: POST/PUT/DELETE bez refera = BLOCK
+- Automatsko blokiranje pri prekoračenju limita (HTTP 429/403)
 
 ### 2. Optimizovan API Endpoint (`app/api/send-order/route.ts`)
 - **Spam zaštita**: Maksimalno 5 narudžbina po IP adresi na sat
@@ -48,7 +58,32 @@ Sajt je imao preko milion edge requests dnevno na Vercelu, što može biti uzrok
    - Top paths (koje rute se najviše pozivaju)
    - 429 responses (blokirani zahtevi)
 
-### Preporuke za production
+## ⚠️ GLAVNI PROBLEM: Botovi ignorišu middleware!
+
+**Middleware POMAŽE ali NIJE DOVOLJNO** jer:
+- Botovi i dalje dolaze do edge functions
+- Svaki request troši Vercel bandwidth
+- Edge middleware execution = trošak
+
+## 🎯 PRAVO REŠENJE: CLOUDFLARE
+
+**Detaljno uputstvo u fajlu: `CLOUDFLARE_SETUP.md`**
+
+Cloudflare postavljen ispred Vercela:
+✅ Zaustavlja botove PRE nego stignu do Vercela
+✅ 100% BESPLATNO
+✅ Bot Fight Mode (blokira poznate botove)
+✅ Rate limiting na edge nivou
+✅ DDoS protection
+✅ Geo-blocking (blokiraj zemlje)
+✅ Challenge suspicious traffic
+✅ CDN za brži sajt
+
+**Očekivani rezultat**: 80-95% smanjenje edge requests!
+
+---
+
+### Alternative opcije (ako Cloudflare ne želiš)
 
 Ako problem i dalje postoji, razmotri:
 

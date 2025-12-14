@@ -6,8 +6,27 @@ const rateLimitMap = new Map<string, { count: number; resetTime: number }>()
 
 // Configuration
 const RATE_LIMIT_WINDOW = 60 * 1000 // 1 minute
-const MAX_REQUESTS_PER_WINDOW = 10 // 10 requests per minute
-const API_RATE_LIMIT = 3 // 3 API calls per minute
+const MAX_REQUESTS_PER_WINDOW = 5 // REDUCED: 5 requests per minute (was 10)
+const API_RATE_LIMIT = 2 // REDUCED: 2 API calls per minute (was 3)
+
+// Known bad bots and crawlers
+const BLOCKED_USER_AGENTS = [
+  'bot', 'crawler', 'spider', 'scraper', 'curl', 'wget', 'python', 'go-http-client',
+  'ahrefsbot', 'semrushbot', 'dotbot', 'mj12bot', 'rogerbot', 'exabot', 'facebot',
+  'ia_archiver', 'bingbot', 'bingpreview', 'msnbot', 'slurp', 'duckduckbot',
+  'baiduspider', 'yandexbot', 'sogou', 'teoma', 'seznambot', 'uptimerobot',
+  'gptbot', 'chatgpt', 'claudebot', 'anthropic', 'ccbot', 'claude-web',
+  'bytespider', 'petalbot', 'zoominfobot', 'axios', 'node-fetch', 'headless',
+  'phantom', 'selenium', 'webdriver', 'playwright', 'puppeteer',
+  'screaming frog', 'majestic', 'linkchecker', 'validator', 'checker'
+]
+
+// Suspicious patterns in paths
+const SUSPICIOUS_PATHS = [
+  '/.env', '/wp-admin', '/wp-login', '/admin', '/phpmyadmin', '/.git',
+  '/config', '/backup', '/test', '/demo', '/.well-known', '/api/graphql',
+  '/xmlrpc.php', '/wp-content', '/wordpress', '/joomla'
+]
 
 function getRateLimitKey(ip: string, pathname: string): string {
   return `${ip}:${pathname}`
@@ -43,11 +62,45 @@ setInterval(() => {
   }
 }, 60000) // Clean every minute
 
+function isBot(userAgent: string): boolean {
+  if (!userAgent) return true // No user agent = suspicious
+
+  const ua = userAgent.toLowerCase()
+  return BLOCKED_USER_AGENTS.some(bot => ua.includes(bot))
+}
+
+function isSuspiciousPath(pathname: string): boolean {
+  return SUSPICIOUS_PATHS.some(path => pathname.toLowerCase().includes(path))
+}
+
 export function middleware(request: NextRequest) {
   const ip = request.headers.get('x-forwarded-for') ||
              request.headers.get('x-real-ip') ||
              'unknown'
   const pathname = request.nextUrl.pathname
+  const userAgent = request.headers.get('user-agent') || ''
+
+  // Block known bots immediately
+  if (isBot(userAgent)) {
+    return new NextResponse('Forbidden', { status: 403 })
+  }
+
+  // Block suspicious paths
+  if (isSuspiciousPath(pathname)) {
+    return new NextResponse('Not Found', { status: 404 })
+  }
+
+  // Block requests without referer (except for direct navigation)
+  const referer = request.headers.get('referer')
+  const method = request.method
+
+  // If it's a POST/PUT/DELETE without referer, it's likely a bot
+  if (['POST', 'PUT', 'DELETE'].includes(method) && !referer) {
+    const origin = request.headers.get('origin')
+    if (!origin || !origin.includes('vinarijaaleks.co.rs')) {
+      return new NextResponse('Forbidden', { status: 403 })
+    }
+  }
 
   // Apply stricter rate limiting for API routes
   if (pathname.startsWith('/api/')) {

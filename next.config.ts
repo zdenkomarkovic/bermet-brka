@@ -19,6 +19,10 @@ const nextConfig: NextConfig = {
     optimizePackageImports: ['lucide-react'],
   },
 
+  // Disable automatic static optimization for pages with getServerSideProps
+  // This prevents unnecessary regeneration
+  poweredByHeader: false,
+
   // Headers for static assets
   async headers() {
     return [
